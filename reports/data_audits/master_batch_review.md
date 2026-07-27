@@ -14,10 +14,10 @@
 | computer_science_02 | Yes | Yes | Yes | Yes | Yes |
 | computer_science_03 | Yes | Yes | Yes | Yes | Yes |
 | computer_science_04 | Yes | Yes | Yes | Yes | Yes |
-| geography_01 | | | | | |
-| geography_02 | | | | | |
-| geography_03 | | | | | |
-| geography_04 | | | | | |
+| geography_01 | Yes | Yes | Yes | Yes | Yes |
+| geography_02 | Yes | Yes | Yes | Yes | Yes |
+| geography_03 | Yes | Yes | Yes | Yes | Yes |
+| geography_04 | Yes | Yes | Yes | Yes | Yes |
 | logic_01 | | | | | |
 | logic_02 | | | | | |
 | logic_03 | | | | | |
