@@ -1,0 +1,940 @@
+data/development/dev_en.jsonl	math_001	What is 19 × 7?
+data/development/dev_en.jsonl	math_002	What is 15 × 6?
+data/development/dev_en.jsonl	math_003	What is 144 divided by 12?
+data/development/dev_en.jsonl	math_004	What is 18 + 27?
+data/development/dev_en.jsonl	science_001	Which planet is closest to the Sun?
+data/development/dev_en.jsonl	science_002	Which gas do plants primarily absorb during photosynthesis?
+data/development/dev_en.jsonl	science_003	At standard atmospheric pressure, water freezes at what temperature in Celsius?
+data/development/dev_en.jsonl	science_004	Which organ pumps blood through the human body?
+data/development/dev_en.jsonl	science_005	What force pulls objects toward Earth?
+data/development/dev_en.jsonl	geography_001	What is the capital of France?
+data/development/dev_en.jsonl	geography_002	Which continent contains Egypt?
+data/development/dev_en.jsonl	geography_003	Which ocean is the largest?
+data/development/dev_en.jsonl	geography_004	Tokyo is the capital of which country?
+data/development/dev_en.jsonl	cs_001	Which data structure uses first-in, first-out ordering?
+data/development/dev_en.jsonl	cs_002	What does CPU stand for?
+data/development/dev_en.jsonl	cs_003	Which language is mainly used to style web pages?
+data/development/dev_en.jsonl	cs_004	What is the binary representation of decimal 2?
+data/development/dev_en.jsonl	logic_001	What is the opposite of true in Boolean logic?
+data/development/dev_en.jsonl	logic_002	If all cats are mammals and Luna is a cat, what must be true?
+data/development/dev_en.jsonl	logic_003	If a statement is both true and false at the same time under classical logic, what principle is violated?
+data/development/dev_en.jsonl	math_005	What is half of 18?
+data/development/dev_en.jsonl	math_006	What is the perimeter of a square with side length 7?
+data/development/dev_en.jsonl	math_007	What is 3/4 written as a decimal?
+data/development/dev_en.jsonl	math_008	What is 2 raised to the fifth power?
+data/development/dev_en.jsonl	math_009	A rectangle has length 12 and width 5. What is its area?
+data/development/dev_en.jsonl	math_010	What is 25% of 80?
+data/development/dev_en.jsonl	math_011	Solve for x: 3x + 5 = 20.
+data/development/dev_en.jsonl	math_012	What is the arithmetic mean of 6, 8, 10, and 12?
+data/development/dev_en.jsonl	math_013	What is 2/3 + 1/6?
+data/development/dev_en.jsonl	math_014	An item costs $80 before a 15% discount. What is the discounted price?
+data/development/dev_en.jsonl	math_015	What is the circumference of a circle with radius 4, expressed in terms of pi?
+data/development/dev_en.jsonl	math_016	What is the slope of the line through the points (2, 3) and (6, 11)?
+data/development/dev_en.jsonl	math_017	A bag contains 3 red and 5 blue marbles. What is the probability of drawing a red marble at random?
+data/development/dev_en.jsonl	math_018	Which expression is the complete factorization of x squared minus 9?
+data/development/dev_en.jsonl	math_019	What is the measure of each interior angle of a regular 12-sided polygon?
+data/development/dev_en.jsonl	math_020	An account earns 10% compound interest annually. If $1,000 is deposited and no money is withdrawn, what is the balance after two years?
+data/development/dev_en.jsonl	science_006	Which cellular structure contains most of a human cell's genetic material?
+data/development/dev_en.jsonl	science_007	In which state of matter does sound generally travel fastest?
+data/development/dev_en.jsonl	science_008	Approximately how long does Earth take to complete one rotation on its axis?
+data/development/dev_en.jsonl	science_009	According to Newton's second law, how is acceleration calculated from net force and mass?
+data/development/dev_en.jsonl	science_010	At room temperature, which pH value indicates an acidic aqueous solution?
+data/development/dev_en.jsonl	science_011	Which organelle produces most of the ATP used by a typical human cell?
+data/development/dev_en.jsonl	science_012	Two resistors of 2 ohms and 3 ohms are connected in series. What is their equivalent resistance?
+data/development/dev_en.jsonl	science_013	In a cross between two heterozygous parents Aa and Aa, what is the probability of an aa offspring?
+data/development/dev_en.jsonl	science_014	When light passes from air into glass at an angle, in which direction does it usually bend?
+data/development/dev_en.jsonl	science_015	At constant pressure, what happens to the volume of an ideal gas when its absolute temperature doubles?
+data/development/dev_en.jsonl	science_016	A radioactive isotope has a half-life of 6 hours. What fraction remains after 18 hours?
+data/development/dev_en.jsonl	science_017	What net force is required to accelerate a 10-kilogram object at 3 meters per second squared?
+data/development/dev_en.jsonl	science_018	In a food chain, which organisms do primary consumers eat directly?
+data/development/dev_en.jsonl	science_019	What is the pH of a solution with a hydrogen-ion concentration of 0.001 moles per liter?
+data/development/dev_en.jsonl	science_020	Which DNA strand is complementary and antiparallel to 5'-AGTC-3'?
+data/development/dev_en.jsonl	cs_005	Which Boolean operator is true only when both of its operands are true?
+data/development/dev_en.jsonl	cs_006	Which file extension is commonly used for a Python source file?
+data/development/dev_en.jsonl	cs_007	How many distinct values can one binary bit represent?
+data/development/dev_en.jsonl	cs_008	Which protocol is primarily used to retrieve web pages?
+data/development/dev_en.jsonl	cs_009	What is the average time complexity of binary search on a sorted array?
+data/development/dev_en.jsonl	cs_010	Which SQL clause filters rows before grouping and aggregation?
+data/development/dev_en.jsonl	cs_011	In object-oriented programming, what is the term for hiding internal implementation details behind a public interface?
+data/development/dev_en.jsonl	cs_012	Which traversal of a binary search tree visits its keys in sorted order?
+data/development/dev_en.jsonl	cs_013	What does a database primary key guarantee within a table?
+data/development/dev_en.jsonl	cs_014	What is the decimal value of the binary number 1010?
+data/development/dev_en.jsonl	cs_015	Which property must hold for every recursive function to terminate on valid finite input?
+data/development/dev_en.jsonl	cs_016	In a hash table with good hashing and a low load factor, what is the average-case lookup time?
+data/development/dev_en.jsonl	cs_017	Which part of an IPv4 address does a subnet mask identify?
+data/development/dev_en.jsonl	cs_018	What is a key benefit of a database transaction being atomic?
+data/development/dev_en.jsonl	cs_019	Dijkstra's shortest-path algorithm gives correct results under which edge-weight condition?
+data/development/dev_en.jsonl	cs_020	A complete binary tree has 31 nodes. How many levels does it have when the root is counted as level 1?
+data/development/dev_en.jsonl	geography_005	Which river flows through the city of Cairo?
+data/development/dev_en.jsonl	geography_006	Which country has a maple leaf on its national flag?
+data/development/dev_en.jsonl	geography_007	On which continent is the Sahara Desert located?
+data/development/dev_en.jsonl	geography_008	What is the capital of Australia?
+data/development/dev_en.jsonl	geography_009	Which mountain range is commonly used as part of the boundary between Europe and Asia?
+data/development/dev_en.jsonl	geography_010	Which country is completely surrounded by South Africa?
+data/development/dev_en.jsonl	geography_011	Which strait separates Asia from North America?
+data/development/dev_en.jsonl	geography_012	Which city is located on two continents, divided by the Bosporus?
+data/development/dev_en.jsonl	geography_013	Which country contains the ancient city of Petra?
+data/development/dev_en.jsonl	geography_014	What is the capital of Kazakhstan?
+data/development/dev_en.jsonl	geography_015	Which sea has no land coastline and is bounded by ocean currents?
+data/development/dev_en.jsonl	geography_016	The Mekong River empties into which body of water?
+data/development/dev_en.jsonl	geography_017	Which African country was formerly known as Abyssinia?
+data/development/dev_en.jsonl	geography_018	Which line of latitude passes through northern Mexico, Egypt, and India?
+data/development/dev_en.jsonl	geography_019	Which national capital lies closest to the Equator?
+data/development/dev_en.jsonl	geography_020	Which river forms much of the border between Germany and Poland?
+data/development/dev_en.jsonl	logic_004	If no programmers are careless and Amir is a programmer, what follows?
+data/development/dev_en.jsonl	logic_005	What number comes next in the sequence 2, 4, 6, 8?
+data/development/dev_en.jsonl	logic_006	If today is Monday, what day is it three days later?
+data/development/dev_en.jsonl	logic_007	Which item does not belong with the others: triangle, square, circle, cube?
+data/development/dev_en.jsonl	logic_008	If a light is on, then the room is illuminated. The light is on. What follows?
+data/development/dev_en.jsonl	logic_009	All roses are flowers. Some flowers fade quickly. Which conclusion about roses fading must follow?
+data/development/dev_en.jsonl	logic_010	What number comes next in the sequence 3, 6, 12, 24?
+data/development/dev_en.jsonl	logic_011	If P implies Q and Q is false, what follows in classical logic?
+data/development/dev_en.jsonl	logic_012	Ava is older than Ben, and Ben is older than Chen. Who is youngest?
+data/development/dev_en.jsonl	logic_013	A code replaces each letter with the next letter in the alphabet. How is DOG encoded?
+data/development/dev_en.jsonl	logic_014	Exactly one of these statements is true: 'The coin is in box A' and 'The coin is in box B.' If the coin is not in box A, where is it?
+data/development/dev_en.jsonl	logic_015	Four people each shake hands once with every other person. How many handshakes occur?
+data/development/dev_en.jsonl	logic_016	Some musicians are teachers, and all teachers are readers. What must follow?
+data/development/dev_en.jsonl	logic_017	Which proposition is logically equivalent to 'not (P and Q)'?
+data/development/dev_en.jsonl	logic_018	A fair six-sided die is rolled. Given that the result is even, what is the probability that it is greater than 3?
+data/development/dev_en.jsonl	logic_019	Three boxes are labeled Apples, Oranges, and Mixed, but every label is wrong. From which box should one fruit be drawn to determine all three correct labels?
+data/development/dev_en.jsonl	logic_020	A says, 'B is lying.' B says, 'A and I are both lying.' Assuming each person is either always truthful or always lying, which assignment is consistent?
+data/development/manual_pilot_questions.jsonl	math_001	What is 19 × 7?
+data/development/manual_pilot_questions.jsonl	math_002	What is 15 × 6?
+data/development/manual_pilot_questions.jsonl	math_003	What is 144 divided by 12?
+data/development/manual_pilot_questions.jsonl	math_004	What is 18 + 27?
+data/development/manual_pilot_questions.jsonl	science_001	Which planet is closest to the Sun?
+data/development/manual_pilot_questions.jsonl	science_002	Which gas do plants primarily absorb during photosynthesis?
+data/development/manual_pilot_questions.jsonl	science_003	At standard atmospheric pressure, water freezes at what temperature in Celsius?
+data/development/manual_pilot_questions.jsonl	science_004	Which organ pumps blood through the human body?
+data/development/manual_pilot_questions.jsonl	science_005	What force pulls objects toward Earth?
+data/development/manual_pilot_questions.jsonl	geography_001	What is the capital of France?
+data/development/manual_pilot_questions.jsonl	geography_002	Which continent contains Egypt?
+data/development/manual_pilot_questions.jsonl	geography_003	Which ocean is the largest?
+data/development/manual_pilot_questions.jsonl	geography_004	Tokyo is the capital of which country?
+data/development/manual_pilot_questions.jsonl	cs_001	Which data structure uses first-in, first-out ordering?
+data/development/manual_pilot_questions.jsonl	cs_002	What does CPU stand for?
+data/development/manual_pilot_questions.jsonl	cs_003	Which language is mainly used to style web pages?
+data/development/manual_pilot_questions.jsonl	cs_004	What is the binary representation of decimal 2?
+data/development/manual_pilot_questions.jsonl	logic_001	What is the opposite of true in Boolean logic?
+data/development/manual_pilot_questions.jsonl	logic_002	If all cats are mammals and Luna is a cat, what must be true?
+data/development/manual_pilot_questions.jsonl	logic_003	If a statement is both true and false at the same time under classical logic, what principle is violated?
+data/smoke_test/train.jsonl		What is 7 × 8?
+data/smoke_test/train.jsonl		Which planet is closest to the Sun?
+data/smoke_test/train.jsonl		What is the capital of France?
+data/smoke_test/train.jsonl		Which data structure uses first-in, first-out ordering?
+data/smoke_test/train.jsonl		What is 12 squared?
+data/smoke_test/train.jsonl		Which gas do plants primarily absorb during photosynthesis?
+data/smoke_test/train.jsonl		Which ocean is the largest?
+data/smoke_test/train.jsonl		What does CPU stand for?
+data/smoke_test/train.jsonl		What is 15 + 27?
+data/smoke_test/train.jsonl		Which organ pumps blood through the human body?
+data/smoke_test/train.jsonl		What is 9 × 6?
+data/smoke_test/train.jsonl		Which language is primarily used to style web pages?
+data/smoke_test/train.jsonl		At standard atmospheric pressure, water freezes at what Celsius temperature?
+data/smoke_test/train.jsonl		Which continent contains Egypt?
+data/smoke_test/train.jsonl		What is the binary representation of decimal 2?
+data/smoke_test/train.jsonl		Which programming construct repeats a block of code?
+data/smoke_test/train.jsonl		What is 100 divided by 4?
+data/smoke_test/train.jsonl		Which animal is a mammal?
+data/smoke_test/train.jsonl		Which protocol is commonly used to load web pages?
+data/smoke_test/train.jsonl		What is the opposite of true in Boolean logic?
+data/master/master_en.jsonl	master_cs_001	What is the purpose of a return statement inside a function?
+data/master/master_en.jsonl	master_cs_002	In the assignment `x = x + 3`, what does the statement normally do in an imperative language?
+data/master/master_en.jsonl	master_cs_003	Consider this pseudocode: `total = 0; for i from 1 to 3; for j from 1 to i; total = total + 1`. What is the final value of total?
+data/master/master_en.jsonl	master_cs_004	Which condition is most likely to make a `while` loop run forever unintentionally?
+data/master/master_en.jsonl	master_cs_005	What is the distinction between a function parameter and an argument?
+data/master/master_en.jsonl	master_cs_006	A variable declared inside a function is described as local when it can normally be accessed where?
+data/master/master_en.jsonl	master_cs_007	The pseudocode sets `x = 7`, then executes `if x > 5: x = x - 2`. What is x afterward?
+data/master/master_en.jsonl	master_cs_008	What does an accumulator variable usually do inside a loop?
+data/master/master_en.jsonl	master_cs_009	A program starts successfully but stops when it attempts to divide by zero. How is this problem best classified?
+data/master/master_en.jsonl	master_cs_010	Which description best matches a pure function?
+data/master/master_en.jsonl	master_cs_011	Which data type is intended to represent either true or false?
+data/master/master_en.jsonl	master_cs_012	What is a source-code comment normally used for?
+data/master/master_en.jsonl	master_cs_013	Which value is most naturally represented by an integer type?
+data/master/master_en.jsonl	master_cs_014	An array has valid indexes 0 through 9. What kind of error is an attempt to access index 10?
+data/master/master_en.jsonl	master_cs_015	What does a debugger breakpoint do?
+data/master/master_en.jsonl	master_cs_016	Why should a program validate user input before processing it?
+data/master/master_en.jsonl	master_cs_017	After values 4, 7, and 9 are pushed onto an empty stack in that order, which value is popped first?
+data/master/master_en.jsonl	master_cs_018	What is a key advantage of a linked list over a fixed-size array?
+data/master/master_en.jsonl	master_cs_019	In a zero-indexed array, which index refers to the first element?
+data/master/master_en.jsonl	master_cs_020	In an unweighted graph, which traversal finds a path with the fewest edges from a starting vertex?
+data/master/master_en.jsonl	master_cs_021	In a tree data structure, what is the topmost node called?
+data/master/master_en.jsonl	master_cs_022	In a min-heap, which ordering property must hold?
+data/master/master_en.jsonl	master_cs_023	What is the worst-case time complexity of merge sort on n elements?
+data/master/master_en.jsonl	master_cs_024	For a sparse graph with relatively few edges, which representation usually uses less memory?
+data/master/master_en.jsonl	master_cs_025	Which queue operation removes and returns the element that has waited longest in a standard queue?
+data/master/master_en.jsonl	master_cs_026	An algorithm splits a problem into two half-sized problems and performs linear additional work at each level. What is its asymptotic running time?
+data/master/master_en.jsonl	master_cs_027	During depth-first search of a directed graph, what indicates a cycle when using color states?
+data/master/master_en.jsonl	master_cs_028	What property makes a sorting algorithm stable?
+data/master/master_en.jsonl	master_cs_029	A search interval in a sorted array has low index 8 and high index 14. Using integer floor division, which midpoint index should binary search inspect?
+data/master/master_en.jsonl	master_cs_030	When is dynamic programming most directly applicable to an optimization problem?
+data/master/master_en.jsonl	master_cs_031	Which search method checks elements one by one until the target is found or the collection ends?
+data/master/master_en.jsonl	master_cs_032	Which collection type is designed to store each distinct value at most once?
+data/master/master_en.jsonl	master_cs_033	Why is ordinary RAM described as volatile memory?
+data/master/master_en.jsonl	master_cs_034	What is the main purpose of a CPU cache?
+data/master/master_en.jsonl	master_cs_035	What is the main purpose of adding a parity bit to a short binary message?
+data/master/master_en.jsonl	master_cs_036	What integer range can an 8-bit two's-complement value represent?
+data/master/master_en.jsonl	master_cs_037	What does a processor's clock signal primarily provide?
+data/master/master_en.jsonl	master_cs_038	Which electronic component is the basic switching element used to build modern digital logic gates?
+data/master/master_en.jsonl	master_cs_039	Which device is intended for nonvolatile long-term data storage?
+data/master/master_en.jsonl	master_cs_040	Why can sequentially processing adjacent array elements be faster than accessing widely scattered elements?
+data/master/master_en.jsonl	master_cs_041	What is the purpose of virtual memory at the computer-system level?
+data/master/master_en.jsonl	master_cs_042	How many bits are in one byte?
+data/master/master_en.jsonl	master_cs_043	During the basic instruction cycle, what normally happens after an instruction is fetched from memory?
+data/master/master_en.jsonl	master_cs_044	Which processor component performs arithmetic and logical operations?
+data/master/master_en.jsonl	master_cs_045	In a relational database table, what does one row normally represent?
+data/master/master_en.jsonl	master_cs_046	Which SQL command is used to retrieve data from a table?
+data/master/master_en.jsonl	master_cs_047	What is the main role of a foreign key in a relational database?
+data/master/master_en.jsonl	master_cs_048	Why is database normalization commonly applied to relational schemas?
+data/master/master_en.jsonl	master_cs_049	What is a common purpose of a database index?
+data/master/master_en.jsonl	master_cs_050	In SQL, what does NULL normally indicate?
+data/master/master_en.jsonl	master_cs_051	Which relational operation combines rows from two tables using a related column?
+data/master/master_en.jsonl	master_cs_052	Which transaction-isolation phenomenon occurs when a transaction reads data written by another transaction that has not committed?
+data/master/master_en.jsonl	master_cs_053	A table declares the pair `(student_id, course_id)` as a composite primary key. What must be unique?
+data/master/master_en.jsonl	master_cs_054	What software manages the storage, querying, and access control of a database?
+data/master/master_en.jsonl	master_cs_055	What is the main purpose of the Domain Name System?
+data/master/master_en.jsonl	master_cs_056	What security property does HTTPS add to ordinary HTTP through TLS?
+data/master/master_en.jsonl	master_cs_057	Which device forwards packets between different IP networks?
+data/master/master_en.jsonl	master_cs_058	In TCP/IP networking, what does a port number help identify on a host?
+data/master/master_en.jsonl	master_cs_059	Which feature is provided by TCP but not by UDP?
+data/master/master_en.jsonl	master_cs_060	What is the role of an IP address in packet delivery?
+data/master/master_en.jsonl	master_cs_061	In the URL `https://example.com/docs`, which part identifies the protocol scheme?
+data/master/master_en.jsonl	master_cs_062	What does the HTTP status code 404 conventionally mean?
+data/master/master_en.jsonl	master_cs_063	How many usable host addresses are available in a conventional IPv4 `/26` subnet when network and broadcast addresses are excluded?
+data/master/master_en.jsonl	master_cs_064	In a typical web interaction, what role does a browser play?
+data/master/master_en.jsonl	master_cs_065	What is a principal difference between a process and a thread?
+data/master/master_en.jsonl	master_cs_066	What is the operating-system scheduler responsible for?
+data/master/master_en.jsonl	master_cs_067	What does a file system primarily organize?
+data/master/master_en.jsonl	master_cs_068	When physical memory is scarce, what may an operating system move from RAM to secondary storage?
+data/master/master_en.jsonl	master_cs_069	Which situation describes a deadlock?
+data/master/master_en.jsonl	master_cs_070	What happens during a context switch?
+data/master/master_en.jsonl	master_cs_071	What is a mutex used for in concurrent programming?
+data/master/master_en.jsonl	master_cs_072	What is the kernel of an operating system?
+data/master/master_en.jsonl	master_cs_073	What is a central benefit of using a version-control system?
+data/master/master_en.jsonl	master_cs_074	What does a unit test normally verify?
+data/master/master_en.jsonl	master_cs_075	What is a primary purpose of peer code review?
+data/master/master_en.jsonl	master_cs_076	Why should passwords generally be stored using a salted password-hashing function rather than reversible encryption?
+data/master/master_en.jsonl	master_cs_077	What does the principle of least privilege require?
+data/master/master_en.jsonl	master_cs_078	What is encryption intended to provide when used correctly with protected keys?
+data/master/master_en.jsonl	master_cs_079	Which practice most directly reduces SQL-injection risk when handling user input?
+data/master/master_en.jsonl	master_cs_080	Why are tested backups important for data recovery?
+data/master/master_en.jsonl	master_geo_001	Which city is the capital of Brazil?
+data/master/master_en.jsonl	master_geo_002	Ottawa is the capital of which country?
+data/master/master_en.jsonl	master_geo_003	Which city is the capital of Germany?
+data/master/master_en.jsonl	master_geo_004	Rome is the capital of which country?
+data/master/master_en.jsonl	master_geo_005	Which list matches all three countries with their capitals correctly?
+data/master/master_en.jsonl	master_geo_006	Which city is the capital of Spain?
+data/master/master_en.jsonl	master_geo_007	A traveler visits the capitals of Portugal, Spain, and Italy in that order. Which route is correct?
+data/master/master_en.jsonl	master_geo_008	Which city is the capital of New Zealand?
+data/master/master_en.jsonl	master_geo_009	Which country has Bangkok as its capital?
+data/master/master_en.jsonl	master_geo_010	Which city is the capital of Argentina?
+data/master/master_en.jsonl	master_geo_011	Which pair consists of two national capitals in East Asia?
+data/master/master_en.jsonl	master_geo_012	Nairobi is the capital of which country?
+data/master/master_en.jsonl	master_geo_013	Which city is the capital of India?
+data/master/master_en.jsonl	master_geo_014	Hanoi is the capital of which country?
+data/master/master_en.jsonl	master_geo_015	Which city is the capital of Portugal?
+data/master/master_en.jsonl	master_geo_016	Which city is the capital of South Korea?
+data/master/master_en.jsonl	master_geo_017	Which three countries are commonly described as the Baltic states?
+data/master/master_en.jsonl	master_geo_018	Which continent contains both Brazil and Argentina?
+data/master/master_en.jsonl	master_geo_019	The Iberian Peninsula is primarily occupied by which two countries?
+data/master/master_en.jsonl	master_geo_020	Which country is part of the mainland region commonly called Southeast Asia?
+data/master/master_en.jsonl	master_geo_021	Into which ocean does the Amazon River discharge?
+data/master/master_en.jsonl	master_geo_022	The Danube River empties into which sea?
+data/master/master_en.jsonl	master_geo_023	The Mississippi River reaches the sea through which body of water?
+data/master/master_en.jsonl	master_geo_024	On which continent does the Rhine River flow?
+data/master/master_en.jsonl	master_geo_025	On which continent are the Himalayas located?
+data/master/master_en.jsonl	master_geo_026	Along which side of South America do the Andes mainly extend?
+data/master/master_en.jsonl	master_geo_027	In which part of Africa are the Atlas Mountains located?
+data/master/master_en.jsonl	master_geo_028	The Alps are a major mountain range on which continent?
+data/master/master_en.jsonl	master_geo_029	Which sea lies between southern Europe and northern Africa?
+data/master/master_en.jsonl	master_geo_030	The Red Sea separates northeastern Africa from which peninsula?
+data/master/master_en.jsonl	master_geo_031	The Gobi Desert extends across parts of Mongolia and which neighboring country?
+data/master/master_en.jsonl	master_geo_032	The Atacama Desert is chiefly located in which country?
+data/master/master_en.jsonl	master_geo_033	The Kalahari Desert region is located in which part of Africa?
+data/master/master_en.jsonl	master_geo_034	Which inland body of water lies between Europe and Asia and is commonly called the world's largest lake by area?
+data/master/master_en.jsonl	master_geo_035	What landform is created where a river deposits sediment as it enters a standing body of water?
+data/master/master_en.jsonl	master_geo_036	What is a peninsula?
+data/master/master_en.jsonl	master_geo_037	What is an isthmus?
+data/master/master_en.jsonl	master_geo_038	What is an archipelago?
+data/master/master_en.jsonl	master_geo_039	What does a drainage divide separate?
+data/master/master_en.jsonl	master_geo_040	Which feature most commonly forms where continental crust is pulled apart over a long period?
+data/master/master_en.jsonl	master_geo_041	Which biome is characterized by year-round warmth, high rainfall, and dense layered vegetation?
+data/master/master_en.jsonl	master_geo_042	Which biome has permafrost and a very short growing season?
+data/master/master_en.jsonl	master_geo_043	Moist air rises over a coastal mountain range. Which climate pattern is most likely on the range's leeward side?
+data/master/master_en.jsonl	master_geo_044	Which climate typically has hot, dry summers and mild, wetter winters?
+data/master/master_en.jsonl	master_geo_045	What is a monsoon primarily?
+data/master/master_en.jsonl	master_geo_046	Two places lie at the same latitude, but one is 2,000 meters higher. Other factors being similar, which temperature pattern is most likely?
+data/master/master_en.jsonl	master_geo_047	Which vegetation pattern is typical of a tropical savanna?
+data/master/master_en.jsonl	master_geo_048	How can a warm ocean current affect a nearby coast?
+data/master/master_en.jsonl	master_geo_049	Which line divides Earth into the Northern and Southern Hemispheres?
+data/master/master_en.jsonl	master_geo_050	What does the Prime Meridian define?
+data/master/master_en.jsonl	master_geo_051	Lines of latitude run mainly in which direction on a conventional map?
+data/master/master_en.jsonl	master_geo_052	A location at 25° south latitude lies in which hemisphere?
+data/master/master_en.jsonl	master_geo_053	Which coordinate measures position east or west of the Prime Meridian?
+data/master/master_en.jsonl	master_geo_054	On a map with north at the top, what direction is to the right?
+data/master/master_en.jsonl	master_geo_055	What do closely spaced contour lines usually indicate on a topographic map?
+data/master/master_en.jsonl	master_geo_056	A map scale states that 1 centimeter represents 5 kilometers. What real distance does 3 centimeters represent?
+data/master/master_en.jsonl	master_geo_057	If it is 12:00 at longitude 0°, what is the approximate local solar time at 30° east longitude?
+data/master/master_en.jsonl	master_geo_058	A point at 10° north, 20° west lies north of the Equator and on which side of the Prime Meridian?
+data/master/master_en.jsonl	master_geo_059	Why do outer bends of a meandering river commonly erode faster than inner bends?
+data/master/master_en.jsonl	master_geo_060	A river's gradient decreases sharply as it leaves mountains and enters a plain. What is the most likely immediate result?
+data/master/master_en.jsonl	master_geo_061	What does population density measure?
+data/master/master_en.jsonl	master_geo_062	What does the term urbanization mean?
+data/master/master_en.jsonl	master_geo_063	A district has 24,000 residents and an area of 80 square kilometers. What is its population density?
+data/master/master_en.jsonl	master_geo_064	Which description best fits a rural settlement?
+data/master/master_en.jsonl	master_geo_065	Why have many settlements historically developed near reliable rivers?
+data/master/master_en.jsonl	master_geo_066	What is a conurbation?
+data/master/master_en.jsonl	master_geo_067	What is the main purpose of a population census?
+data/master/master_en.jsonl	master_geo_068	Which settlement pattern has buildings grouped closely around a central point?
+data/master/master_en.jsonl	master_geo_069	Which set contains the three Scandinavian kingdoms in the narrow conventional sense?
+data/master/master_en.jsonl	master_geo_070	Which countries make up the Benelux grouping?
+data/master/master_en.jsonl	master_geo_071	A glacier erodes a former river valley for thousands of years. Which cross-sectional shape is most likely afterward?
+data/master/master_en.jsonl	master_geo_072	How does an oxbow lake usually form?
+data/master/master_en.jsonl	master_geo_073	Which process wears away and removes rock or soil from one location?
+data/master/master_en.jsonl	master_geo_074	Which rock type is especially associated with caves and sinkholes in karst landscapes?
+data/master/master_en.jsonl	master_geo_075	What is an aquifer?
+data/master/master_en.jsonl	master_geo_076	What is an estuary?
+data/master/master_en.jsonl	master_geo_077	Which process most directly deepens a canyon cut by a river?
+data/master/master_en.jsonl	master_geo_078	What is a floodplain?
+data/master/master_en.jsonl	master_geo_079	What is mechanical weathering?
+data/master/master_en.jsonl	master_geo_080	Why are many volcanoes concentrated near convergent plate boundaries?
+data/master/master_en.jsonl	master_logic_001	What is the logical negation of 'Both lamps are on'?
+data/master/master_en.jsonl	master_logic_002	When is the conjunction 'P and Q' true?
+data/master/master_en.jsonl	master_logic_003	Under inclusive logical OR, when is 'P or Q' false?
+data/master/master_en.jsonl	master_logic_004	In classical propositional logic, when is the implication 'P implies Q' false?
+data/master/master_en.jsonl	master_logic_005	What does the biconditional 'P if and only if Q' assert?
+data/master/master_en.jsonl	master_logic_006	Which expression is logically equivalent to '(P or Q) and not P'?
+data/master/master_en.jsonl	master_logic_007	When is exclusive OR between P and Q true?
+data/master/master_en.jsonl	master_logic_008	How is the proposition 'R and not R' classified?
+data/master/master_en.jsonl	master_logic_009	How is the proposition 'S or not S' classified in classical logic?
+data/master/master_en.jsonl	master_logic_010	What is the negation of 'At least one package arrived'?
+data/master/master_en.jsonl	master_logic_011	Which expression is logically equivalent to 'P implies Q'?
+data/master/master_en.jsonl	master_logic_012	If P is true and Q is false, what is the truth value of 'P and Q'?
+data/master/master_en.jsonl	master_logic_013	If P is false, what is the classical truth value of 'P implies Q', regardless of Q?
+data/master/master_en.jsonl	master_logic_014	Among the four possible truth assignments to P and Q, under how many is exclusive OR true?
+data/master/master_en.jsonl	master_logic_015	All cedar objects are wooden. No wooden objects are transparent. What must follow?
+data/master/master_en.jsonl	master_logic_016	Some chefs are poets. No poets are swimmers. What must be true?
+data/master/master_en.jsonl	master_logic_017	All atlases are reference books. All reference books are publications. What must follow?
+data/master/master_en.jsonl	master_logic_018	No metal tokens are transparent. Token K is metal. What follows?
+data/master/master_en.jsonl	master_logic_019	Some amber objects are boxes. All boxes are containers. No containers are weightless. What must follow?
+data/master/master_en.jsonl	master_logic_020	All squares are rectangles. No circles are rectangles. Which conclusion must be true?
+data/master/master_en.jsonl	master_logic_021	All copper items conduct electricity. No insulating items conduct electricity. What follows about copper items?
+data/master/master_en.jsonl	master_logic_022	All falcons are birds. Some animals are not birds. Which conclusion must be true?
+data/master/master_en.jsonl	master_logic_023	All red tiles are heavy. No light tiles are heavy. What must follow?
+data/master/master_en.jsonl	master_logic_024	Some books are old. No old item is digital. What follows?
+data/master/master_en.jsonl	master_logic_025	No ceramic item is flexible. Every rubber item is flexible. Which conclusion must be true?
+data/master/master_en.jsonl	master_logic_026	All emerald tokens are green. No blue token is green. What must follow?
+data/master/master_en.jsonl	master_logic_027	All violins are instruments. All pianos are instruments. What relation between violins and pianos must hold?
+data/master/master_en.jsonl	master_logic_028	Some dancers are not singers. Every choir member is a singer. What must follow?
+data/master/master_en.jsonl	master_logic_029	If the sensor triggers, the alarm activates. If the alarm activates, a message is sent. The sensor triggers. What follows?
+data/master/master_en.jsonl	master_logic_030	If the gate opens, the bell rings. If the bell rings, the lamp flashes. The lamp does not flash. What follows?
+data/master/master_en.jsonl	master_logic_031	If a whole number is divisible by 6, then it is divisible by 3. A number n is divisible by 3. What follows about n?
+data/master/master_en.jsonl	master_logic_032	A valid keycard is necessary for entering the lab. Mira entered the lab. What must follow?
+data/master/master_en.jsonl	master_logic_033	Submitting the completed form is sufficient to receive a confirmation number. Ivo submitted the completed form. What follows?
+data/master/master_en.jsonl	master_logic_034	The parcel will not ship unless payment is received. The parcel shipped. What follows?
+data/master/master_en.jsonl	master_logic_035	A switch is active if and only if its indicator is green. The indicator is not green. What follows?
+data/master/master_en.jsonl	master_logic_036	If P then R, and if Q then R. R is false. What must follow?
+data/master/master_en.jsonl	master_logic_037	If the server is overloaded, response time increases. The server is not overloaded. What follows about response time?
+data/master/master_en.jsonl	master_logic_038	If both A and B occur, then C occurs. If C occurs, then D occurs. D did not occur, but A did. What must follow?
+data/master/master_en.jsonl	master_logic_039	A permit is issued only if the applicant passes the review. A permit was issued to Ren. What follows?
+data/master/master_en.jsonl	master_logic_040	If a card is a queen, then it is a face card. This card is not a face card. What follows?
+data/master/master_en.jsonl	master_logic_041	Let A = {1, 2, 3} and B = {3, 4}. What is A intersect B?
+data/master/master_en.jsonl	master_logic_042	Let A = {a, b} and B = {b, c}. What is A union B?
+data/master/master_en.jsonl	master_logic_043	If set X is a subset of Y and Y is a proper subset of Z, which statement must be true?
+data/master/master_en.jsonl	master_logic_044	In a group, 18 people read magazine A, 12 read magazine B, and 5 read both. How many read at least one?
+data/master/master_en.jsonl	master_logic_045	Within a universe U, what is the complement of a set A?
+data/master/master_en.jsonl	master_logic_046	Which statement describes the empty set?
+data/master/master_en.jsonl	master_logic_047	If sets M and N are disjoint, what must be true?
+data/master/master_en.jsonl	master_logic_048	Among 40 people, 30 drink tea, 18 drink coffee, and 10 drink both. How many drink exactly one of the two?
+data/master/master_en.jsonl	master_logic_049	If 4 belongs to set S, which notation states this correctly?
+data/master/master_en.jsonl	master_logic_050	All members of set A are in set B, and some members of B are not in A. Which relation holds?
+data/master/master_en.jsonl	master_logic_051	The pattern alternates circle, square, circle, square. Which shape comes next?
+data/master/master_en.jsonl	master_logic_052	What number comes next in 2, 5, 10, 17, ... if consecutive differences are 3, 5, 7, and so on?
+data/master/master_en.jsonl	master_logic_053	In the sequence 1, 1, 2, 3, 5, ... each term after the first two is their sum. What comes next?
+data/master/master_en.jsonl	master_logic_054	The letter pattern A, C, F, J advances by 2, then 3, then 4 alphabet positions. Which letter comes next?
+data/master/master_en.jsonl	master_logic_055	What comes next in 81, 27, 9, 3, ... if each term is divided by 3?
+data/master/master_en.jsonl	master_logic_056	A sequence interleaves even numbers and multiples of ten: 2, 10, 4, 20, 6, 30, ... What is the next term?
+data/master/master_en.jsonl	master_logic_057	What number follows 3, 6, 11, 18, 27 when the increases are consecutive odd numbers 3, 5, 7, and 9?
+data/master/master_en.jsonl	master_logic_058	The pattern 1, 4, 2, 8, 3, 12, 4 interleaves counting numbers with their multiples of four. What comes next?
+data/master/master_en.jsonl	master_logic_059	What letter comes next in Z, X, V, T, ... when the pattern moves backward two alphabet positions each step?
+data/master/master_en.jsonl	master_logic_060	What number comes next in 1, 4, 9, 16, ... if the terms are consecutive square numbers?
+data/master/master_en.jsonl	master_logic_061	Four tasks D, A, B, and C must be ordered. D is before A, A is before B, and C is after B. Which order is required?
+data/master/master_en.jsonl	master_logic_062	Nina finishes before Omar, and Omar finishes before Pia. Who finishes last?
+data/master/master_en.jsonl	master_logic_063	Tasks X, Y, and Z occupy slots 1, 2, and 3. X is not first, and Y is immediately before X. Which order is possible?
+data/master/master_en.jsonl	master_logic_064	Leo stands ahead of Maya, and Maya stands ahead of Noor. Who is first among the three?
+data/master/master_en.jsonl	master_logic_065	Three boxes—red, blue, and green—are arranged in a row. Red is left of blue, and green is right of blue. Which box is in the middle?
+data/master/master_en.jsonl	master_logic_066	Four runners J, K, L, and M finish with no ties. J is before K, L is after K, and M is before J. Which order is required?
+data/master/master_en.jsonl	master_logic_067	Ava and Bo must sit next to each other. Which seating order satisfies that constraint?
+data/master/master_en.jsonl	master_logic_068	Book B is between books A and C, and A is left of B. Which book is in the middle?
+data/master/master_en.jsonl	master_logic_069	Meetings P, Q, and R occur on Monday, Tuesday, and Wednesday. P is before Q, and R is on Wednesday. When is Q?
+data/master/master_en.jsonl	master_logic_070	A committee must include exactly two of Lina, Mo, Nia, and Oren. If Lina is selected, Mo must also be selected. Which pair is not allowed?
+data/master/master_en.jsonl	master_logic_071	A speaker rejects Dana's budget argument by saying, 'Dana is lazy, so her figures cannot be right.' Which fallacy is this?
+data/master/master_en.jsonl	master_logic_072	Ice-cream sales and sunburn cases both rise in summer; therefore ice-cream causes sunburn. What is the main error?
+data/master/master_en.jsonl	master_logic_073	Kai proposes reducing one meeting per week. A critic replies, 'Kai wants us never to communicate again.' Which fallacy is used?
+data/master/master_en.jsonl	master_logic_074	A manager says, 'Either approve my exact plan or the project will certainly fail.' Other workable plans exist. Which fallacy is this?
+data/master/master_en.jsonl	master_logic_075	'Millions of people believe this claim, so it must be true.' Which fallacy is present?
+data/master/master_en.jsonl	master_logic_076	'This rule is fair because it is a fair rule.' What defect does the argument have?
+data/master/master_en.jsonl	master_logic_077	After meeting two rude tourists from one town, I conclude that everyone from that town is rude. Which error is this?
+data/master/master_en.jsonl	master_logic_078	An actor with no medical expertise endorses a treatment, and the endorsement is offered as the sole evidence that it works. Which fallacy best describes this?
+data/master/master_en.jsonl	master_logic_079	Asked whether a policy reduced costs, a speaker talks only about the office's new paint color. What tactic is this?
+data/master/master_en.jsonl	master_logic_080	In the argument 'All metals conduct electricity; copper is a metal; therefore copper conducts electricity,' which statement is the conclusion?
+data/master/master_en.jsonl	master_math_001	Five notebooks cost $35 at the same price per notebook. How much do eight notebooks cost?
+data/master/master_en.jsonl	master_math_002	What is 63 minus 28?
+data/master/master_en.jsonl	master_math_003	The arithmetic sequence 5, 9, 13, 17 continues with the same difference. What is its eighth term?
+data/master/master_en.jsonl	master_math_004	A triangle has base 14 centimeters and perpendicular height 9 centimeters. What is its area?
+data/master/master_en.jsonl	master_math_005	What is 3.5 plus 2.4?
+data/master/master_en.jsonl	master_math_006	On a map, 1 centimeter represents 6 kilometers. What actual distance does 8.5 centimeters represent?
+data/master/master_en.jsonl	master_math_007	Two consecutive positive even integers have a product of 168. What is their sum?
+data/master/master_en.jsonl	master_math_008	If f(x) = x squared minus 1 and g(x) = 2x + 1, what is f(g(2))?
+data/master/master_en.jsonl	master_math_009	How many edges does a cube have?
+data/master/master_en.jsonl	master_math_010	A walking route is 1.2 kilometers long. How many meters does a person cover by completing the route three times?
+data/master/master_en.jsonl	master_math_011	Five eighths of a number is 35. What is the number?
+data/master/master_en.jsonl	master_math_012	How many degrees are in a right angle?
+data/master/master_en.jsonl	master_math_013	What is the median of 3, 5, 8, 12, and 20?
+data/master/master_en.jsonl	master_math_014	What simple interest is earned by $600 at 5% per year for 3 years?
+data/master/master_en.jsonl	master_math_015	What is the sum of the interior angles of any triangle?
+data/master/master_en.jsonl	master_math_016	If x + y = 11 and x - y = 3, what is x?
+data/master/master_en.jsonl	master_math_017	A car travels 180 kilometers in 3 hours at a constant speed. How far does it travel in 5 hours?
+data/master/master_en.jsonl	master_math_018	What is the least common multiple of 18 and 24?
+data/master/master_en.jsonl	master_math_019	How many lines of symmetry does a rectangle that is not a square have?
+data/master/master_en.jsonl	master_math_020	Two parallel lines are cut by a transversal. If one interior angle is 68 degrees, what is its alternate interior angle?
+data/master/master_en.jsonl	master_math_021	A price of $200 is increased by 10% and then the increased price is reduced by 10%. What is the final price?
+data/master/master_en.jsonl	master_math_022	What is 7 + 3 × 4 using the standard order of operations?
+data/master/master_en.jsonl	master_math_023	Two quantities are in the ratio 2:3 and have a total of 45. What is the smaller quantity?
+data/master/master_en.jsonl	master_math_024	What is the value of -4 + 3(5 - 2)?
+data/master/master_en.jsonl	master_math_025	What is 3.2 multiplied by 10?
+data/master/master_en.jsonl	master_math_026	A tank is 3/8 full. After 25 liters are added, it is 5/8 full. What is the tank's capacity?
+data/master/master_en.jsonl	master_math_027	What is the greatest common divisor of 20 and 30?
+data/master/master_en.jsonl	master_math_028	A rectangle has a perimeter of 50 centimeters and a length of 15 centimeters. What is its width?
+data/master/master_en.jsonl	master_math_029	What is the reciprocal of 4/7?
+data/master/master_en.jsonl	master_math_030	What is the absolute value of -13?
+data/master/master_en.jsonl	master_math_031	What is 6 squared minus 5 squared?
+data/master/master_en.jsonl	master_math_032	Which of these numbers is prime?
+data/master/master_en.jsonl	master_math_033	After a number is decreased by 15%, the result is 68. What was the original number?
+data/master/master_en.jsonl	master_math_034	What is 2 cubed multiplied by 2 to the fourth power?
+data/master/master_en.jsonl	master_math_035	What is 3/4 divided by 2/5?
+data/master/master_en.jsonl	master_math_036	What is 47.386 rounded to the nearest tenth?
+data/master/master_en.jsonl	master_math_037	A recipe uses 3 cups of flour for 8 servings. How many cups are needed for 20 servings at the same rate?
+data/master/master_en.jsonl	master_math_038	An item costs $50 before an 8% sales tax. What is the total price after tax?
+data/master/master_en.jsonl	master_math_039	Which expression is equivalent to 6(2x - 3) - 4x?
+data/master/master_en.jsonl	master_math_040	What is the remainder when 157 is divided by 12?
+data/master/master_en.jsonl	master_math_041	A rectangle has side lengths 6 centimeters and 8 centimeters. What is the length of its diagonal?
+data/master/master_en.jsonl	master_math_042	How many vertices does a pentagon have?
+data/master/master_en.jsonl	master_math_043	A trapezoid has parallel sides of 8 centimeters and 14 centimeters and a height of 5 centimeters. What is its area?
+data/master/master_en.jsonl	master_math_044	What is the volume of a cube with side length 3 units?
+data/master/master_en.jsonl	master_math_045	What is the area of a circle with radius 7 centimeters, expressed in terms of pi?
+data/master/master_en.jsonl	master_math_046	What is the complement of a 37-degree angle?
+data/master/master_en.jsonl	master_math_047	What is 5 factorial?
+data/master/master_en.jsonl	master_math_048	How is 0.00072 written in scientific notation?
+data/master/master_en.jsonl	master_math_049	Which of these numbers is divisible by 3?
+data/master/master_en.jsonl	master_math_050	Which is the prime factorization of 180?
+data/master/master_en.jsonl	master_math_051	Each exterior angle of a regular polygon measures 24 degrees. How many sides does the polygon have?
+data/master/master_en.jsonl	master_math_052	What is the volume of a rectangular prism measuring 4 units by 5 units by 7 units?
+data/master/master_en.jsonl	master_math_053	A circle has a diameter of 18 centimeters. What is its radius?
+data/master/master_en.jsonl	master_math_054	A triangle with side lengths 6, 8, and 10 is similar to a larger triangle whose shortest side is 9. What is the longest side of the larger triangle?
+data/master/master_en.jsonl	master_math_055	In which quadrant of the coordinate plane is the point (-3, 4)?
+data/master/master_en.jsonl	master_math_056	What is the volume of a cylinder with radius 3 units and height 5 units, expressed in terms of pi?
+data/master/master_en.jsonl	master_math_057	What is the sum of the first 20 positive integers?
+data/master/master_en.jsonl	master_math_058	The three-digit number 4a2 is divisible by 9. What digit is a?
+data/master/master_en.jsonl	master_math_059	What is the principal square root of 0.0081?
+data/master/master_en.jsonl	master_math_060	What is the cube root of 64?
+data/master/master_en.jsonl	master_math_061	A fair coin is tossed once. What is the probability of getting heads?
+data/master/master_en.jsonl	master_math_062	Five numbers have a mean of 12. If one value of 8 is replaced by 18, what is the new mean?
+data/master/master_en.jsonl	master_math_063	An integer is selected at random from 1 through 12. What is the probability that it is a multiple of 3?
+data/master/master_en.jsonl	master_math_064	What is the mode of the data set 2, 3, 3, 5, 7?
+data/master/master_en.jsonl	master_math_065	What is the range of the data set 4, 9, 12, 17?
+data/master/master_en.jsonl	master_math_066	What is the median of the data set 1, 4, 6, 8?
+data/master/master_en.jsonl	master_math_067	Two fair coins are tossed. What is the probability that both show heads?
+data/master/master_en.jsonl	master_math_068	What is the probability of an impossible event?
+data/master/master_en.jsonl	master_math_069	In the data set 2, 4, 6, 8, how many values are greater than 5?
+data/master/master_en.jsonl	master_math_070	A course grade consists of a score of 80 weighted at 40% and a score of 90 weighted at 60%. What is the weighted average?
+data/master/master_en.jsonl	master_math_071	How many possible outcomes are there when one standard six-sided die is rolled?
+data/master/master_en.jsonl	master_math_072	A bag contains 3 red and 2 blue counters. Two counters are drawn without replacement. What is the probability that both are red?
+data/master/master_en.jsonl	master_math_073	Which inequality is equivalent to 3x + 2 < 14?
+data/master/master_en.jsonl	master_math_074	What is the value of 2a + 3 when a = 4?
+data/master/master_en.jsonl	master_math_075	What are the solutions of the equation |x - 4| = 3?
+data/master/master_en.jsonl	master_math_076	For the line y = 3x - 2, what is y when x = 5?
+data/master/master_en.jsonl	master_math_077	The variable y varies directly with x. If y = 18 when x = 6, what is y when x = 10?
+data/master/master_en.jsonl	master_math_078	What is the probability of drawing an ace from a standard 52-card deck?
+data/master/master_en.jsonl	master_math_079	If every value in a data set is the same, what is the range of the data set?
+data/master/master_en.jsonl	master_math_080	How many different pairs can be selected from 5 people?
+data/master/master_en.jsonl	master_science_001	Which blood vessel carries oxygen-rich blood from the lungs to the heart?
+data/master/master_en.jsonl	master_science_002	During mitosis, what is the primary result of one parent cell dividing?
+data/master/master_en.jsonl	master_science_003	Which body system exchanges oxygen and carbon dioxide with the environment?
+data/master/master_en.jsonl	master_science_004	What is the main function of enzymes in living organisms?
+data/master/master_en.jsonl	master_science_005	A plant's stomata close during a hot, dry afternoon. What immediate benefit does this provide?
+data/master/master_en.jsonl	master_science_006	In a food web, what is a likely direct effect of a sharp decline in a prey population?
+data/master/master_en.jsonl	master_science_007	Which process moves water across a selectively permeable membrane from lower solute concentration to higher solute concentration?
+data/master/master_en.jsonl	master_science_008	Which nutrient is the body's main immediate source of energy?
+data/master/master_en.jsonl	master_science_009	Which structures anchor a plant in soil and absorb most of its water?
+data/master/master_en.jsonl	master_science_010	Why can antibiotics treat many bacterial infections but not influenza?
+data/master/master_en.jsonl	master_science_011	What do kidneys primarily remove from the blood to form urine?
+data/master/master_en.jsonl	master_science_012	Which type of organism breaks down dead material and recycles nutrients in an ecosystem?
+data/master/master_en.jsonl	master_science_013	A person touches a hot surface and pulls a hand away before consciously feeling pain. What coordinates this rapid response first?
+data/master/master_en.jsonl	master_science_014	What is the primary role of chlorophyll in plants?
+data/master/master_en.jsonl	master_science_015	Which of these is a chemical element?
+data/master/master_en.jsonl	master_science_016	What happens to the particles of a liquid as the liquid cools but does not freeze?
+data/master/master_en.jsonl	master_science_017	Which observation provides the strongest evidence that a chemical reaction has formed a new substance?
+data/master/master_en.jsonl	master_science_018	What electrical charge does an electron carry?
+data/master/master_en.jsonl	master_science_019	Which state of matter has neither a fixed shape nor a fixed volume?
+data/master/master_en.jsonl	master_science_020	Which method can separate insoluble sand from water?
+data/master/master_en.jsonl	master_science_021	What is the smallest unit of an element that retains that element's chemical properties?
+data/master/master_en.jsonl	master_science_022	An atom has 11 protons and 10 electrons. What is its net charge?
+data/master/master_en.jsonl	master_science_023	Why does increasing temperature usually speed up a chemical reaction?
+data/master/master_en.jsonl	master_science_024	Which symbol represents the element sodium?
+data/master/master_en.jsonl	master_science_025	In a sealed container, 5 grams of hydrogen react completely with 40 grams of oxygen. What total mass of products is formed?
+data/master/master_en.jsonl	master_science_026	The equation 2H2 + O2 → 2H2O shows that four H2 molecules react with three O2 molecules. After the reaction goes as far as possible, what remains?
+data/master/master_en.jsonl	master_science_027	Which change would most directly increase the concentration of sugar in an unsaturated sugar solution?
+data/master/master_en.jsonl	master_science_028	Which material is a mixture rather than a pure substance?
+data/master/master_en.jsonl	master_science_029	A solution turns blue litmus paper red and reacts with a carbonate to release carbon dioxide. How should the solution be classified?
+data/master/master_en.jsonl	master_science_030	When liquid water boils at constant pressure, why does its temperature remain constant until boiling is complete?
+data/master/master_en.jsonl	master_science_031	A bicycle travels 120 meters in 20 seconds at constant speed. What is its speed?
+data/master/master_en.jsonl	master_science_032	Which form of energy is stored in a stretched elastic band?
+data/master/master_en.jsonl	master_science_033	Two carts start from rest. The same constant net force acts on cart X of mass 2 kg and cart Y of mass 4 kg for the same time. How does X's final speed compare with Y's?
+data/master/master_en.jsonl	master_science_034	What force opposes sliding motion between two surfaces in contact?
+data/master/master_en.jsonl	master_science_035	Which simple machine is a rigid bar that rotates around a fixed pivot?
+data/master/master_en.jsonl	master_science_036	Which quantity is measured in joules?
+data/master/master_en.jsonl	master_science_037	When a stationary ball begins rolling down a slope, which energy conversion occurs primarily?
+data/master/master_en.jsonl	master_science_038	A 10-newton force moves a box 3 meters in the force's direction. How much work does the force do?
+data/master/master_en.jsonl	master_science_039	Which instrument measures temperature?
+data/master/master_en.jsonl	master_science_040	A swimmer pushes water backward. Why does the swimmer move forward?
+data/master/master_en.jsonl	master_science_041	Two identical light bulbs are connected in parallel to an ideal battery. If one bulb burns out and opens its branch, what happens to the other bulb?
+data/master/master_en.jsonl	master_science_042	Which material is generally a good conductor of electricity?
+data/master/master_en.jsonl	master_science_043	If the frequency of a wave doubles while its speed stays constant, what happens to its wavelength?
+data/master/master_en.jsonl	master_science_044	Why can a person hear an echo in a large empty hall?
+data/master/master_en.jsonl	master_science_045	A 12-volt battery is connected across a 4-ohm resistor. If the voltage is then reduced to 6 volts with resistance unchanged, what current flows?
+data/master/master_en.jsonl	master_science_046	Why does a metal spoon feel colder than a wooden spoon kept in the same room?
+data/master/master_en.jsonl	master_science_047	A solid object has a mass of 240 grams and a volume of 80 cubic centimeters. It is placed in a liquid of density 2 grams per cubic centimeter. What will the object do?
+data/master/master_en.jsonl	master_science_048	A machine receives 500 joules of energy and delivers 350 joules of useful work. What is its efficiency?
+data/master/master_en.jsonl	master_science_049	Which layer of Earth is liquid and composed mainly of iron and nickel?
+data/master/master_en.jsonl	master_science_050	What instrument is used to measure atmospheric pressure?
+data/master/master_en.jsonl	master_science_051	Which process turns water vapor into liquid droplets in clouds?
+data/master/master_en.jsonl	master_science_052	Why are earthquakes common near many tectonic plate boundaries?
+data/master/master_en.jsonl	master_science_053	A warm, moist air mass is forced upward over a mountain. Why is precipitation likely on the windward side?
+data/master/master_en.jsonl	master_science_054	Which type of rock forms when molten rock cools and solidifies?
+data/master/master_en.jsonl	master_science_055	What is the main difference between weather and climate?
+data/master/master_en.jsonl	master_science_056	How does vegetation on a slope generally reduce soil erosion?
+data/master/master_en.jsonl	master_science_057	Which resource is renewable on a human timescale?
+data/master/master_en.jsonl	master_science_058	What is the main source of energy that drives Earth's water cycle?
+data/master/master_en.jsonl	master_science_059	Which observation best indicates that a soil sample has high permeability?
+data/master/master_en.jsonl	master_science_060	At a divergent boundary between two oceanic plates, what typically forms as magma rises and cools?
+data/master/master_en.jsonl	master_science_061	A tall plant with genotype Tt is crossed with a short plant with genotype tt, where T is dominant. What fraction of the offspring is expected to be short?
+data/master/master_en.jsonl	master_science_062	Which component of blood helps form clots after a cut?
+data/master/master_en.jsonl	master_science_063	Why does breathing rate normally increase during vigorous exercise?
+data/master/master_en.jsonl	master_science_064	In a stable ecosystem, why is less energy available at higher trophic levels?
+data/master/master_en.jsonl	master_science_065	Why can removing a top predator cause the population of its prey to rise sharply?
+data/master/master_en.jsonl	master_science_066	Why does burning fossil fuel add carbon to the active atmosphere-ocean cycle?
+data/master/master_en.jsonl	master_science_067	What is the name of the galaxy that contains our Solar System?
+data/master/master_en.jsonl	master_science_068	Why does the Moon show phases as viewed from Earth?
+data/master/master_en.jsonl	master_science_069	Why do astronauts in an orbiting spacecraft appear weightless?
+data/master/master_en.jsonl	master_science_070	A star appears equally bright as another star but is known to be twice as far from Earth. Compared with the nearer star, what must be true of its luminosity?
+data/master/master_en.jsonl	master_science_071	What primarily causes the seasons on Earth?
+data/master/master_en.jsonl	master_science_072	Planet X orbits the same star farther away than Planet Y. If both orbits are nearly circular, which statement is generally correct?
+data/master/master_en.jsonl	master_science_073	What powers the Sun over most of its lifetime?
+data/master/master_en.jsonl	master_science_074	Which object is a natural satellite of Earth?
+data/master/master_en.jsonl	master_science_075	In an experiment, which variable is deliberately changed by the researcher?
+data/master/master_en.jsonl	master_science_076	Students test whether fertilizer affects plant growth. Which setup provides the best control group?
+data/master/master_en.jsonl	master_science_077	A balance gives readings of 52.1 g, 52.0 g, and 52.1 g for an object whose verified mass is 50.0 g. How are the readings best described?
+data/master/master_en.jsonl	master_science_078	Why do scientists repeat measurements in an experiment?
+data/master/master_en.jsonl	master_science_079	A graph shows distance on the vertical axis and time on the horizontal axis. What does the slope represent?
+data/master/master_en.jsonl	master_science_080	Which unit is most appropriate for measuring the volume of water in a drinking glass?
+data/final/test_en.jsonl	master_logic_023	All red tiles are heavy. No light tiles are heavy. What must follow?
+data/final/test_en.jsonl	master_math_055	In which quadrant of the coordinate plane is the point (-3, 4)?
+data/final/test_en.jsonl	master_science_049	Which layer of Earth is liquid and composed mainly of iron and nickel?
+data/final/test_en.jsonl	master_geo_029	Which sea lies between southern Europe and northern Africa?
+data/final/test_en.jsonl	master_cs_061	In the URL `https://example.com/docs`, which part identifies the protocol scheme?
+data/final/test_en.jsonl	master_math_037	A recipe uses 3 cups of flour for 8 servings. How many cups are needed for 20 servings at the same rate?
+data/final/test_en.jsonl	master_cs_047	What is the main role of a foreign key in a relational database?
+data/final/test_en.jsonl	master_cs_023	What is the worst-case time complexity of merge sort on n elements?
+data/final/test_en.jsonl	master_science_077	A balance gives readings of 52.1 g, 52.0 g, and 52.1 g for an object whose verified mass is 50.0 g. How are the readings best described?
+data/final/test_en.jsonl	master_geo_004	Rome is the capital of which country?
+data/final/test_en.jsonl	master_cs_030	When is dynamic programming most directly applicable to an optimization problem?
+data/final/test_en.jsonl	master_science_071	What primarily causes the seasons on Earth?
+data/final/test_en.jsonl	master_logic_055	What comes next in 81, 27, 9, 3, ... if each term is divided by 3?
+data/final/test_en.jsonl	master_cs_018	What is a key advantage of a linked list over a fixed-size array?
+data/final/test_en.jsonl	master_cs_074	What does a unit test normally verify?
+data/final/test_en.jsonl	master_cs_059	Which feature is provided by TCP but not by UDP?
+data/final/test_en.jsonl	master_logic_074	A manager says, 'Either approve my exact plan or the project will certainly fail.' Other workable plans exist. Which fallacy is this?
+data/final/test_en.jsonl	master_cs_072	What is the kernel of an operating system?
+data/final/test_en.jsonl	master_science_048	A machine receives 500 joules of energy and delivers 350 joules of useful work. What is its efficiency?
+data/final/test_en.jsonl	master_cs_029	A search interval in a sorted array has low index 8 and high index 14. Using integer floor division, which midpoint index should binary search inspect?
+data/final/test_en.jsonl	master_math_073	Which inequality is equivalent to 3x + 2 < 14?
+data/final/test_en.jsonl	master_geo_067	What is the main purpose of a population census?
+data/final/test_en.jsonl	master_science_036	Which quantity is measured in joules?
+data/final/test_en.jsonl	master_math_075	What are the solutions of the equation |x - 4| = 3?
+data/final/test_en.jsonl	master_math_028	A rectangle has a perimeter of 50 centimeters and a length of 15 centimeters. What is its width?
+data/final/test_en.jsonl	master_science_063	Why does breathing rate normally increase during vigorous exercise?
+data/final/test_en.jsonl	master_cs_033	Why is ordinary RAM described as volatile memory?
+data/final/test_en.jsonl	master_science_015	Which of these is a chemical element?
+data/final/test_en.jsonl	master_logic_022	All falcons are birds. Some animals are not birds. Which conclusion must be true?
+data/final/test_en.jsonl	master_math_039	Which expression is equivalent to 6(2x - 3) - 4x?
+data/final/test_en.jsonl	master_geo_032	The Atacama Desert is chiefly located in which country?
+data/final/test_en.jsonl	master_logic_037	If the server is overloaded, response time increases. The server is not overloaded. What follows about response time?
+data/final/test_en.jsonl	master_geo_042	Which biome has permafrost and a very short growing season?
+data/final/test_en.jsonl	master_geo_036	What is a peninsula?
+data/final/test_en.jsonl	master_science_021	What is the smallest unit of an element that retains that element's chemical properties?
+data/final/test_en.jsonl	master_logic_036	If P then R, and if Q then R. R is false. What must follow?
+data/final/test_en.jsonl	master_geo_026	Along which side of South America do the Andes mainly extend?
+data/final/test_en.jsonl	master_logic_028	Some dancers are not singers. Every choir member is a singer. What must follow?
+data/final/test_en.jsonl	master_math_041	A rectangle has side lengths 6 centimeters and 8 centimeters. What is the length of its diagonal?
+data/final/test_en.jsonl	master_logic_052	What number comes next in 2, 5, 10, 17, ... if consecutive differences are 3, 5, 7, and so on?
+data/final/test_en.jsonl	master_cs_021	In a tree data structure, what is the topmost node called?
+data/final/test_en.jsonl	master_cs_012	What is a source-code comment normally used for?
+data/final/test_en.jsonl	master_math_035	What is 3/4 divided by 2/5?
+data/final/test_en.jsonl	master_math_024	What is the value of -4 + 3(5 - 2)?
+data/final/test_en.jsonl	master_logic_045	Within a universe U, what is the complement of a set A?
+data/final/test_en.jsonl	master_science_029	A solution turns blue litmus paper red and reacts with a carbonate to release carbon dioxide. How should the solution be classified?
+data/final/test_en.jsonl	master_science_022	An atom has 11 protons and 10 electrons. What is its net charge?
+data/final/test_en.jsonl	master_logic_029	If the sensor triggers, the alarm activates. If the alarm activates, a message is sent. The sensor triggers. What follows?
+data/final/test_en.jsonl	master_geo_027	In which part of Africa are the Atlas Mountains located?
+data/final/test_en.jsonl	master_science_057	Which resource is renewable on a human timescale?
+data/final/test_en.jsonl	master_science_037	When a stationary ball begins rolling down a slope, which energy conversion occurs primarily?
+data/final/test_en.jsonl	master_cs_022	In a min-heap, which ordering property must hold?
+data/final/test_en.jsonl	master_math_078	What is the probability of drawing an ace from a standard 52-card deck?
+data/final/test_en.jsonl	master_math_004	A triangle has base 14 centimeters and perpendicular height 9 centimeters. What is its area?
+data/final/test_en.jsonl	master_cs_080	Why are tested backups important for data recovery?
+data/final/test_en.jsonl	master_cs_079	Which practice most directly reduces SQL-injection risk when handling user input?
+data/final/test_en.jsonl	master_math_002	What is 63 minus 28?
+data/final/test_en.jsonl	master_logic_038	If both A and B occur, then C occurs. If C occurs, then D occurs. D did not occur, but A did. What must follow?
+data/final/test_en.jsonl	master_math_029	What is the reciprocal of 4/7?
+data/final/test_en.jsonl	master_cs_016	Why should a program validate user input before processing it?
+data/final/test_en.jsonl	master_science_041	Two identical light bulbs are connected in parallel to an ideal battery. If one bulb burns out and opens its branch, what happens to the other bulb?
+data/final/test_en.jsonl	master_math_007	Two consecutive positive even integers have a product of 168. What is their sum?
+data/final/test_en.jsonl	master_math_045	What is the area of a circle with radius 7 centimeters, expressed in terms of pi?
+data/final/test_en.jsonl	master_cs_054	What software manages the storage, querying, and access control of a database?
+data/final/test_en.jsonl	master_science_027	Which change would most directly increase the concentration of sugar in an unsaturated sugar solution?
+data/final/test_en.jsonl	master_math_077	The variable y varies directly with x. If y = 18 when x = 6, what is y when x = 10?
+data/final/test_en.jsonl	master_cs_050	In SQL, what does NULL normally indicate?
+data/final/test_en.jsonl	master_logic_020	All squares are rectangles. No circles are rectangles. Which conclusion must be true?
+data/final/test_en.jsonl	master_geo_012	Nairobi is the capital of which country?
+data/final/test_en.jsonl	master_science_075	In an experiment, which variable is deliberately changed by the researcher?
+data/final/test_en.jsonl	master_math_020	Two parallel lines are cut by a transversal. If one interior angle is 68 degrees, what is its alternate interior angle?
+data/final/test_en.jsonl	master_logic_072	Ice-cream sales and sunburn cases both rise in summer; therefore ice-cream causes sunburn. What is the main error?
+data/final/test_en.jsonl	master_geo_071	A glacier erodes a former river valley for thousands of years. Which cross-sectional shape is most likely afterward?
+data/final/test_en.jsonl	master_logic_048	Among 40 people, 30 drink tea, 18 drink coffee, and 10 drink both. How many drink exactly one of the two?
+data/final/test_en.jsonl	master_geo_007	A traveler visits the capitals of Portugal, Spain, and Italy in that order. Which route is correct?
+data/final/test_en.jsonl	master_logic_012	If P is true and Q is false, what is the truth value of 'P and Q'?
+data/final/test_en.jsonl	master_science_047	A solid object has a mass of 240 grams and a volume of 80 cubic centimeters. It is placed in a liquid of density 2 grams per cubic centimeter. What will the object do?
+data/final/test_en.jsonl	master_logic_007	When is exclusive OR between P and Q true?
+data/final/test_en.jsonl	master_geo_051	Lines of latitude run mainly in which direction on a conventional map?
+data/final/test_en.jsonl	master_science_065	Why can removing a top predator cause the population of its prey to rise sharply?
+data/final/test_en.jsonl	master_science_050	What instrument is used to measure atmospheric pressure?
+data/final/test_en.jsonl	master_math_061	A fair coin is tossed once. What is the probability of getting heads?
+data/final/test_en.jsonl	master_science_061	A tall plant with genotype Tt is crossed with a short plant with genotype tt, where T is dominant. What fraction of the offspring is expected to be short?
+data/final/test_en.jsonl	master_science_005	A plant's stomata close during a hot, dry afternoon. What immediate benefit does this provide?
+data/final/test_en.jsonl	master_cs_036	What integer range can an 8-bit two's-complement value represent?
+data/final/test_en.jsonl	master_cs_002	In the assignment `x = x + 3`, what does the statement normally do in an imperative language?
+data/final/test_en.jsonl	master_logic_061	Four tasks D, A, B, and C must be ordered. D is before A, A is before B, and C is after B. Which order is required?
+data/final/test_en.jsonl	master_geo_052	A location at 25° south latitude lies in which hemisphere?
+data/final/test_en.jsonl	master_geo_014	Hanoi is the capital of which country?
+data/final/test_en.jsonl	master_cs_009	A program starts successfully but stops when it attempts to divide by zero. How is this problem best classified?
+data/final/test_en.jsonl	master_cs_069	Which situation describes a deadlock?
+data/final/test_en.jsonl	master_cs_032	Which collection type is designed to store each distinct value at most once?
+data/final/test_en.jsonl	master_geo_070	Which countries make up the Benelux grouping?
+data/final/test_en.jsonl	master_math_033	After a number is decreased by 15%, the result is 68. What was the original number?
+data/final/test_en.jsonl	master_math_065	What is the range of the data set 4, 9, 12, 17?
+data/final/test_en.jsonl	master_logic_065	Three boxes—red, blue, and green—are arranged in a row. Red is left of blue, and green is right of blue. Which box is in the middle?
+data/final/test_en.jsonl	master_logic_077	After meeting two rude tourists from one town, I conclude that everyone from that town is rude. Which error is this?
+data/final/test_en.jsonl	master_cs_043	During the basic instruction cycle, what normally happens after an instruction is fetched from memory?
+data/final/test_en.jsonl	master_geo_053	Which coordinate measures position east or west of the Prime Meridian?
+data/final/test_en.jsonl	master_math_022	What is 7 + 3 × 4 using the standard order of operations?
+data/final/test_en.jsonl	master_logic_062	Nina finishes before Omar, and Omar finishes before Pia. Who finishes last?
+data/final/test_en.jsonl	master_cs_051	Which relational operation combines rows from two tables using a related column?
+data/final/test_en.jsonl	master_cs_038	Which electronic component is the basic switching element used to build modern digital logic gates?
+data/final/test_en.jsonl	master_logic_033	Submitting the completed form is sufficient to receive a confirmation number. Ivo submitted the completed form. What follows?
+data/final/test_en.jsonl	master_math_027	What is the greatest common divisor of 20 and 30?
+data/final/test_en.jsonl	master_logic_067	Ava and Bo must sit next to each other. Which seating order satisfies that constraint?
+data/final/test_en.jsonl	master_logic_002	When is the conjunction 'P and Q' true?
+data/final/test_en.jsonl	master_cs_031	Which search method checks elements one by one until the target is found or the collection ends?
+data/final/test_en.jsonl	master_logic_041	Let A = {1, 2, 3} and B = {3, 4}. What is A intersect B?
+data/final/test_en.jsonl	master_math_017	A car travels 180 kilometers in 3 hours at a constant speed. How far does it travel in 5 hours?
+data/final/test_en.jsonl	master_math_021	A price of $200 is increased by 10% and then the increased price is reduced by 10%. What is the final price?
+data/final/test_en.jsonl	master_geo_069	Which set contains the three Scandinavian kingdoms in the narrow conventional sense?
+data/final/test_en.jsonl	master_cs_028	What property makes a sorting algorithm stable?
+data/final/test_en.jsonl	master_math_019	How many lines of symmetry does a rectangle that is not a square have?
+data/final/test_en.jsonl	master_cs_042	How many bits are in one byte?
+data/final/test_en.jsonl	master_math_058	The three-digit number 4a2 is divisible by 9. What digit is a?
+data/final/test_en.jsonl	master_science_051	Which process turns water vapor into liquid droplets in clouds?
+data/final/test_en.jsonl	master_math_018	What is the least common multiple of 18 and 24?
+data/final/test_en.jsonl	master_logic_014	Among the four possible truth assignments to P and Q, under how many is exclusive OR true?
+data/final/test_en.jsonl	master_science_074	Which object is a natural satellite of Earth?
+data/final/test_en.jsonl	master_logic_057	What number follows 3, 6, 11, 18, 27 when the increases are consecutive odd numbers 3, 5, 7, and 9?
+data/final/test_en.jsonl	master_math_057	What is the sum of the first 20 positive integers?
+data/final/test_en.jsonl	master_logic_035	A switch is active if and only if its indicator is green. The indicator is not green. What follows?
+data/final/test_en.jsonl	master_science_032	Which form of energy is stored in a stretched elastic band?
+data/final/test_en.jsonl	master_geo_002	Ottawa is the capital of which country?
+data/final/test_en.jsonl	master_logic_054	The letter pattern A, C, F, J advances by 2, then 3, then 4 alphabet positions. Which letter comes next?
+data/final/test_en.jsonl	master_logic_039	A permit is issued only if the applicant passes the review. A permit was issued to Ren. What follows?
+data/final/test_en.jsonl	master_logic_059	What letter comes next in Z, X, V, T, ... when the pattern moves backward two alphabet positions each step?
+data/final/test_en.jsonl	master_math_059	What is the principal square root of 0.0081?
+data/final/test_en.jsonl	master_geo_077	Which process most directly deepens a canyon cut by a river?
+data/final/test_en.jsonl	master_science_062	Which component of blood helps form clots after a cut?
+data/final/test_en.jsonl	master_geo_065	Why have many settlements historically developed near reliable rivers?
+data/final/test_en.jsonl	master_math_009	How many edges does a cube have?
+data/final/test_en.jsonl	master_math_015	What is the sum of the interior angles of any triangle?
+data/final/test_en.jsonl	master_math_079	If every value in a data set is the same, what is the range of the data set?
+data/final/test_en.jsonl	master_geo_016	Which city is the capital of South Korea?
+data/final/test_en.jsonl	master_cs_015	What does a debugger breakpoint do?
+data/final/test_en.jsonl	master_logic_063	Tasks X, Y, and Z occupy slots 1, 2, and 3. X is not first, and Y is immediately before X. Which order is possible?
+data/final/test_en.jsonl	master_cs_077	What does the principle of least privilege require?
+data/final/test_en.jsonl	master_cs_005	What is the distinction between a function parameter and an argument?
+data/final/test_en.jsonl	master_logic_008	How is the proposition 'R and not R' classified?
+data/final/test_en.jsonl	master_logic_015	All cedar objects are wooden. No wooden objects are transparent. What must follow?
+data/final/test_en.jsonl	master_science_030	When liquid water boils at constant pressure, why does its temperature remain constant until boiling is complete?
+data/final/test_en.jsonl	master_cs_065	What is a principal difference between a process and a thread?
+data/final/test_en.jsonl	master_science_067	What is the name of the galaxy that contains our Solar System?
+data/final/test_en.jsonl	master_geo_037	What is an isthmus?
+data/final/test_en.jsonl	master_geo_001	Which city is the capital of Brazil?
+data/final/test_en.jsonl	master_geo_030	The Red Sea separates northeastern Africa from which peninsula?
+data/final/test_en.jsonl	master_cs_044	Which processor component performs arithmetic and logical operations?
+data/final/test_en.jsonl	master_math_025	What is 3.2 multiplied by 10?
+data/final/test_en.jsonl	master_geo_020	Which country is part of the mainland region commonly called Southeast Asia?
+data/final/test_en.jsonl	master_math_012	How many degrees are in a right angle?
+data/final/test_en.jsonl	master_math_011	Five eighths of a number is 35. What is the number?
+data/final/test_en.jsonl	master_geo_045	What is a monsoon primarily?
+data/final/test_en.jsonl	master_geo_064	Which description best fits a rural settlement?
+data/final/test_en.jsonl	master_science_001	Which blood vessel carries oxygen-rich blood from the lungs to the heart?
+data/final/test_en.jsonl	master_cs_010	Which description best matches a pure function?
+data/final/test_en.jsonl	master_logic_003	Under inclusive logical OR, when is 'P or Q' false?
+data/final/test_en.jsonl	master_cs_052	Which transaction-isolation phenomenon occurs when a transaction reads data written by another transaction that has not committed?
+data/final/test_en.jsonl	master_geo_028	The Alps are a major mountain range on which continent?
+data/final/test_en.jsonl	master_geo_078	What is a floodplain?
+data/final/test_en.jsonl	master_science_046	Why does a metal spoon feel colder than a wooden spoon kept in the same room?
+data/final/test_en.jsonl	master_geo_068	Which settlement pattern has buildings grouped closely around a central point?
+data/final/test_en.jsonl	master_geo_031	The Gobi Desert extends across parts of Mongolia and which neighboring country?
+data/final/test_en.jsonl	master_science_053	A warm, moist air mass is forced upward over a mountain. Why is precipitation likely on the windward side?
+data/final/test_en.jsonl	master_logic_079	Asked whether a policy reduced costs, a speaker talks only about the office's new paint color. What tactic is this?
+data/final/test_en.jsonl	master_geo_022	The Danube River empties into which sea?
+data/final/test_en.jsonl	master_logic_044	In a group, 18 people read magazine A, 12 read magazine B, and 5 read both. How many read at least one?
+data/final/test_en.jsonl	master_geo_066	What is a conurbation?
+data/final/test_en.jsonl	master_geo_076	What is an estuary?
+data/final/test_en.jsonl	master_science_026	The equation 2H2 + O2 → 2H2O shows that four H2 molecules react with three O2 molecules. After the reaction goes as far as possible, what remains?
+data/final/test_en.jsonl	master_math_043	A trapezoid has parallel sides of 8 centimeters and 14 centimeters and a height of 5 centimeters. What is its area?
+data/final/test_en.jsonl	master_geo_039	What does a drainage divide separate?
+data/final/test_en.jsonl	master_math_046	What is the complement of a 37-degree angle?
+data/final/test_en.jsonl	master_math_047	What is 5 factorial?
+data/final/test_en.jsonl	master_cs_024	For a sparse graph with relatively few edges, which representation usually uses less memory?
+data/final/test_en.jsonl	master_math_049	Which of these numbers is divisible by 3?
+data/final/test_en.jsonl	master_science_024	Which symbol represents the element sodium?
+data/final/test_en.jsonl	master_geo_040	Which feature most commonly forms where continental crust is pulled apart over a long period?
+data/final/test_en.jsonl	master_logic_024	Some books are old. No old item is digital. What follows?
+data/final/test_en.jsonl	master_math_054	A triangle with side lengths 6, 8, and 10 is similar to a larger triangle whose shortest side is 9. What is the longest side of the larger triangle?
+data/final/test_en.jsonl	master_math_052	What is the volume of a rectangular prism measuring 4 units by 5 units by 7 units?
+data/final/test_en.jsonl	master_science_080	Which unit is most appropriate for measuring the volume of water in a drinking glass?
+data/final/test_en.jsonl	master_math_010	A walking route is 1.2 kilometers long. How many meters does a person cover by completing the route three times?
+data/final/test_en.jsonl	master_geo_017	Which three countries are commonly described as the Baltic states?
+data/final/test_en.jsonl	master_geo_072	How does an oxbow lake usually form?
+data/final/test_en.jsonl	master_cs_071	What is a mutex used for in concurrent programming?
+data/final/test_en.jsonl	master_geo_024	On which continent does the Rhine River flow?
+data/final/test_en.jsonl	master_science_007	Which process moves water across a selectively permeable membrane from lower solute concentration to higher solute concentration?
+data/final/test_en.jsonl	master_geo_057	If it is 12:00 at longitude 0°, what is the approximate local solar time at 30° east longitude?
+data/final/test_en.jsonl	master_science_016	What happens to the particles of a liquid as the liquid cools but does not freeze?
+data/final/test_en.jsonl	master_math_006	On a map, 1 centimeter represents 6 kilometers. What actual distance does 8.5 centimeters represent?
+data/final/test_en.jsonl	master_science_035	Which simple machine is a rigid bar that rotates around a fixed pivot?
+data/final/test_en.jsonl	master_cs_003	Consider this pseudocode: `total = 0; for i from 1 to 3; for j from 1 to i; total = total + 1`. What is the final value of total?
+data/final/test_en.jsonl	master_science_060	At a divergent boundary between two oceanic plates, what typically forms as magma rises and cools?
+data/final/test_en.jsonl	master_cs_040	Why can sequentially processing adjacent array elements be faster than accessing widely scattered elements?
+data/final/test_en.jsonl	master_cs_045	In a relational database table, what does one row normally represent?
+data/final/test_en.jsonl	master_cs_007	The pseudocode sets `x = 7`, then executes `if x > 5: x = x - 2`. What is x afterward?
+data/final/test_en.jsonl	master_cs_067	What does a file system primarily organize?
+data/final/test_en.jsonl	master_cs_011	Which data type is intended to represent either true or false?
+data/final/test_en.jsonl	master_geo_054	On a map with north at the top, what direction is to the right?
+data/final/test_en.jsonl	master_logic_034	The parcel will not ship unless payment is received. The parcel shipped. What follows?
+data/final/test_en.jsonl	master_cs_063	How many usable host addresses are available in a conventional IPv4 `/26` subnet when network and broadcast addresses are excluded?
+data/final/test_en.jsonl	master_logic_068	Book B is between books A and C, and A is left of B. Which book is in the middle?
+data/final/test_en.jsonl	master_logic_069	Meetings P, Q, and R occur on Monday, Tuesday, and Wednesday. P is before Q, and R is on Wednesday. When is Q?
+data/final/test_en.jsonl	master_cs_076	Why should passwords generally be stored using a salted password-hashing function rather than reversible encryption?
+data/final/test_en.jsonl	master_cs_020	In an unweighted graph, which traversal finds a path with the fewest edges from a starting vertex?
+data/final/test_en.jsonl	master_logic_026	All emerald tokens are green. No blue token is green. What must follow?
+data/final/test_en.jsonl	master_science_068	Why does the Moon show phases as viewed from Earth?
+data/final/test_en.jsonl	master_logic_042	Let A = {a, b} and B = {b, c}. What is A union B?
+data/final/test_en.jsonl	master_cs_039	Which device is intended for nonvolatile long-term data storage?
+data/final/test_en.jsonl	master_geo_079	What is mechanical weathering?
+data/final/test_en.jsonl	master_science_070	A star appears equally bright as another star but is known to be twice as far from Earth. Compared with the nearer star, what must be true of its luminosity?
+data/final/test_en.jsonl	master_science_078	Why do scientists repeat measurements in an experiment?
+data/final/test_en.jsonl	master_geo_019	The Iberian Peninsula is primarily occupied by which two countries?
+data/final/test_en.jsonl	master_geo_023	The Mississippi River reaches the sea through which body of water?
+data/final/test_en.jsonl	master_geo_044	Which climate typically has hot, dry summers and mild, wetter winters?
+data/final/test_en.jsonl	master_science_002	During mitosis, what is the primary result of one parent cell dividing?
+data/final/test_en.jsonl	master_logic_066	Four runners J, K, L, and M finish with no ties. J is before K, L is after K, and M is before J. Which order is required?
+data/final/test_en.jsonl	master_cs_017	After values 4, 7, and 9 are pushed onto an empty stack in that order, which value is popped first?
+data/final/test_en.jsonl	master_science_044	Why can a person hear an echo in a large empty hall?
+data/final/test_en.jsonl	master_logic_051	The pattern alternates circle, square, circle, square. Which shape comes next?
+data/final/test_en.jsonl	master_cs_004	Which condition is most likely to make a `while` loop run forever unintentionally?
+data/final/test_en.jsonl	master_cs_057	Which device forwards packets between different IP networks?
+data/final/test_en.jsonl	master_geo_063	A district has 24,000 residents and an area of 80 square kilometers. What is its population density?
+data/final/test_en.jsonl	master_logic_050	All members of set A are in set B, and some members of B are not in A. Which relation holds?
+data/final/test_en.jsonl	master_cs_070	What happens during a context switch?
+data/final/test_en.jsonl	master_geo_047	Which vegetation pattern is typical of a tropical savanna?
+data/final/test_en.jsonl	master_geo_060	A river's gradient decreases sharply as it leaves mountains and enters a plain. What is the most likely immediate result?
+data/final/test_en.jsonl	master_science_019	Which state of matter has neither a fixed shape nor a fixed volume?
+data/final/test_en.jsonl	master_science_012	Which type of organism breaks down dead material and recycles nutrients in an ecosystem?
+data/final/test_en.jsonl	master_science_017	Which observation provides the strongest evidence that a chemical reaction has formed a new substance?
+data/final/test_en.jsonl	master_geo_011	Which pair consists of two national capitals in East Asia?
+data/final/test_en.jsonl	master_math_080	How many different pairs can be selected from 5 people?
+data/final/test_en.jsonl	master_geo_018	Which continent contains both Brazil and Argentina?
+data/final/test_en.jsonl	master_geo_056	A map scale states that 1 centimeter represents 5 kilometers. What real distance does 3 centimeters represent?
+data/final/test_en.jsonl	master_math_064	What is the mode of the data set 2, 3, 3, 5, 7?
+data/final/test_en.jsonl	master_science_014	What is the primary role of chlorophyll in plants?
+data/final/test_en.jsonl	master_math_003	The arithmetic sequence 5, 9, 13, 17 continues with the same difference. What is its eighth term?
+data/final/test_en.jsonl	master_logic_058	The pattern 1, 4, 2, 8, 3, 12, 4 interleaves counting numbers with their multiples of four. What comes next?
+data/final/test_en.jsonl	master_math_032	Which of these numbers is prime?
+data/final/test_en.jsonl	master_math_068	What is the probability of an impossible event?
+data/final/test_en.jsonl	master_math_071	How many possible outcomes are there when one standard six-sided die is rolled?
+data/final/test_en.jsonl	master_math_044	What is the volume of a cube with side length 3 units?
+data/final/test_en.jsonl	master_geo_073	Which process wears away and removes rock or soil from one location?
+data/final/test_en.jsonl	master_math_042	How many vertices does a pentagon have?
+data/final/test_en.jsonl	master_geo_035	What landform is created where a river deposits sediment as it enters a standing body of water?
+data/final/test_en.jsonl	master_cs_035	What is the main purpose of adding a parity bit to a short binary message?
+data/final/test_en.jsonl	master_logic_053	In the sequence 1, 1, 2, 3, 5, ... each term after the first two is their sum. What comes next?
+data/final/test_en.jsonl	master_logic_064	Leo stands ahead of Maya, and Maya stands ahead of Noor. Who is first among the three?
+data/final/test_en.jsonl	master_science_011	What do kidneys primarily remove from the blood to form urine?
+data/final/test_en.jsonl	master_math_069	In the data set 2, 4, 6, 8, how many values are greater than 5?
+data/final/test_en.jsonl	master_logic_005	What does the biconditional 'P if and only if Q' assert?
+data/final/test_en.jsonl	master_math_014	What simple interest is earned by $600 at 5% per year for 3 years?
+data/final/test_en.jsonl	master_logic_017	All atlases are reference books. All reference books are publications. What must follow?
+data/final/test_en.jsonl	master_cs_056	What security property does HTTPS add to ordinary HTTP through TLS?
+data/final/test_en.jsonl	master_geo_003	Which city is the capital of Germany?
+data/final/test_en.jsonl	master_geo_075	What is an aquifer?
+data/final/test_en.jsonl	master_math_038	An item costs $50 before an 8% sales tax. What is the total price after tax?
+data/final/test_en.jsonl	master_logic_001	What is the logical negation of 'Both lamps are on'?
+data/final/test_en.jsonl	master_science_054	Which type of rock forms when molten rock cools and solidifies?
+data/final/test_en.jsonl	master_cs_060	What is the role of an IP address in packet delivery?
+data/final/test_en.jsonl	master_science_023	Why does increasing temperature usually speed up a chemical reaction?
+data/final/test_en.jsonl	master_science_073	What powers the Sun over most of its lifetime?
+data/final/test_en.jsonl	master_science_042	Which material is generally a good conductor of electricity?
+data/final/test_en.jsonl	master_geo_046	Two places lie at the same latitude, but one is 2,000 meters higher. Other factors being similar, which temperature pattern is most likely?
+data/final/test_en.jsonl	master_science_055	What is the main difference between weather and climate?
+data/final/test_en.jsonl	master_science_038	A 10-newton force moves a box 3 meters in the force's direction. How much work does the force do?
+data/final/test_en.jsonl	master_logic_011	Which expression is logically equivalent to 'P implies Q'?
+data/final/test_en.jsonl	master_math_070	A course grade consists of a score of 80 weighted at 40% and a score of 90 weighted at 60%. What is the weighted average?
+data/final/test_en.jsonl	master_math_066	What is the median of the data set 1, 4, 6, 8?
+data/final/test_en.jsonl	master_logic_040	If a card is a queen, then it is a face card. This card is not a face card. What follows?
+data/final/test_en.jsonl	master_math_016	If x + y = 11 and x - y = 3, what is x?
+data/final/test_en.jsonl	master_logic_032	A valid keycard is necessary for entering the lab. Mira entered the lab. What must follow?
+data/final/test_en.jsonl	master_cs_058	In TCP/IP networking, what does a port number help identify on a host?
+data/final/test_en.jsonl	master_logic_046	Which statement describes the empty set?
+data/final/test_en.jsonl	master_cs_025	Which queue operation removes and returns the element that has waited longest in a standard queue?
+data/final/test_en.jsonl	master_science_010	Why can antibiotics treat many bacterial infections but not influenza?
+data/final/test_en.jsonl	master_geo_049	Which line divides Earth into the Northern and Southern Hemispheres?
+data/final/test_en.jsonl	master_logic_071	A speaker rejects Dana's budget argument by saying, 'Dana is lazy, so her figures cannot be right.' Which fallacy is this?
+data/final/test_en.jsonl	master_logic_009	How is the proposition 'S or not S' classified in classical logic?
+data/final/test_en.jsonl	master_math_056	What is the volume of a cylinder with radius 3 units and height 5 units, expressed in terms of pi?
+data/final/test_en.jsonl	master_math_074	What is the value of 2a + 3 when a = 4?
+data/final/test_en.jsonl	master_science_069	Why do astronauts in an orbiting spacecraft appear weightless?
+data/final/test_en.jsonl	master_geo_009	Which country has Bangkok as its capital?
+data/final/test_en.jsonl	master_logic_070	A committee must include exactly two of Lina, Mo, Nia, and Oren. If Lina is selected, Mo must also be selected. Which pair is not allowed?
+data/final/test_en.jsonl	master_math_053	A circle has a diameter of 18 centimeters. What is its radius?
+data/final/test_en.jsonl	master_cs_001	What is the purpose of a return statement inside a function?
+data/final/test_en.jsonl	master_math_051	Each exterior angle of a regular polygon measures 24 degrees. How many sides does the polygon have?
+data/final/test_en.jsonl	master_math_008	If f(x) = x squared minus 1 and g(x) = 2x + 1, what is f(g(2))?
+data/final/test_en.jsonl	master_geo_034	Which inland body of water lies between Europe and Asia and is commonly called the world's largest lake by area?
+data/final/test_en.jsonl	master_math_076	For the line y = 3x - 2, what is y when x = 5?
+data/final/test_en.jsonl	master_logic_056	A sequence interleaves even numbers and multiples of ten: 2, 10, 4, 20, 6, 30, ... What is the next term?
+data/final/test_en.jsonl	master_math_040	What is the remainder when 157 is divided by 12?
+data/final/test_en.jsonl	master_math_023	Two quantities are in the ratio 2:3 and have a total of 45. What is the smaller quantity?
+data/final/test_en.jsonl	master_geo_033	The Kalahari Desert region is located in which part of Africa?
+data/final/test_en.jsonl	master_science_045	A 12-volt battery is connected across a 4-ohm resistor. If the voltage is then reduced to 6 volts with resistance unchanged, what current flows?
+data/final/test_en.jsonl	master_logic_076	'This rule is fair because it is a fair rule.' What defect does the argument have?
+data/final/test_en.jsonl	master_science_059	Which observation best indicates that a soil sample has high permeability?
+data/final/test_en.jsonl	master_cs_066	What is the operating-system scheduler responsible for?
+data/final/reserve_en.jsonl	master_logic_030	If the gate opens, the bell rings. If the bell rings, the lamp flashes. The lamp does not flash. What follows?
+data/final/reserve_en.jsonl	master_math_031	What is 6 squared minus 5 squared?
+data/final/reserve_en.jsonl	master_science_028	Which material is a mixture rather than a pure substance?
+data/final/reserve_en.jsonl	master_math_050	Which is the prime factorization of 180?
+data/final/reserve_en.jsonl	master_math_034	What is 2 cubed multiplied by 2 to the fourth power?
+data/final/reserve_en.jsonl	master_math_026	A tank is 3/8 full. After 25 liters are added, it is 5/8 full. What is the tank's capacity?
+data/final/reserve_en.jsonl	master_math_060	What is the cube root of 64?
+data/final/reserve_en.jsonl	master_geo_008	Which city is the capital of New Zealand?
+data/final/reserve_en.jsonl	master_cs_019	In a zero-indexed array, which index refers to the first element?
+data/final/reserve_en.jsonl	master_geo_010	Which city is the capital of Argentina?
+data/final/reserve_en.jsonl	master_cs_053	A table declares the pair `(student_id, course_id)` as a composite primary key. What must be unique?
+data/final/reserve_en.jsonl	master_geo_074	Which rock type is especially associated with caves and sinkholes in karst landscapes?
+data/final/reserve_en.jsonl	master_logic_021	All copper items conduct electricity. No insulating items conduct electricity. What follows about copper items?
+data/final/reserve_en.jsonl	master_cs_048	Why is database normalization commonly applied to relational schemas?
+data/final/reserve_en.jsonl	master_logic_031	If a whole number is divisible by 6, then it is divisible by 3. A number n is divisible by 3. What follows about n?
+data/final/reserve_en.jsonl	master_science_043	If the frequency of a wave doubles while its speed stays constant, what happens to its wavelength?
+data/final/reserve_en.jsonl	master_geo_015	Which city is the capital of Portugal?
+data/final/reserve_en.jsonl	master_logic_010	What is the negation of 'At least one package arrived'?
+data/final/reserve_en.jsonl	master_cs_006	A variable declared inside a function is described as local when it can normally be accessed where?
+data/final/reserve_en.jsonl	master_cs_026	An algorithm splits a problem into two half-sized problems and performs linear additional work at each level. What is its asymptotic running time?
+data/final/reserve_en.jsonl	master_science_020	Which method can separate insoluble sand from water?
+data/final/reserve_en.jsonl	master_geo_080	Why are many volcanoes concentrated near convergent plate boundaries?
+data/final/reserve_en.jsonl	master_geo_061	What does population density measure?
+data/final/reserve_en.jsonl	master_geo_043	Moist air rises over a coastal mountain range. Which climate pattern is most likely on the range's leeward side?
+data/final/reserve_en.jsonl	master_math_063	An integer is selected at random from 1 through 12. What is the probability that it is a multiple of 3?
+data/final/reserve_en.jsonl	master_geo_013	Which city is the capital of India?
+data/final/reserve_en.jsonl	master_logic_047	If sets M and N are disjoint, what must be true?
+data/final/reserve_en.jsonl	master_science_008	Which nutrient is the body's main immediate source of energy?
+data/final/reserve_en.jsonl	master_science_040	A swimmer pushes water backward. Why does the swimmer move forward?
+data/final/reserve_en.jsonl	master_math_013	What is the median of 3, 5, 8, 12, and 20?
+data/final/reserve_en.jsonl	master_cs_073	What is a central benefit of using a version-control system?
+data/final/reserve_en.jsonl	master_science_025	In a sealed container, 5 grams of hydrogen react completely with 40 grams of oxygen. What total mass of products is formed?
+data/final/reserve_en.jsonl	master_science_004	What is the main function of enzymes in living organisms?
+data/final/reserve_en.jsonl	master_science_018	What electrical charge does an electron carry?
+data/final/reserve_en.jsonl	master_science_058	What is the main source of energy that drives Earth's water cycle?
+data/final/reserve_en.jsonl	master_logic_043	If set X is a subset of Y and Y is a proper subset of Z, which statement must be true?
+data/final/reserve_en.jsonl	master_science_039	Which instrument measures temperature?
+data/final/reserve_en.jsonl	master_cs_068	When physical memory is scarce, what may an operating system move from RAM to secondary storage?
+data/final/reserve_en.jsonl	master_logic_073	Kai proposes reducing one meeting per week. A critic replies, 'Kai wants us never to communicate again.' Which fallacy is used?
+data/final/reserve_en.jsonl	master_logic_060	What number comes next in 1, 4, 9, 16, ... if the terms are consecutive square numbers?
+data/final/reserve_en.jsonl	master_science_056	How does vegetation on a slope generally reduce soil erosion?
+data/final/reserve_en.jsonl	master_science_031	A bicycle travels 120 meters in 20 seconds at constant speed. What is its speed?
+data/final/reserve_en.jsonl	master_logic_078	An actor with no medical expertise endorses a treatment, and the endorsement is offered as the sole evidence that it works. Which fallacy best describes this?
+data/final/reserve_en.jsonl	master_geo_058	A point at 10° north, 20° west lies north of the Equator and on which side of the Prime Meridian?
+data/final/reserve_en.jsonl	master_logic_016	Some chefs are poets. No poets are swimmers. What must be true?
+data/final/reserve_en.jsonl	master_science_003	Which body system exchanges oxygen and carbon dioxide with the environment?
+data/final/reserve_en.jsonl	master_science_034	What force opposes sliding motion between two surfaces in contact?
+data/final/reserve_en.jsonl	master_science_009	Which structures anchor a plant in soil and absorb most of its water?
+data/final/reserve_en.jsonl	master_logic_027	All violins are instruments. All pianos are instruments. What relation between violins and pianos must hold?
+data/final/reserve_en.jsonl	master_science_064	In a stable ecosystem, why is less energy available at higher trophic levels?
+data/final/reserve_en.jsonl	master_geo_038	What is an archipelago?
+data/final/reserve_en.jsonl	master_science_033	Two carts start from rest. The same constant net force acts on cart X of mass 2 kg and cart Y of mass 4 kg for the same time. How does X's final speed compare with Y's?
+data/final/reserve_en.jsonl	master_cs_078	What is encryption intended to provide when used correctly with protected keys?
+data/final/reserve_en.jsonl	master_geo_006	Which city is the capital of Spain?
+data/final/reserve_en.jsonl	master_cs_034	What is the main purpose of a CPU cache?
+data/final/reserve_en.jsonl	master_cs_062	What does the HTTP status code 404 conventionally mean?
+data/final/reserve_en.jsonl	master_science_013	A person touches a hot surface and pulls a hand away before consciously feeling pain. What coordinates this rapid response first?
+data/final/reserve_en.jsonl	master_cs_049	What is a common purpose of a database index?
+data/final/reserve_en.jsonl	master_math_030	What is the absolute value of -13?
+data/final/reserve_en.jsonl	master_geo_062	What does the term urbanization mean?
+data/final/reserve_en.jsonl	master_logic_080	In the argument 'All metals conduct electricity; copper is a metal; therefore copper conducts electricity,' which statement is the conclusion?
+data/final/reserve_en.jsonl	master_geo_055	What do closely spaced contour lines usually indicate on a topographic map?
+data/final/reserve_en.jsonl	master_math_072	A bag contains 3 red and 2 blue counters. Two counters are drawn without replacement. What is the probability that both are red?
+data/final/reserve_en.jsonl	master_logic_004	In classical propositional logic, when is the implication 'P implies Q' false?
+data/final/reserve_en.jsonl	master_math_005	What is 3.5 plus 2.4?
+data/final/reserve_en.jsonl	master_logic_018	No metal tokens are transparent. Token K is metal. What follows?
+data/final/reserve_en.jsonl	master_logic_025	No ceramic item is flexible. Every rubber item is flexible. Which conclusion must be true?
+data/final/reserve_en.jsonl	master_logic_075	'Millions of people believe this claim, so it must be true.' Which fallacy is present?
+data/final/reserve_en.jsonl	master_cs_014	An array has valid indexes 0 through 9. What kind of error is an attempt to access index 10?
+data/final/reserve_en.jsonl	master_science_052	Why are earthquakes common near many tectonic plate boundaries?
+data/final/reserve_en.jsonl	master_science_076	Students test whether fertilizer affects plant growth. Which setup provides the best control group?
+data/final/reserve_en.jsonl	master_science_079	A graph shows distance on the vertical axis and time on the horizontal axis. What does the slope represent?
+data/final/reserve_en.jsonl	master_geo_041	Which biome is characterized by year-round warmth, high rainfall, and dense layered vegetation?
+data/final/reserve_en.jsonl	master_geo_025	On which continent are the Himalayas located?
+data/final/reserve_en.jsonl	master_cs_055	What is the main purpose of the Domain Name System?
+data/final/reserve_en.jsonl	master_math_062	Five numbers have a mean of 12. If one value of 8 is replaced by 18, what is the new mean?
+data/final/reserve_en.jsonl	master_cs_075	What is a primary purpose of peer code review?
+data/final/reserve_en.jsonl	master_geo_059	Why do outer bends of a meandering river commonly erode faster than inner bends?
+data/final/reserve_en.jsonl	master_math_001	Five notebooks cost $35 at the same price per notebook. How much do eight notebooks cost?
+data/final/reserve_en.jsonl	master_science_066	Why does burning fossil fuel add carbon to the active atmosphere-ocean cycle?
+data/final/reserve_en.jsonl	master_geo_005	Which list matches all three countries with their capitals correctly?
+data/final/reserve_en.jsonl	master_geo_021	Into which ocean does the Amazon River discharge?
+data/final/reserve_en.jsonl	master_cs_041	What is the purpose of virtual memory at the computer-system level?
+data/final/reserve_en.jsonl	master_cs_046	Which SQL command is used to retrieve data from a table?
+data/final/reserve_en.jsonl	master_logic_019	Some amber objects are boxes. All boxes are containers. No containers are weightless. What must follow?
+data/final/reserve_en.jsonl	master_cs_027	During depth-first search of a directed graph, what indicates a cycle when using color states?
+data/final/reserve_en.jsonl	master_geo_048	How can a warm ocean current affect a nearby coast?
+data/final/reserve_en.jsonl	master_science_072	Planet X orbits the same star farther away than Planet Y. If both orbits are nearly circular, which statement is generally correct?
+data/final/reserve_en.jsonl	master_cs_008	What does an accumulator variable usually do inside a loop?
+data/final/reserve_en.jsonl	master_math_048	How is 0.00072 written in scientific notation?
+data/final/reserve_en.jsonl	master_logic_013	If P is false, what is the classical truth value of 'P implies Q', regardless of Q?
+data/final/reserve_en.jsonl	master_cs_037	What does a processor's clock signal primarily provide?
+data/final/reserve_en.jsonl	master_math_036	What is 47.386 rounded to the nearest tenth?
+data/final/reserve_en.jsonl	master_science_006	In a food web, what is a likely direct effect of a sharp decline in a prey population?
+data/final/reserve_en.jsonl	master_geo_050	What does the Prime Meridian define?
+data/final/reserve_en.jsonl	master_math_067	Two fair coins are tossed. What is the probability that both show heads?
+data/final/reserve_en.jsonl	master_logic_049	If 4 belongs to set S, which notation states this correctly?
+data/final/reserve_en.jsonl	master_cs_013	Which value is most naturally represented by an integer type?
+data/final/reserve_en.jsonl	master_cs_064	In a typical web interaction, what role does a browser play?
+data/final/reserve_en.jsonl	master_logic_006	Which expression is logically equivalent to '(P or Q) and not P'?
