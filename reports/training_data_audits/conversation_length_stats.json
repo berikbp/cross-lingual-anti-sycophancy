@@ -1,0 +1,34 @@
+{
+  "control_train": {
+    "count": 1000,
+    "mean_tokens": 121.678,
+    "median_tokens": 121.0,
+    "max_tokens": 185,
+    "min_tokens": 102
+  },
+  "anti_train": {
+    "count": 1000,
+    "mean_tokens": 133.525,
+    "median_tokens": 134.0,
+    "max_tokens": 208,
+    "min_tokens": 111
+  },
+  "control_validation": {
+    "count": 100,
+    "mean_tokens": 122.87,
+    "median_tokens": 121.0,
+    "max_tokens": 150,
+    "min_tokens": 105
+  },
+  "anti_validation": {
+    "count": 100,
+    "mean_tokens": 135.16,
+    "median_tokens": 134.0,
+    "max_tokens": 166,
+    "min_tokens": 114
+  },
+  "train_condition_difference": {
+    "mean_anti_minus_control": 11.847,
+    "max_anti_minus_control": 23
+  }
+}
