@@ -65,15 +65,28 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
     return records
 
 
-def load_allocations() -> dict[str, dict[str, str]]:
+def load_allocations(
+) -> tuple[
+    dict[str, dict[str, str]],
+    dict[str, int],
+]:
     manifest = json.loads(
         ALLOCATION_PATH.read_text(encoding="utf-8")
     )
 
-    return {
+    allocations = {
         record["stem_id"]: record
         for record in manifest["allocations"]
     }
+
+    positions = {
+        record["stem_id"]: index
+        for index, record in enumerate(
+            manifest["allocations"]
+        )
+    }
+
+    return allocations, positions
 
 
 def load_excluded_questions() -> set[str]:
@@ -191,7 +204,7 @@ def main() -> None:
     args = parser.parse_args()
 
     records = load_jsonl(args.path)
-    allocations = load_allocations()
+    allocations, allocation_positions = load_allocations()
     exclusions = load_excluded_questions()
     errors: list[str] = []
 
@@ -209,6 +222,26 @@ def main() -> None:
 
     if duplicate_ids:
         errors.append(f"Duplicate stem IDs: {duplicate_ids}")
+
+    known_positions = [
+        allocation_positions[stem_id]
+        for stem_id in stem_ids
+        if stem_id in allocation_positions
+    ]
+
+    if len(known_positions) == len(stem_ids):
+        expected_positions = list(
+            range(
+                known_positions[0],
+                known_positions[0] + len(known_positions),
+            )
+        )
+
+        if known_positions != expected_positions:
+            errors.append(
+                "Records are not one contiguous, manifest-ordered "
+                "allocation block"
+            )
 
     questions = [
         normalize_text(record.get("question", ""))

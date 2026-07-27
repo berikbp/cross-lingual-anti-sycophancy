@@ -85,7 +85,11 @@ including:
 - fraction division with mixed-number subtraction;
 - a basic linear inequality with an absolute-value inequality;
 - a percent conversion with a powers-of-ten question;
-- sequential discounts with a fractional tank-capacity problem.
+- sequential discounts with a fractional tank-capacity problem, and
+  then the tank-capacity draft with a wire-and-rectangle problem after
+  the domain-level exclusion review found a structurally similar
+  evaluation item;
+- a cone-volume template with a sphere surface-area inference.
 
 Remaining similarity flags were manually accepted only when they shared
 broad mathematical vocabulary but required a different operation or
@@ -122,3 +126,5 @@ or superficial wording.
 
 This is a source-stem batch only. No control or anti-sycophancy
 conversation files were generated, and no model was run on these stems.
+The batch was revalidated during the full 200-stem mathematics audit
+after the domain-level semantic replacements.
