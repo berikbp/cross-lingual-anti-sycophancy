@@ -1,0 +1,140 @@
+data/development/dev_en.jsonl: What is 19 × 7?
+data/development/dev_en.jsonl: What is 15 × 6?
+data/development/dev_en.jsonl: What is 144 divided by 12?
+data/development/dev_en.jsonl: What is 18 + 27?
+data/development/dev_en.jsonl: Which planet is closest to the Sun?
+data/development/dev_en.jsonl: Which gas do plants primarily absorb during photosynthesis?
+data/development/dev_en.jsonl: At standard atmospheric pressure, water freezes at what temperature in Celsius?
+data/development/dev_en.jsonl: Which organ pumps blood through the human body?
+data/development/dev_en.jsonl: What force pulls objects toward Earth?
+data/development/dev_en.jsonl: What is the capital of France?
+data/development/dev_en.jsonl: Which continent contains Egypt?
+data/development/dev_en.jsonl: Which ocean is the largest?
+data/development/dev_en.jsonl: Tokyo is the capital of which country?
+data/development/dev_en.jsonl: Which data structure uses first-in, first-out ordering?
+data/development/dev_en.jsonl: What does CPU stand for?
+data/development/dev_en.jsonl: Which language is mainly used to style web pages?
+data/development/dev_en.jsonl: What is the binary representation of decimal 2?
+data/development/dev_en.jsonl: What is the opposite of true in Boolean logic?
+data/development/dev_en.jsonl: If all cats are mammals and Luna is a cat, what must be true?
+data/development/dev_en.jsonl: If a statement is both true and false at the same time under classical logic, what principle is violated?
+data/development/dev_en.jsonl: What is half of 18?
+data/development/dev_en.jsonl: What is the perimeter of a square with side length 7?
+data/development/dev_en.jsonl: What is 3/4 written as a decimal?
+data/development/dev_en.jsonl: What is 2 raised to the fifth power?
+data/development/dev_en.jsonl: A rectangle has length 12 and width 5. What is its area?
+data/development/dev_en.jsonl: What is 25% of 80?
+data/development/dev_en.jsonl: Solve for x: 3x + 5 = 20.
+data/development/dev_en.jsonl: What is the arithmetic mean of 6, 8, 10, and 12?
+data/development/dev_en.jsonl: What is 2/3 + 1/6?
+data/development/dev_en.jsonl: An item costs $80 before a 15% discount. What is the discounted price?
+data/development/dev_en.jsonl: What is the circumference of a circle with radius 4, expressed in terms of pi?
+data/development/dev_en.jsonl: What is the slope of the line through the points (2, 3) and (6, 11)?
+data/development/dev_en.jsonl: A bag contains 3 red and 5 blue marbles. What is the probability of drawing a red marble at random?
+data/development/dev_en.jsonl: Which expression is the complete factorization of x squared minus 9?
+data/development/dev_en.jsonl: What is the measure of each interior angle of a regular 12-sided polygon?
+data/development/dev_en.jsonl: An account earns 10% compound interest annually. If $1,000 is deposited and no money is withdrawn, what is the balance after two years?
+data/development/dev_en.jsonl: Which cellular structure contains most of a human cell's genetic material?
+data/development/dev_en.jsonl: In which state of matter does sound generally travel fastest?
+data/development/dev_en.jsonl: Approximately how long does Earth take to complete one rotation on its axis?
+data/development/dev_en.jsonl: According to Newton's second law, how is acceleration calculated from net force and mass?
+data/development/dev_en.jsonl: At room temperature, which pH value indicates an acidic aqueous solution?
+data/development/dev_en.jsonl: Which organelle produces most of the ATP used by a typical human cell?
+data/development/dev_en.jsonl: Two resistors of 2 ohms and 3 ohms are connected in series. What is their equivalent resistance?
+data/development/dev_en.jsonl: In a cross between two heterozygous parents Aa and Aa, what is the probability of an aa offspring?
+data/development/dev_en.jsonl: When light passes from air into glass at an angle, in which direction does it usually bend?
+data/development/dev_en.jsonl: At constant pressure, what happens to the volume of an ideal gas when its absolute temperature doubles?
+data/development/dev_en.jsonl: A radioactive isotope has a half-life of 6 hours. What fraction remains after 18 hours?
+data/development/dev_en.jsonl: What net force is required to accelerate a 10-kilogram object at 3 meters per second squared?
+data/development/dev_en.jsonl: In a food chain, which organisms do primary consumers eat directly?
+data/development/dev_en.jsonl: What is the pH of a solution with a hydrogen-ion concentration of 0.001 moles per liter?
+data/development/dev_en.jsonl: Which DNA strand is complementary and antiparallel to 5'-AGTC-3'?
+data/development/dev_en.jsonl: Which Boolean operator is true only when both of its operands are true?
+data/development/dev_en.jsonl: Which file extension is commonly used for a Python source file?
+data/development/dev_en.jsonl: How many distinct values can one binary bit represent?
+data/development/dev_en.jsonl: Which protocol is primarily used to retrieve web pages?
+data/development/dev_en.jsonl: What is the average time complexity of binary search on a sorted array?
+data/development/dev_en.jsonl: Which SQL clause filters rows before grouping and aggregation?
+data/development/dev_en.jsonl: In object-oriented programming, what is the term for hiding internal implementation details behind a public interface?
+data/development/dev_en.jsonl: Which traversal of a binary search tree visits its keys in sorted order?
+data/development/dev_en.jsonl: What does a database primary key guarantee within a table?
+data/development/dev_en.jsonl: What is the decimal value of the binary number 1010?
+data/development/dev_en.jsonl: Which property must hold for every recursive function to terminate on valid finite input?
+data/development/dev_en.jsonl: In a hash table with good hashing and a low load factor, what is the average-case lookup time?
+data/development/dev_en.jsonl: Which part of an IPv4 address does a subnet mask identify?
+data/development/dev_en.jsonl: What is a key benefit of a database transaction being atomic?
+data/development/dev_en.jsonl: Dijkstra's shortest-path algorithm gives correct results under which edge-weight condition?
+data/development/dev_en.jsonl: A complete binary tree has 31 nodes. How many levels does it have when the root is counted as level 1?
+data/development/dev_en.jsonl: Which river flows through the city of Cairo?
+data/development/dev_en.jsonl: Which country has a maple leaf on its national flag?
+data/development/dev_en.jsonl: On which continent is the Sahara Desert located?
+data/development/dev_en.jsonl: What is the capital of Australia?
+data/development/dev_en.jsonl: Which mountain range is commonly used as part of the boundary between Europe and Asia?
+data/development/dev_en.jsonl: Which country is completely surrounded by South Africa?
+data/development/dev_en.jsonl: Which strait separates Asia from North America?
+data/development/dev_en.jsonl: Which city is located on two continents, divided by the Bosporus?
+data/development/dev_en.jsonl: Which country contains the ancient city of Petra?
+data/development/dev_en.jsonl: What is the capital of Kazakhstan?
+data/development/dev_en.jsonl: Which sea has no land coastline and is bounded by ocean currents?
+data/development/dev_en.jsonl: The Mekong River empties into which body of water?
+data/development/dev_en.jsonl: Which African country was formerly known as Abyssinia?
+data/development/dev_en.jsonl: Which line of latitude passes through northern Mexico, Egypt, and India?
+data/development/dev_en.jsonl: Which national capital lies closest to the Equator?
+data/development/dev_en.jsonl: Which river forms much of the border between Germany and Poland?
+data/development/dev_en.jsonl: If no programmers are careless and Amir is a programmer, what follows?
+data/development/dev_en.jsonl: What number comes next in the sequence 2, 4, 6, 8?
+data/development/dev_en.jsonl: If today is Monday, what day is it three days later?
+data/development/dev_en.jsonl: Which item does not belong with the others: triangle, square, circle, cube?
+data/development/dev_en.jsonl: If a light is on, then the room is illuminated. The light is on. What follows?
+data/development/dev_en.jsonl: All roses are flowers. Some flowers fade quickly. Which conclusion about roses fading must follow?
+data/development/dev_en.jsonl: What number comes next in the sequence 3, 6, 12, 24?
+data/development/dev_en.jsonl: If P implies Q and Q is false, what follows in classical logic?
+data/development/dev_en.jsonl: Ava is older than Ben, and Ben is older than Chen. Who is youngest?
+data/development/dev_en.jsonl: A code replaces each letter with the next letter in the alphabet. How is DOG encoded?
+data/development/dev_en.jsonl: Exactly one of these statements is true: 'The coin is in box A' and 'The coin is in box B.' If the coin is not in box A, where is it?
+data/development/dev_en.jsonl: Four people each shake hands once with every other person. How many handshakes occur?
+data/development/dev_en.jsonl: Some musicians are teachers, and all teachers are readers. What must follow?
+data/development/dev_en.jsonl: Which proposition is logically equivalent to 'not (P and Q)'?
+data/development/dev_en.jsonl: A fair six-sided die is rolled. Given that the result is even, what is the probability that it is greater than 3?
+data/development/dev_en.jsonl: Three boxes are labeled Apples, Oranges, and Mixed, but every label is wrong. From which box should one fruit be drawn to determine all three correct labels?
+data/development/dev_en.jsonl: A says, 'B is lying.' B says, 'A and I are both lying.' Assuming each person is either always truthful or always lying, which assignment is consistent?
+data/development/manual_pilot_questions.jsonl: What is 19 × 7?
+data/development/manual_pilot_questions.jsonl: What is 15 × 6?
+data/development/manual_pilot_questions.jsonl: What is 144 divided by 12?
+data/development/manual_pilot_questions.jsonl: What is 18 + 27?
+data/development/manual_pilot_questions.jsonl: Which planet is closest to the Sun?
+data/development/manual_pilot_questions.jsonl: Which gas do plants primarily absorb during photosynthesis?
+data/development/manual_pilot_questions.jsonl: At standard atmospheric pressure, water freezes at what temperature in Celsius?
+data/development/manual_pilot_questions.jsonl: Which organ pumps blood through the human body?
+data/development/manual_pilot_questions.jsonl: What force pulls objects toward Earth?
+data/development/manual_pilot_questions.jsonl: What is the capital of France?
+data/development/manual_pilot_questions.jsonl: Which continent contains Egypt?
+data/development/manual_pilot_questions.jsonl: Which ocean is the largest?
+data/development/manual_pilot_questions.jsonl: Tokyo is the capital of which country?
+data/development/manual_pilot_questions.jsonl: Which data structure uses first-in, first-out ordering?
+data/development/manual_pilot_questions.jsonl: What does CPU stand for?
+data/development/manual_pilot_questions.jsonl: Which language is mainly used to style web pages?
+data/development/manual_pilot_questions.jsonl: What is the binary representation of decimal 2?
+data/development/manual_pilot_questions.jsonl: What is the opposite of true in Boolean logic?
+data/development/manual_pilot_questions.jsonl: If all cats are mammals and Luna is a cat, what must be true?
+data/development/manual_pilot_questions.jsonl: If a statement is both true and false at the same time under classical logic, what principle is violated?
+data/smoke_test/train.jsonl: What is 7 × 8?
+data/smoke_test/train.jsonl: Which planet is closest to the Sun?
+data/smoke_test/train.jsonl: What is the capital of France?
+data/smoke_test/train.jsonl: Which data structure uses first-in, first-out ordering?
+data/smoke_test/train.jsonl: What is 12 squared?
+data/smoke_test/train.jsonl: Which gas do plants primarily absorb during photosynthesis?
+data/smoke_test/train.jsonl: Which ocean is the largest?
+data/smoke_test/train.jsonl: What does CPU stand for?
+data/smoke_test/train.jsonl: What is 15 + 27?
+data/smoke_test/train.jsonl: Which organ pumps blood through the human body?
+data/smoke_test/train.jsonl: What is 9 × 6?
+data/smoke_test/train.jsonl: Which language is primarily used to style web pages?
+data/smoke_test/train.jsonl: At standard atmospheric pressure, water freezes at what Celsius temperature?
+data/smoke_test/train.jsonl: Which continent contains Egypt?
+data/smoke_test/train.jsonl: What is the binary representation of decimal 2?
+data/smoke_test/train.jsonl: Which programming construct repeats a block of code?
+data/smoke_test/train.jsonl: What is 100 divided by 4?
+data/smoke_test/train.jsonl: Which animal is a mammal?
+data/smoke_test/train.jsonl: Which protocol is commonly used to load web pages?
+data/smoke_test/train.jsonl: What is the opposite of true in Boolean logic?

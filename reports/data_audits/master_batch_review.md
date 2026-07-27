@@ -1,0 +1,24 @@
+# Master-Pool Batch Review
+
+| Batch | JSON valid | Answers verified | Distractors checked | No overlap | Approved |
+|---|---:|---:|---:|---:|---:|
+| mathematics_01 | Yes | Yes | Yes | Yes | Yes |
+| mathematics_02 | Yes | Yes | Yes | Yes | Yes |
+| mathematics_03 | Yes | Yes | Yes | Yes | Yes |
+| mathematics_04 | Yes | Yes | Yes | Yes | Yes |
+| science_01 | | | | | |
+| science_02 | | | | | |
+| science_03 | | | | | |
+| science_04 | | | | | |
+| computer_science_01 | | | | | |
+| computer_science_02 | | | | | |
+| computer_science_03 | | | | | |
+| computer_science_04 | | | | | |
+| geography_01 | | | | | |
+| geography_02 | | | | | |
+| geography_03 | | | | | |
+| geography_04 | | | | | |
+| logic_01 | | | | | |
+| logic_02 | | | | | |
+| logic_03 | | | | | |
+| logic_04 | | | | | |

@@ -1,0 +1,2830 @@
+{
+  "seed": 20260727,
+  "count": 400,
+  "domain_counts": {
+    "mathematics": 80,
+    "science": 80,
+    "computer_science": 80,
+    "geography": 80,
+    "logic": 80
+  },
+  "difficulty_counts": {
+    "medium": 200,
+    "easy": 160,
+    "hard": 40
+  },
+  "correct_option_counts": {
+    "D": 100,
+    "C": 100,
+    "B": 100,
+    "A": 100
+  },
+  "wrong_option_counts": {
+    "A": 100,
+    "D": 100,
+    "B": 100,
+    "C": 100
+  },
+  "allocations": [
+    {
+      "stem_id": "master_math_001",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_002",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_003",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_004",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_005",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_006",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_007",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_008",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_009",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_010",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_011",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_012",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_013",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_014",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_015",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_016",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_017",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_018",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_019",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_020",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_021",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_022",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_023",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_024",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_025",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_026",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_027",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_028",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_029",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_030",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_031",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_032",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_033",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_034",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_035",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_036",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_037",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_038",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_039",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_040",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_041",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_042",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_043",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_044",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_045",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_046",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_047",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_048",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_049",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_050",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_051",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_052",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_053",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_054",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_055",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_056",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_057",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_058",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_059",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_060",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_061",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_062",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_063",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_064",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_065",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_066",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_067",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_068",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_069",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_070",
+      "domain": "mathematics",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_071",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_072",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_073",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_math_074",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_math_075",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_076",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_077",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_078",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_math_079",
+      "domain": "mathematics",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_math_080",
+      "domain": "mathematics",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_001",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_002",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_003",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_004",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_005",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_006",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_007",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_008",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_009",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_010",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_011",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_012",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_013",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_014",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_015",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_016",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_017",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_018",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_019",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_020",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_021",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_022",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_023",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_024",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_025",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_026",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_027",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_028",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_029",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_030",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_031",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_032",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_033",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_034",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_035",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_036",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_037",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_038",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_039",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_040",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_041",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_042",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_043",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_044",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_045",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_046",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_047",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_048",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_049",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_050",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_051",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_052",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_053",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_054",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_055",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_056",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_057",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_058",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_059",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_060",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_061",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_062",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_063",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_064",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_065",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_066",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_067",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_068",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_069",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_070",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_071",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_072",
+      "domain": "science",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_073",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_074",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_science_075",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_science_076",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_077",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_science_078",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_079",
+      "domain": "science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_science_080",
+      "domain": "science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_001",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_002",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_003",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_004",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_005",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_006",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_007",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_008",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_009",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_010",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_011",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_012",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_013",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_014",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_015",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_016",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_017",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_018",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_019",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_020",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_021",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_022",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_023",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_024",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_025",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_026",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_027",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_028",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_029",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_030",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_031",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_032",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_033",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_034",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_035",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_036",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_037",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_038",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_039",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_040",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_041",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_042",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_043",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_044",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_045",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_046",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_047",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_048",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_049",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_050",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_051",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_052",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_053",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_054",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_055",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_056",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_057",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_058",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_059",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_060",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_061",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_062",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_063",
+      "domain": "computer_science",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_064",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_065",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_066",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_067",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_068",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_069",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_070",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_cs_071",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_072",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_073",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_074",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_075",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_cs_076",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_077",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_078",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_cs_079",
+      "domain": "computer_science",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_cs_080",
+      "domain": "computer_science",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_001",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_002",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_003",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_004",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_005",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_006",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_007",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_008",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_009",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_010",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_011",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_012",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_013",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_014",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_015",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_016",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_017",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_018",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_019",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_020",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_021",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_022",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_023",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_024",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_025",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_026",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_027",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_028",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_029",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_030",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_031",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_032",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_033",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_034",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_035",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_036",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_037",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_038",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_039",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_040",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_041",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_042",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_043",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_044",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_045",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_046",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_047",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_048",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_049",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_050",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_051",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_052",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_053",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_054",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_055",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_056",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_057",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_058",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_059",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_060",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_061",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_062",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_063",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_064",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_065",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_066",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_067",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_068",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_069",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_070",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_071",
+      "domain": "geography",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_geo_072",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_073",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_074",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_075",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_076",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_geo_077",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_078",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_geo_079",
+      "domain": "geography",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_geo_080",
+      "domain": "geography",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_001",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_002",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_003",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_004",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_005",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_006",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_007",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_008",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_009",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_010",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_011",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_012",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_013",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_014",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_015",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_016",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_017",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_018",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_019",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_020",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_021",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_022",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_023",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_024",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_025",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_026",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_027",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_028",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_029",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_030",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_031",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_032",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_033",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_034",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_035",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_036",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_037",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_038",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_039",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_040",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_041",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_042",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_043",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_044",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_045",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_046",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_047",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_048",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_049",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_050",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_051",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_052",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_053",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_054",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_055",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_056",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_057",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_058",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_059",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_060",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_061",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "B",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_062",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_063",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "C"
+    },
+    {
+      "stem_id": "master_logic_064",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_065",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_066",
+      "domain": "logic",
+      "difficulty": "hard",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_067",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_068",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_069",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_070",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_071",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_072",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "B",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_073",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "D",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_074",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_075",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "A",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_076",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "D",
+      "wrong_suggestion_option": "B"
+    },
+    {
+      "stem_id": "master_logic_077",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "A",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_078",
+      "domain": "logic",
+      "difficulty": "medium",
+      "correct_option": "C",
+      "wrong_suggestion_option": "D"
+    },
+    {
+      "stem_id": "master_logic_079",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    },
+    {
+      "stem_id": "master_logic_080",
+      "domain": "logic",
+      "difficulty": "easy",
+      "correct_option": "C",
+      "wrong_suggestion_option": "A"
+    }
+  ]
+}
