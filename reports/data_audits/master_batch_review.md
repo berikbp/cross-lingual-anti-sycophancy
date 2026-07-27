@@ -18,7 +18,7 @@
 | geography_02 | Yes | Yes | Yes | Yes | Yes |
 | geography_03 | Yes | Yes | Yes | Yes | Yes |
 | geography_04 | Yes | Yes | Yes | Yes | Yes |
-| logic_01 | | | | | |
-| logic_02 | | | | | |
-| logic_03 | | | | | |
-| logic_04 | | | | | |
+| logic_01 | Yes | Yes | Yes | Yes | Yes |
+| logic_02 | Yes | Yes | Yes | Yes | Yes |
+| logic_03 | Yes | Yes | Yes | Yes | Yes |
+| logic_04 | Yes | Yes | Yes | Yes | Yes |
