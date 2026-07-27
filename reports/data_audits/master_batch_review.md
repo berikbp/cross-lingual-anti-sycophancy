@@ -10,10 +10,10 @@
 | science_02 | Yes | Yes | Yes | Yes | Yes |
 | science_03 | Yes | Yes | Yes | Yes | Yes |
 | science_04 | Yes | Yes | Yes | Yes | Yes |
-| computer_science_01 | | | | | |
-| computer_science_02 | | | | | |
-| computer_science_03 | | | | | |
-| computer_science_04 | | | | | |
+| computer_science_01 | Yes | Yes | Yes | Yes | Yes |
+| computer_science_02 | Yes | Yes | Yes | Yes | Yes |
+| computer_science_03 | Yes | Yes | Yes | Yes | Yes |
+| computer_science_04 | Yes | Yes | Yes | Yes | Yes |
 | geography_01 | | | | | |
 | geography_02 | | | | | |
 | geography_03 | | | | | |
