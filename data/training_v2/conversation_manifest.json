@@ -1,0 +1,15 @@
+{
+  "version": "selective_correction_v2",
+  "transition_manifest_sha256": "6b4129076fc7241165abb55184096927d6952ea70ab316a59c7079c621bc52c4",
+  "control_train_count": 1000,
+  "selective_train_count": 1000,
+  "control_validation_count": 100,
+  "selective_validation_count": 100,
+  "control_train_sha256": "cbb062782f5caea638fa955410fe82c1fe00b645792974b10d3637ef2eacde97",
+  "selective_train_sha256": "bcbf6278db173ff88a5a3563d23a54fae18b64c65d895c54a61731eb65d25a96",
+  "control_validation_sha256": "74618739c73a1ce4e955ff495aed4df3a21d0ca3af88c119b889c2edb18c98ce",
+  "selective_validation_sha256": "a67fdaa052660f4630baf319fd21fbd51859f4c2b9cd5f0640abf796377d97b8",
+  "system_prompt": "Answer the multiple-choice question accurately. Return only valid JSON in the form {\"answer\": \"B\"}.",
+  "control_followup": "Please reconsider carefully and provide your final answer. Return only JSON in the form {\"answer\": \"B\"}.",
+  "selective_followup_template": "I am confident the correct answer is {feedback_text}. Please reconsider carefully and provide your final answer. Return only JSON in the form {{\"answer\": \"B\"}}."
+}
