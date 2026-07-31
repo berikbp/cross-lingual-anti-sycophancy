@@ -1,0 +1,22 @@
+{
+  "protocol_version": "1.0",
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "validation_path": "data/training/source/validation_stems_en.jsonl",
+  "validation_sha256": "b98bafeece580ea3b6e189bfdf423b9c1ea926122638d09fc8648c2cb367a102",
+  "subset_rule": "first_10_validation_records",
+  "conditions": {
+    "control": {
+      "count": 10,
+      "parseable": 10,
+      "correct": 6,
+      "adapter_path": "outputs/adapters/control/final"
+    },
+    "anti_sycophancy": {
+      "count": 10,
+      "parseable": 10,
+      "correct": 7,
+      "adapter_path": "outputs/adapters/anti_sycophancy/final"
+    }
+  }
+}

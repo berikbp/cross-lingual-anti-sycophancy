@@ -1,0 +1,63 @@
+{
+  "condition": "control",
+  "dry_run": true,
+  "protocol_version": "1.0",
+  "training_config_version": "qlora_v1",
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "config_path": "configs/training/qlora_v1.yaml",
+  "config_sha256": "521580f3739be5f4ba69d46aa54602470c69c4a1bd62a87c002bfcf0e43d99de",
+  "train_path": "data/training/control/train.jsonl",
+  "train_sha256": "6034ca5e2f7d83b544a22d61ea2c138ff40bff2b2e49f26635781d82e28081fc",
+  "validation_path": "data/training/control/validation.jsonl",
+  "validation_sha256": "93a11adfd121538df6656964107bfa8f4d5fbe78e035804d6e32c0ca0749f438",
+  "train_count": 2,
+  "validation_count": 2,
+  "epochs": 3.0,
+  "effective_batch_size": 1,
+  "expected_global_steps": 2,
+  "seed": 42,
+  "data_seed": 42,
+  "compute_dtype": "torch.bfloat16",
+  "torch_version": "2.13.0+cu130",
+  "transformers_version": "5.14.1",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.39",
+  "cuda_version": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime_seconds": 1.9508824348449707,
+  "global_step": 2,
+  "final_training_loss": 1.1643216136435512,
+  "final_validation_loss": null,
+  "train_metrics": {
+    "train_runtime": 1.6714,
+    "train_samples_per_second": 1.197,
+    "train_steps_per_second": 1.197,
+    "total_flos": 5475040512000.0,
+    "train_loss": 1.1643216136435512,
+    "epoch": 1.0
+  },
+  "token_statistics": {
+    "train": {
+      "count": 2,
+      "min_length": 115,
+      "max_length": 135,
+      "mean_length": 125.0,
+      "mean_supervised_tokens": 8.0
+    },
+    "validation": {
+      "count": 2,
+      "min_length": 109,
+      "max_length": 123,
+      "mean_length": 116.0,
+      "mean_supervised_tokens": 8.0
+    }
+  },
+  "peak_allocated_gb": 4.291401386260986,
+  "peak_reserved_gb": 4.923828125,
+  "callback_peak_allocated_gb": 4.291401386260986,
+  "callback_peak_reserved_gb": 4.876953125,
+  "git_commit": "d3db8dac7bc373ea6939d17e5a28d4187228c0e5",
+  "final_adapter_path": "outputs/adapters/control_dry_run/final",
+  "adapter_reload_verified": true
+}
