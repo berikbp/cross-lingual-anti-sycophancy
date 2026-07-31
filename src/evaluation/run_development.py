@@ -24,14 +24,19 @@ from transformers import (
 )
 
 
-Condition = Literal["base", "control", "anti_sycophancy"]
+Condition = Literal[
+    "base",
+    "control",
+    "anti_sycophancy",
+    "control_v2",
+    "selective_correction_v2",
+]
 
 DEFAULT_CONFIG_PATH = Path(
     "configs/evaluation/development_v1.yaml"
 )
-DEFAULT_RESULT_DIRECTORY = Path("results/development_v1")
 REPORT_ROOT = Path("reports/evaluation_runs")
-ALLOWED_STAGE13_DATASET = Path(
+ALLOWED_DEVELOPMENT_DATASET = Path(
     "data/development/dev_en.jsonl"
 ).resolve()
 FORBIDDEN_EVALUATION_PATHS = {
@@ -52,7 +57,13 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--condition",
         required=True,
-        choices=["base", "control", "anti_sycophancy"],
+        choices=[
+            "base",
+            "control",
+            "anti_sycophancy",
+            "control_v2",
+            "selective_correction_v2",
+        ],
     )
     parser.add_argument(
         "--config",
@@ -116,16 +127,16 @@ def configure_reproducibility(seed: int) -> None:
     set_seed(seed)
 
 
-def validate_stage13_dataset(path: Path) -> Path:
+def validate_development_dataset(path: Path) -> Path:
     resolved = path.resolve()
     if resolved in FORBIDDEN_EVALUATION_PATHS:
         raise RuntimeError(
-            "Stage 13 may not access frozen evaluation data: "
+            "Development evaluation may not access frozen data: "
             f"{resolved}"
         )
-    if resolved != ALLOWED_STAGE13_DATASET:
+    if resolved != ALLOWED_DEVELOPMENT_DATASET:
         raise RuntimeError(
-            "Stage 13 is restricted to the frozen English "
+            "Development evaluation is restricted to the frozen English "
             f"development dataset, not {resolved}."
         )
     return resolved
@@ -309,15 +320,27 @@ def main() -> None:
     reproducibility = config["reproducibility"]
     model_config = config["models"][condition]
 
-    if protocol["version"] != "1.0":
-        raise ValueError("Stage 13 requires Protocol 1.0.")
+    expected_protocol = {
+        "english_development_v1": "1.0",
+        "english_development_v2": "2.0",
+    }
+    evaluation_name = protocol["evaluation_name"]
+    if evaluation_name not in expected_protocol:
+        raise ValueError(
+            f"Unsupported development evaluation: {evaluation_name}"
+        )
+    if protocol["version"] != expected_protocol[evaluation_name]:
+        raise ValueError(
+            f"{evaluation_name} requires Protocol "
+            f"{expected_protocol[evaluation_name]}."
+        )
     if protocol["pressure_template_version"] != "v1_weak":
-        raise ValueError("Stage 13 requires v1_weak pressure.")
+        raise ValueError("Development evaluation requires v1_weak pressure.")
     if tuple(config["branches"]) != BRANCHES:
         raise ValueError("Branch order must be B0/B1/B2/B3.")
 
     dataset_path = Path(dataset_config["path"])
-    validate_stage13_dataset(dataset_path)
+    validate_development_dataset(dataset_path)
     questions = load_jsonl(dataset_path)
     if len(questions) != dataset_config["expected_records"]:
         raise ValueError(
@@ -325,14 +348,15 @@ def main() -> None:
             f"found {len(questions)}."
         )
     if any(record["stem_id"].startswith("master_") for record in questions):
-        raise RuntimeError("Master-pool stem detected in Stage 13 input.")
+        raise RuntimeError("Master-pool stem detected in development input.")
     if arguments.limit is not None:
         if arguments.limit <= 0:
             raise ValueError("--limit must be positive.")
         questions = questions[: arguments.limit]
 
+    result_namespace = evaluation_name.removeprefix("english_")
     output_path = arguments.output or (
-        DEFAULT_RESULT_DIRECTORY / f"{condition}.jsonl"
+        Path("results") / result_namespace / f"{condition}.jsonl"
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
     existing, completed_stems = existing_complete_stems(
@@ -504,9 +528,9 @@ def main() -> None:
     runtime_seconds = time.time() - started
     is_dry = arguments.limit is not None
     manifest_evaluation_name = (
-        f"{protocol['evaluation_name']}_dry"
+        f"{result_namespace}_dry"
         if is_dry
-        else protocol["evaluation_name"]
+        else result_namespace
     )
     manifest_path = (
         REPORT_ROOT

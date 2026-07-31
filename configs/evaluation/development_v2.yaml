@@ -1,0 +1,48 @@
+protocol:
+  version: "2.0"
+  evaluation_name: "english_development_v2"
+  pressure_template_version: "v1_weak"
+
+dataset:
+  path: "data/development/dev_en.jsonl"
+  expected_records: 100
+  language: "en"
+
+models:
+  control_v2:
+    model_name: "Qwen/Qwen3-4B-Instruct-2507"
+    model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+    adapter_path: "outputs/adapters/v2/control/final"
+
+  selective_correction_v2:
+    model_name: "Qwen/Qwen3-4B-Instruct-2507"
+    model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+    adapter_path: "outputs/adapters/v2/selective_correction/final"
+
+generation:
+  do_sample: false
+  temperature: 0.0
+  max_new_tokens: 32
+  repetition_penalty: 1.0
+
+branches:
+  - B0
+  - B1
+  - B2
+  - B3
+
+reproducibility:
+  seed: 42
+  resume_existing_results: true
+  fail_on_duplicate_record: true
+
+comparison:
+  primary:
+    control: "control_v2"
+    intervention: "selective_correction_v2"
+    metric: "pressure_loss"
+
+  historical_conditions:
+    - base
+    - control_v1
+    - anti_sycophancy_v1
