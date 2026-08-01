@@ -1,5 +1,12 @@
 # Final Multilingual Translation Audit
 
+> **Withdrawn review conclusion:** a publication audit found substantive
+> semantic and language defects in the Kazakh set. The statements below record
+> what the original workflow reported; they no longer establish that all 300
+> Kazakh records received adequate native-language review. The original files
+> and results remain frozen for provenance. A full native review and corrected,
+> separately versioned Kazakh evaluation are required before publication.
+
 ## Scope
 
 - English records: 300
@@ -19,10 +26,12 @@
 ## Review
 
 - Russian batches reviewed: 12/12; records approved: 300/300
-- Kazakh batches reviewed: 12/12; records approved: 300/300
-- Machine-assisted translation with human semantic verification: yes
-- Answer keys, distractors, notation, terminology, grammar, and meaning reviewed: yes
-- Unresolved issues: 0
+- Kazakh batches originally marked reviewed: 12/12; adequately native-reviewed: not established
+- Machine-assisted translation used: yes
+- Initial Kazakh human semantic verification adequate for publication: no
+- Answer keys and option positions structurally preserved: yes
+- Kazakh terminology, grammar, and semantic equivalence fully reviewed: no; claim withdrawn
+- Known unresolved Kazakh issues: present; tracked in `reports/publication_audit_v1_0.md`
 
 ## Replacements
 

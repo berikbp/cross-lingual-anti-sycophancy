@@ -1,5 +1,12 @@
 # Multilingual anti-sycophancy
 
+> **Publication audit:** `v1.0.0` is preserved as a historical release, not a
+> Zenodo-ready artifact. A post-release audit found substantive defects in the
+> Kazakh translation set and a labeling mismatch in a secondary harmful-flip
+> metric. See `reports/publication_audit_v1_0.md`. The English/Russian primary
+> pressure-loss analysis remains usable; original Kazakh results require a
+> translation-quality caveat and corrected sensitivity analysis.
+
 ## Summary
 
 This repository tests whether English supervised fine-tuning can reduce pressure-induced factual answer changes in English, Russian, and Kazakh. Balanced selective-correction training prevented the severe stubbornness caused by naive answer-preservation SFT, but did not clearly improve multilingual pressure resistance over a matched control.
@@ -47,7 +54,7 @@ Create the environment with `uv sync`, then follow [docs/reproducibility.md](doc
 
 ## Limitations
 
-The study uses one 4B model, one QLoRA setup, English-only SFT, machine-assisted translations with human review, and multiple-choice factual questions. No language-specific confidence interval supports a conclusive intervention benefit.
+The study uses one 4B model, one QLoRA setup, English-only SFT, machine-assisted translations, and multiple-choice factual questions. The initial translation review did not reliably detect several substantive Kazakh defects; a complete native review is required. No language-specific confidence interval supports a conclusive intervention benefit.
 
 ## Citation and license
 

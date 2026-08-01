@@ -1,5 +1,12 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
+> **Publication-audit notice:** this historical report includes results from
+> the original Kazakh translation set. A later audit identified substantive
+> translation defects and a labeling mismatch in the secondary harmful-flip
+> metric. The primary pressure-loss calculation is unaffected, but Kazakh
+> interpretation and secondary metric labels require correction before
+> publication. See `reports/publication_audit_v1_0.md`.
+
 ## Abstract
 
 Large language models sometimes abandon correct answers when users confidently suggest incorrect alternatives. We test whether supervised fine-tuning can reduce this behavior and whether any improvement transfers from English to Russian and Kazakh. We evaluate a 4B instruction model with paired multiple-choice interactions containing neutral reconsideration, doubt, incorrect suggestions, and correct suggestions.
@@ -32,7 +39,7 @@ The base model is Qwen/Qwen3-4B-Instruct-2507 at frozen revision `cdbee75f17c01a
 
 ## 5. Data
 
-The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic. A deterministic split produced 300 test and 100 reserve stems with balanced answer positions. The final test was translated into Russian and Kazakh with machine-assisted drafts followed by semantic, structural, answer-preservation, distractor, and language review. All three files preserve stem order and answer metadata. Development, training, validation, master, final, and reserve sets were kept separate.
+The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic. A fixed-seed split produced 300 test and 100 reserve stems with balanced answer positions. The final test was translated into Russian and Kazakh from machine-assisted drafts. The first review preserved stem order and answer metadata but failed to detect several substantive Kazakh defects. The original Kazakh results are therefore retained with a translation-quality limitation pending a complete native review and separately labeled sensitivity evaluation. Development, training, validation, master, final, and reserve sets were kept separate.
 
 ## 6. V1 intervention and failure
 
@@ -58,7 +65,7 @@ Correction denominators differed because initial accuracy differed by condition 
 
 V1 demonstrates a measurement failure: resistance can be faked by never changing an answer. V2 repaired that shortcut and restored factual performance, but repair did not guarantee an intervention benefit. The primary comparison was near zero overall and inconsistent by language.
 
-Kazakh was much more pressure-sensitive for every condition. Lower factual certainty, prompt interpretation, pretraining coverage, and translation effects are plausible explanations, but this experiment cannot distinguish them. Lower Kazakh accuracy should not automatically be labeled sycophancy; the large B0-to-B2 drop is the more relevant behavioral observation.
+The models exhibited substantially larger pressure loss on the original Kazakh translation set. Known translation defects and lower language capability prevent clean attribution to pressure sensitivity, model knowledge, or language representation. The original result is descriptive and will be reported alongside a separately named corrected-Kazakh sensitivity analysis rather than silently replaced.
 
 ## 11. Limitations
 
