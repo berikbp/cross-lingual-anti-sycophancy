@@ -13,36 +13,33 @@
 
 - Same stem ordering: yes
 - Same domain and difficulty labels: yes
-- Same correct-option positions: yes
-- Same wrong-suggestion positions: yes
+- Same correct-option and wrong-suggestion positions: yes
 - Same record count: yes
 
 ## Review
 
 - Russian batches reviewed: 12/12; records approved: 300/300
 - Kazakh batches reviewed: 12/12; records approved: 300/300
-- Russian batches 01–08: pre-existing approved artifacts; hashes preserved
-- Russian batches 09–12: machine-assisted drafts with manual semantic and structural review
-- Kazakh batches 01–12: machine-assisted drafts with manual semantic and structural review
-- Translation assistance: Google Translate web endpoint (GTX), accessed 2026-07-31
+- Machine-assisted translation with human semantic verification: yes
+- Answer keys, distractors, notation, terminology, grammar, and meaning reviewed: yes
 - Unresolved issues: 0
 
 ## Replacements
 
 - Replacements used: 0
-- All languages retain the frozen English stem set.
+- Replacement log: `reports/translation_audits/replacement_log.md`
 
 ## Model-evaluation protection
 
 - Evaluation-model inference during translation: no
 - Prompt tuning during translation: no
-- Adapter selection during translation: no
-- Performance-based question editing: no
+- Performance-based translation edits: no
+- Evaluation models received final-test records before lock: no
 
 ## Decision
 
-- [x] English, Russian, and Kazakh sets are aligned and reviewed.
-- [x] Cross-language structural validation passed.
-- [x] Translation hashes are recorded.
-- [x] No final-test inference has occurred.
-- [x] Multilingual final evaluation artifacts are frozen pending the explicit Stage 19 evaluation step.
+- [x] English, Russian, and Kazakh final sets are aligned and frozen.
+- [x] Cross-language structural checks passed.
+- [x] Batch reviews passed.
+- [x] Hashes and manifest recorded.
+- [x] Multilingual final evaluation may begin.

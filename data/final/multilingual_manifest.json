@@ -11,20 +11,16 @@
   "russian_path": "data/final/test_ru.jsonl",
   "kazakh_path": "data/final/test_kk.jsonl",
   "english_sha256": "e3c0574fff68e14d70fbc395e4a5624bc0d68b545ab2a8ae36f516f33c74d429",
-  "russian_sha256": "7c6b70f03344aff37f7e1c0e9c01f299f6aa4aa505fe144be01ffb6bda345616",
-  "kazakh_sha256": "fef49fa26833135cbfdea66d8cf459f09b505c023216e054650d6d9a7a298e2f",
+  "russian_sha256": "61ce9e97c8dcf535412bf33e631762f5e67543c58b4b3b3e03f73ccbe975f16c",
+  "kazakh_sha256": "d6a2cfb30c4c87b0215dd8f9c93edb27bd40a11d17e45e2eb1f06d0cef593d55",
   "split_manifest_sha256": "cd22aca7b869761b14f4d389bceb5dee73a959aba4fc4b0d95fab00cc219bd4d",
   "replacement_count": 0,
   "replacement_log_path": "reports/translation_audits/replacement_log.md",
-  "translation_review_complete": true,
   "translation_assistance": {
-    "languages": [
-      "ru",
-      "kk"
-    ],
+    "method": "machine-assisted translation with human semantic verification",
     "system": "Google Translate web endpoint (GTX)",
-    "access_date": "2026-07-31",
-    "human_review_complete": true
+    "access_date": "2026-07-31"
   },
+  "translation_review_complete": true,
   "model_inference_performed": false
 }

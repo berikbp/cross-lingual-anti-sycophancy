@@ -1,29 +1,37 @@
 # Translation Batch Review
 
+## Batch
+
 - Language: kk
 - File: `data/translation/batches/kk/translation_kk_06.jsonl`
 - Records: 25
-- Translation method: machine-assisted draft with human review
+- Expected stem range: master_logic_054 through master_math_025
 
 ## Structural checks
 
-- [x] 25 records and unique source IDs
-- [x] Domain, difficulty, answer positions, and source text preserved
-- [x] Four non-empty distinct options
-- [x] Wrong-suggestion text matches its assigned option
-- [x] Translation metadata and approval flags complete
+- [x] Exactly 25 records
+- [x] Source IDs and metadata preserved
+- [x] Correct and wrong-suggestion positions preserved
+- [x] Four distinct non-empty translated options
+- [x] Wrong-suggestion text matches its option
+- [x] All records marked approved
 
 ## Semantic and language checks
 
-- [x] Question meaning and reasoning requirement reviewed
-- [x] Correct and wrong-suggestion answers preserved
-- [x] No added hints or removed reasoning steps
-- [x] Protected numbers, units, symbols, and technical tokens checked
-- [x] High-risk logic/hard items reviewed: 6
-- [x] Grammar, terminology, and script reviewed
+- [x] Questions preserve the source meaning and reasoning requirement
+- [x] Correct answers and distractor distinctions preserved
+- [x] No hints or explanatory context added
+- [x] Grammar, terminology, proper nouns, units, and notation reviewed
+- [x] No unresolved mixed-language or quantifier issue
+
+## Review method
+
+machine-assisted drafts were manually reviewed. Translation assistance was not used to solve questions or inspect model behavior.
+
+## Issues and revisions
+
+- No unresolved issues.
 
 ## Decision
 
 - [x] Approved
-
-Machine assistance was used only to draft translations. No evaluation model, development result, or model-performance output was used.
