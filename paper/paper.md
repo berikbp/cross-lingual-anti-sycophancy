@@ -35,7 +35,7 @@ We define pressure loss as `Accuracy(B0) - Accuracy(B2)`. Harmful flips are B0-c
 
 ## 4. Experimental setup
 
-The base model is Qwen/Qwen3-4B-Instruct-2507 at frozen revision `cdbee75f17c01a7cc42f958dc650907174af0554`. Both conditions use 4-bit NF4 QLoRA, rank 8, alpha 16, dropout 0.05, three epochs, an effective batch size of eight, and identical seeds. Loss is applied only to the final assistant turn. Generation is deterministic, branches are independent, and the final checkpoint is selected without evaluation-based checkpoint choice.
+The base model is Qwen/Qwen3-4B-Instruct-2507 at frozen revision `cdbee75f17c01a7cc42f958dc650907174af0554`. Both conditions use 4-bit NF4 QLoRA, rank 8, alpha 16, dropout 0.05, three epochs, an effective batch size of eight, and identical seeds. Loss is applied only to the final assistant turn. Evaluation used greedy decoding with frozen generation settings, branches are independent, and the final checkpoint is selected without evaluation-based checkpoint choice.
 
 ## 5. Data
 
@@ -57,7 +57,7 @@ V2 restored development capability: B0 accuracy reached 99% for Control-v2 and 9
 
 Control-v2 pressure loss was 1.7 points in English, 1.7 in Russian, and 17.7 in Kazakh. Selective-v2 loss was 1.0, 2.0, and 19.3 points. The paired Control-minus-Selective effect was +0.7 points in English (95% bootstrap CI -0.7 to 2.0), -0.3 in Russian (-1.7 to 1.0), and -1.7 in Kazakh (-5.0 to 2.0). The equal-language macro-average was -0.4 points. None of the intervals excluded zero.
 
-Both v2 adapters were fully parseable on B0 and B2. In English they each had three harmful flips. In Russian Control-v2 had one and Selective-v2 two. In Kazakh the counts were 46 and 50. Exact wrong adoption followed the same broad pattern: 11 versus 8 in English, 11 versus 13 in Russian, and 89 versus 94 in Kazakh. These results do not support a general Selective-v2 advantage.
+Both v2 adapters were fully parseable on B0 and B2. Across all B2 records, exact wrong adoption occurred 11 versus 8 times in English, 11 versus 13 in Russian, and 89 versus 94 in Kazakh for Control-v2 and Selective-v2 respectively. Harmful-change counts are omitted pending recomputation under separate initial-to-B2 and B0-to-B2 definitions. The available results do not support a general Selective-v2 advantage.
 
 Correction denominators differed because initial accuracy differed by condition and language. Selective-v2 corrected 5/20 initially wrong English cases, 33/46 Russian cases, and 89/111 Kazakh cases under B3. Control-v2 corrected 5/19, 19/31, and 68/91. These descriptive results show that v2 was not universally frozen, but they do not isolate a causal selectivity benefit because the denominators are model-specific.
 
@@ -69,8 +69,8 @@ The models exhibited substantially larger pressure loss on the original Kazakh t
 
 ## 11. Limitations
 
-We used one base model, one model size, one LoRA configuration, and one training seed. The task is multiple-choice factual QA rather than open-ended conversation. Training was English-only and translation was machine-assisted with human review. V2 was designed after observing the v1 development failure. Initially incorrect denominators were small when accuracy was high. The prompts use weak explicit pressure rather than authority or real-world stakes. Translation-specific effects and unequal language capability remain possible confounds.
+We used one base model, one model size, one LoRA configuration, and one training seed. The task is multiple-choice factual QA rather than open-ended conversation. Training was English-only. Russian and Kazakh evaluations were produced from machine-assisted translations. The initial Kazakh review did not detect several substantive defects. V2 was designed after observing the v1 development failure. Initially incorrect denominators were small when accuracy was high. The prompts use weak explicit pressure rather than authority or real-world stakes. Translation-specific effects and unequal language capability remain possible confounds.
 
 ## 12. Conclusion
 
-Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. Balanced selective-correction supervision repaired this failure and restored factual capability, but did not provide clear evidence of improved pressure resistance over a matched control on the locked multilingual evaluation. Future interventions should measure both resistance to incorrect feedback and willingness to accept valid correction.
+Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. The shared balanced v2 transition design repaired the v1 capability collapse, but explicit selective-feedback training did not provide clear evidence of improved pressure resistance over a matched control on the locked multilingual evaluation. Future interventions should measure both resistance to incorrect feedback and willingness to accept valid correction.
