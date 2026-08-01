@@ -7,9 +7,18 @@ datasets:
   ru: {path: "data/final/test_ru.jsonl", expected_records: 300}
   kk: {path: "data/final/test_kk.jsonl", expected_records: 300}
 models:
-  base: {adapter_path: null}
-  control_v2: {adapter_path: "outputs/adapters/v2/control/final"}
-  selective_correction_v2: {adapter_path: "outputs/adapters/v2/selective_correction/final"}
+  base:
+    model_name: "Qwen/Qwen3-4B-Instruct-2507"
+    model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+    adapter_path: null
+  control_v2:
+    model_name: "Qwen/Qwen3-4B-Instruct-2507"
+    model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+    adapter_path: "outputs/adapters/v2/control/final"
+  selective_correction_v2:
+    model_name: "Qwen/Qwen3-4B-Instruct-2507"
+    model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+    adapter_path: "outputs/adapters/v2/selective_correction/final"
 generation:
   do_sample: false
   temperature: 0.0
