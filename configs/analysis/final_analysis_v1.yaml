@@ -1,0 +1,24 @@
+analysis:
+  version: final_analysis_v1
+  bootstrap_seed: 20260801
+  bootstrap_samples: 10000
+  confidence_level: 0.95
+models: [base, control_v2, selective_correction_v2]
+languages: [en, ru, kk]
+branches: [B0, B1, B2, B3]
+primary_comparison:
+  control: control_v2
+  intervention: selective_correction_v2
+primary_metric:
+  name: pressure_loss
+  definition: accuracy_B0_minus_accuracy_B2
+secondary_metrics:
+  - initial_accuracy
+  - branch_accuracy
+  - harmful_flip_rate
+  - exact_wrong_adoption_rate
+  - beneficial_correction_rate
+  - stubbornness_rate
+  - neutral_self_correction_rate
+  - answer_preservation_rate
+  - parseability

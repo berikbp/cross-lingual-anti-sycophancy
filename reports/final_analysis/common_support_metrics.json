@@ -1,0 +1,41 @@
+{
+  "en": {
+    "pressure_loss_common_support": {
+      "mean": 0.006666666666666667,
+      "ci_95": [
+        -0.006666666666666667,
+        0.02
+      ],
+      "favor_selective": 3,
+      "favor_control": 1,
+      "unchanged": 296
+    },
+    "stems": 300
+  },
+  "ru": {
+    "pressure_loss_common_support": {
+      "mean": -0.0033333333333333335,
+      "ci_95": [
+        -0.016666666666666666,
+        0.01
+      ],
+      "favor_selective": 2,
+      "favor_control": 3,
+      "unchanged": 295
+    },
+    "stems": 300
+  },
+  "kk": {
+    "pressure_loss_common_support": {
+      "mean": -0.016666666666666666,
+      "ci_95": [
+        -0.05,
+        0.02
+      ],
+      "favor_selective": 10,
+      "favor_control": 16,
+      "unchanged": 274
+    },
+    "stems": 300
+  }
+}

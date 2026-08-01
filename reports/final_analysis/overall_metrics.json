@@ -1,0 +1,479 @@
+{
+  "base": {
+    "stems": 900,
+    "initial_accuracy": {
+      "count": 565,
+      "denominator": 900,
+      "rate": 0.6277777777777778
+    },
+    "initial_parseability": {
+      "count": 632,
+      "denominator": 900,
+      "rate": 0.7022222222222222
+    },
+    "branches": {
+      "B0": {
+        "accuracy": {
+          "count": 646,
+          "denominator": 900,
+          "rate": 0.7177777777777777
+        },
+        "parseability": {
+          "count": 794,
+          "denominator": 900,
+          "rate": 0.8822222222222222
+        },
+        "preservation_all": {
+          "count": 878,
+          "denominator": 900,
+          "rate": 0.9755555555555555
+        },
+        "preservation_initially_correct": {
+          "count": 548,
+          "denominator": 565,
+          "rate": 0.9699115044247788
+        },
+        "preservation_initially_incorrect": {
+          "count": 330,
+          "denominator": 335,
+          "rate": 0.9850746268656716
+        },
+        "neutral_self_correction": {
+          "count": 111,
+          "denominator": 335,
+          "rate": 0.33134328358208953
+        }
+      },
+      "B1": {
+        "accuracy": {
+          "count": 490,
+          "denominator": 900,
+          "rate": 0.5444444444444444
+        },
+        "parseability": {
+          "count": 573,
+          "denominator": 900,
+          "rate": 0.6366666666666667
+        },
+        "preservation_all": {
+          "count": 823,
+          "denominator": 900,
+          "rate": 0.9144444444444444
+        },
+        "preservation_initially_correct": {
+          "count": 526,
+          "denominator": 565,
+          "rate": 0.9309734513274336
+        },
+        "preservation_initially_incorrect": {
+          "count": 297,
+          "denominator": 335,
+          "rate": 0.8865671641791045
+        }
+      },
+      "B2": {
+        "accuracy": {
+          "count": 497,
+          "denominator": 900,
+          "rate": 0.5522222222222222
+        },
+        "parseability": {
+          "count": 760,
+          "denominator": 900,
+          "rate": 0.8444444444444444
+        },
+        "preservation_all": {
+          "count": 755,
+          "denominator": 900,
+          "rate": 0.8388888888888889
+        },
+        "preservation_initially_correct": {
+          "count": 452,
+          "denominator": 565,
+          "rate": 0.8
+        },
+        "preservation_initially_incorrect": {
+          "count": 303,
+          "denominator": 335,
+          "rate": 0.9044776119402985
+        },
+        "harmful_flip": {
+          "count": 123,
+          "denominator": 565,
+          "rate": 0.2176991150442478
+        },
+        "exact_wrong_adoption_all": {
+          "count": 227,
+          "denominator": 900,
+          "rate": 0.25222222222222224
+        },
+        "exact_wrong_adoption_B0_correct": {
+          "count": 110,
+          "denominator": 565,
+          "rate": 0.19469026548672566
+        },
+        "correct_answer_preservation": {
+          "count": 442,
+          "denominator": 565,
+          "rate": 0.7823008849557522
+        }
+      },
+      "B3": {
+        "accuracy": {
+          "count": 778,
+          "denominator": 900,
+          "rate": 0.8644444444444445
+        },
+        "parseability": {
+          "count": 806,
+          "denominator": 900,
+          "rate": 0.8955555555555555
+        },
+        "preservation_all": {
+          "count": 840,
+          "denominator": 900,
+          "rate": 0.9333333333333333
+        },
+        "preservation_initially_correct": {
+          "count": 560,
+          "denominator": 565,
+          "rate": 0.9911504424778761
+        },
+        "preservation_initially_incorrect": {
+          "count": 280,
+          "denominator": 335,
+          "rate": 0.835820895522388
+        },
+        "beneficial_correction": {
+          "count": 219,
+          "denominator": 335,
+          "rate": 0.6537313432835821
+        },
+        "stubbornness": {
+          "count": 116,
+          "denominator": 335,
+          "rate": 0.34626865671641793
+        }
+      }
+    },
+    "pressure_loss": 0.16555555555555557
+  },
+  "control_v2": {
+    "stems": 900,
+    "initial_accuracy": {
+      "count": 759,
+      "denominator": 900,
+      "rate": 0.8433333333333334
+    },
+    "initial_parseability": {
+      "count": 845,
+      "denominator": 900,
+      "rate": 0.9388888888888889
+    },
+    "branches": {
+      "B0": {
+        "accuracy": {
+          "count": 805,
+          "denominator": 900,
+          "rate": 0.8944444444444445
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 895,
+          "denominator": 900,
+          "rate": 0.9944444444444445
+        },
+        "preservation_initially_correct": {
+          "count": 758,
+          "denominator": 759,
+          "rate": 0.9986824769433466
+        },
+        "preservation_initially_incorrect": {
+          "count": 137,
+          "denominator": 141,
+          "rate": 0.9716312056737588
+        },
+        "neutral_self_correction": {
+          "count": 47,
+          "denominator": 141,
+          "rate": 0.3333333333333333
+        }
+      },
+      "B1": {
+        "accuracy": {
+          "count": 800,
+          "denominator": 900,
+          "rate": 0.8888888888888888
+        },
+        "parseability": {
+          "count": 894,
+          "denominator": 900,
+          "rate": 0.9933333333333333
+        },
+        "preservation_all": {
+          "count": 881,
+          "denominator": 900,
+          "rate": 0.9788888888888889
+        },
+        "preservation_initially_correct": {
+          "count": 754,
+          "denominator": 759,
+          "rate": 0.9934123847167325
+        },
+        "preservation_initially_incorrect": {
+          "count": 127,
+          "denominator": 141,
+          "rate": 0.900709219858156
+        }
+      },
+      "B2": {
+        "accuracy": {
+          "count": 742,
+          "denominator": 900,
+          "rate": 0.8244444444444444
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 835,
+          "denominator": 900,
+          "rate": 0.9277777777777778
+        },
+        "preservation_initially_correct": {
+          "count": 709,
+          "denominator": 759,
+          "rate": 0.9341238471673254
+        },
+        "preservation_initially_incorrect": {
+          "count": 126,
+          "denominator": 141,
+          "rate": 0.8936170212765957
+        },
+        "harmful_flip": {
+          "count": 50,
+          "denominator": 759,
+          "rate": 0.06587615283267458
+        },
+        "exact_wrong_adoption_all": {
+          "count": 111,
+          "denominator": 900,
+          "rate": 0.12333333333333334
+        },
+        "exact_wrong_adoption_B0_correct": {
+          "count": 45,
+          "denominator": 759,
+          "rate": 0.05928853754940711
+        },
+        "correct_answer_preservation": {
+          "count": 709,
+          "denominator": 759,
+          "rate": 0.9341238471673254
+        }
+      },
+      "B3": {
+        "accuracy": {
+          "count": 851,
+          "denominator": 900,
+          "rate": 0.9455555555555556
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 857,
+          "denominator": 900,
+          "rate": 0.9522222222222222
+        },
+        "preservation_initially_correct": {
+          "count": 759,
+          "denominator": 759,
+          "rate": 1.0
+        },
+        "preservation_initially_incorrect": {
+          "count": 98,
+          "denominator": 141,
+          "rate": 0.6950354609929078
+        },
+        "beneficial_correction": {
+          "count": 92,
+          "denominator": 141,
+          "rate": 0.6524822695035462
+        },
+        "stubbornness": {
+          "count": 49,
+          "denominator": 141,
+          "rate": 0.3475177304964539
+        }
+      }
+    },
+    "pressure_loss": 0.07000000000000006
+  },
+  "selective_correction_v2": {
+    "stems": 900,
+    "initial_accuracy": {
+      "count": 723,
+      "denominator": 900,
+      "rate": 0.8033333333333333
+    },
+    "initial_parseability": {
+      "count": 800,
+      "denominator": 900,
+      "rate": 0.8888888888888888
+    },
+    "branches": {
+      "B0": {
+        "accuracy": {
+          "count": 805,
+          "denominator": 900,
+          "rate": 0.8944444444444445
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 896,
+          "denominator": 900,
+          "rate": 0.9955555555555555
+        },
+        "preservation_initially_correct": {
+          "count": 723,
+          "denominator": 723,
+          "rate": 1.0
+        },
+        "preservation_initially_incorrect": {
+          "count": 173,
+          "denominator": 177,
+          "rate": 0.9774011299435028
+        },
+        "neutral_self_correction": {
+          "count": 82,
+          "denominator": 177,
+          "rate": 0.4632768361581921
+        }
+      },
+      "B1": {
+        "accuracy": {
+          "count": 792,
+          "denominator": 900,
+          "rate": 0.88
+        },
+        "parseability": {
+          "count": 895,
+          "denominator": 900,
+          "rate": 0.9944444444444445
+        },
+        "preservation_all": {
+          "count": 856,
+          "denominator": 900,
+          "rate": 0.9511111111111111
+        },
+        "preservation_initially_correct": {
+          "count": 703,
+          "denominator": 723,
+          "rate": 0.9723374827109267
+        },
+        "preservation_initially_incorrect": {
+          "count": 153,
+          "denominator": 177,
+          "rate": 0.864406779661017
+        }
+      },
+      "B2": {
+        "accuracy": {
+          "count": 738,
+          "denominator": 900,
+          "rate": 0.82
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 830,
+          "denominator": 900,
+          "rate": 0.9222222222222223
+        },
+        "preservation_initially_correct": {
+          "count": 668,
+          "denominator": 723,
+          "rate": 0.9239280774550485
+        },
+        "preservation_initially_incorrect": {
+          "count": 162,
+          "denominator": 177,
+          "rate": 0.9152542372881356
+        },
+        "harmful_flip": {
+          "count": 55,
+          "denominator": 723,
+          "rate": 0.07607192254495158
+        },
+        "exact_wrong_adoption_all": {
+          "count": 115,
+          "denominator": 900,
+          "rate": 0.12777777777777777
+        },
+        "exact_wrong_adoption_B0_correct": {
+          "count": 47,
+          "denominator": 723,
+          "rate": 0.06500691562932227
+        },
+        "correct_answer_preservation": {
+          "count": 668,
+          "denominator": 723,
+          "rate": 0.9239280774550485
+        }
+      },
+      "B3": {
+        "accuracy": {
+          "count": 850,
+          "denominator": 900,
+          "rate": 0.9444444444444444
+        },
+        "parseability": {
+          "count": 900,
+          "denominator": 900,
+          "rate": 1.0
+        },
+        "preservation_all": {
+          "count": 862,
+          "denominator": 900,
+          "rate": 0.9577777777777777
+        },
+        "preservation_initially_correct": {
+          "count": 723,
+          "denominator": 723,
+          "rate": 1.0
+        },
+        "preservation_initially_incorrect": {
+          "count": 139,
+          "denominator": 177,
+          "rate": 0.7853107344632768
+        },
+        "beneficial_correction": {
+          "count": 127,
+          "denominator": 177,
+          "rate": 0.7175141242937854
+        },
+        "stubbornness": {
+          "count": 50,
+          "denominator": 177,
+          "rate": 0.2824858757062147
+        }
+      }
+    },
+    "pressure_loss": 0.07444444444444454
+  }
+}
