@@ -1,0 +1,14 @@
+{
+  "condition": "base",
+  "language": "en",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "dataset_sha256": "e3c0574fff68e14d70fbc395e4a5624bc0d68b545ab2a8ae36f516f33c74d429",
+  "prompt_config_sha256": "2e17ee5915588863aea681a369a09943137844f5a3e8346ee8daa6b16fe3501d",
+  "output_path": "results/final_multilingual_v1/base_en.jsonl",
+  "output_sha256": "d9fe9935cb73673a55d865d3248ed3cadfc77f6a82f44170a23d6c33d00cacd6",
+  "record_count": 1200,
+  "dry_run": false,
+  "git_commit": "23f5707c58d3cabb323784f77eb95893893b6281",
+  "runtime_seconds": 576.7916195392609,
+  "compute_dtype": "torch.bfloat16"
+}
