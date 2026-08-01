@@ -1,5 +1,18 @@
 # Research Plan
 
+## Document status
+
+This file preserves the project's original research plan and hypotheses. The
+experiment later required a documented repair cycle after the first
+intervention produced indiscriminate answer preservation. The original
+hypotheses below have not been rewritten after observing results.
+
+The completed protocol, evidence, and conclusions are recorded in:
+
+* `paper/paper.md`;
+* `paper/claims_and_evidence.md`;
+* `reports/final_project_report.md`.
+
 ## Project title
 
 **Does English Anti-Sycophancy Fine-Tuning Transfer to Kazakh?**
@@ -293,35 +306,55 @@ Possible future extensions include:
 * thinking-mode comparisons;
 * quantization experiments.
 
-None of these will be added before the MVP is complet
+None of these were added before the MVP was complete.
 
-# Research Question
+## 16. Protocol amendments and completed study
 
+The original plan described the primary B0/B2 comparison. The implemented
+evaluation retained that primary endpoint and added two diagnostic branches:
+
+```text
+Initial response
+├── B0: neutral reconsideration
+├── B1: expression of doubt
+├── B2: incorrect suggestion
+└── B3: correct suggestion
 ```
-Can synthetic anti-sycophancy fine-tuning reduce harmful
-answer changes in Qwen2.5-1.5B-Instruct?
 
-Does that improvement transfer from English to Russian and Kazakh?
-```
+All branches began from the same initial conversation state.
 
-# Model:
+### V1 failure and repair
 
-Qwen/Qwen3-4b
+The first training design always began with a correct answer and supervised an
+unchanged final answer. Development evaluation showed that both v1 adapters had
+learned an answer-preservation shortcut. They resisted incorrect suggestions
+but also rejected correct feedback and lost factual capability. This failure is
+documented in `reports/stage13_failure_diagnosis.md`.
 
-## Hypotheses
+The v2 amendment introduced balanced CW, WC, CC, and WW transitions, with
+correct and incorrect initial answers and feedback represented equally. Fresh
+Control-v2 and Selective-correction-v2 adapters were trained from the frozen
+base model. The design is recorded in
+`docs/selective_correction_v2_spec.md`.
 
-### 1. English mitigation
+### Translation amendment
 
-The fine-tuned model will agree with incorrect users less frequently than the original model.
+Russian and Kazakh translations used machine-assisted drafts followed by human
+semantic, structural, answer-preservation, distractor, and language review.
+The amendment was frozen before translation assistance was used and is recorded
+in `docs/translation/translation_assistance_amendment.md`.
 
-### 2. Cross-lingual transfer
+### Final outcome
 
-English anti-sycophancy training will cause at least some reduction in sycophancy in Russian and Kazakh.
+The locked final comparison used Base, Control-v2, and
+Selective-correction-v2 on 300 aligned stems in English, Russian, and Kazakh.
+Selective-v2 avoided the severe v1 capability collapse, but did not produce a
+reliable multilingual reduction in pressure loss. The paired effect was +0.7
+percentage points in English, -0.3 in Russian, and -1.7 in Kazakh; the
+macro-average was -0.4 points. Every language-specific 95% bootstrap confidence
+interval included zero.
 
-### 3. Capability retention
-
-The intervention will not substantially reduce accuracy when no misleading user opinion is present.
-
-### 4. Stubbornness risk
-
-The intervention might make the model reject users too often, including when the user is correct.
+These findings support the project's original success criterion that positive,
+negative, and null results must be reported honestly. They do not support a
+claim that selective-correction training solved sycophancy or transferred
+reliably across languages.
