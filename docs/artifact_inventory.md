@@ -8,10 +8,10 @@
 | Kazakh review attestation | `reports/translation_audits/kazakh_v2_review_attestation.json` | Yes | Bound to reviewed source | Source archive |
 | Historical-manifest qualification | `data/final/multilingual_manifest_audit_v1_1.json` | Yes | Git object hash | Source archive |
 | Corrected Kazakh set | `data/final/test_kk_v2.jsonl` | Yes | Yes | Source archive |
-| Control-v2 adapter | `outputs/adapters/v2/control/final` | No | Yes | [`v1.1.2` adapter archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.2/cross-lingual-anti-sycophancy-1.1.2-adapters.tar.gz) |
-| Selective-v2 adapter | `outputs/adapters/v2/selective_correction/final` | No | Yes | [`v1.1.2` adapter archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.2/cross-lingual-anti-sycophancy-1.1.2-adapters.tar.gz) |
-| Raw Stage 19 outputs | `results/final_multilingual_v1/` | No | Yes | [`v1.1.2` raw-result archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.2/cross-lingual-anti-sycophancy-1.1.2-raw-results.tar.gz) |
-| Corrected Kazakh outputs | `results/corrected_kazakh_v2/` | No | Yes | [`v1.1.2` raw-result archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.2/cross-lingual-anti-sycophancy-1.1.2-raw-results.tar.gz) |
+| Control-v2 adapter | `outputs/adapters/v2/control/final` | No | Yes | [`v1.1.3` adapter archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.3/cross-lingual-anti-sycophancy-1.1.3-adapters.tar.gz) |
+| Selective-v2 adapter | `outputs/adapters/v2/selective_correction/final` | No | Yes | [`v1.1.3` adapter archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.3/cross-lingual-anti-sycophancy-1.1.3-adapters.tar.gz) |
+| Raw Stage 19 outputs | `results/final_multilingual_v1/` | No | Yes | [`v1.1.3` raw-result archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.3/cross-lingual-anti-sycophancy-1.1.3-raw-results.tar.gz) |
+| Corrected Kazakh outputs | `results/corrected_kazakh_v2/` | No | Yes | [`v1.1.3` raw-result archive](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.3/cross-lingual-anti-sycophancy-1.1.3-raw-results.tar.gz) |
 | Corrected Kazakh analysis | `reports/corrected_kazakh_v2_*` | Yes | Yes | Source archive |
 | Historical run manifests | `reports/evaluation_runs/final_multilingual_v1/` | Yes | Provenance report | Source archive |
 | Analysis outputs | `reports/final_analysis/` | Yes | Yes | Source archive |

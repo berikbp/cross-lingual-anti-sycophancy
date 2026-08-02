@@ -1,6 +1,6 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
-**Berik Satybaldy · Technical report · Version 1.1.2 · August 2026**
+**Berik Satybaldy · Technical report · Version 1.1.3 · August 2026**
 
 ## Abstract
 
@@ -40,7 +40,7 @@ The primary estimate is paired at the stem level. For each model and stem, press
 
 ## 5. Data
 
-The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic. A fixed-seed split produced 300 test and 100 reserve stems with balanced answer positions. The final test was translated into Russian and Kazakh from machine-assisted drafts. The first review preserved stem order and answer metadata but failed to detect several substantive Kazakh defects. The original Kazakh results are therefore retained with a translation-quality limitation. Six identified defects were corrected, all 300 corrected records received an author review, and the exact reviewed artifact is bound to a compact attestation by SHA-256. Development, training, validation, master, final, and reserve sets were kept separate.
+The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic, with 80 questions per domain and exactly balanced correct- and wrong-option positions. A fixed-seed split produced 300 test and 100 reserve stems; the two subsets retain the frozen sampled distributions rather than exact answer-position balance. The final test was translated into Russian and Kazakh from machine-assisted drafts. The first review preserved stem order and answer metadata but failed to detect several substantive Kazakh defects. The original Kazakh results are therefore retained with a translation-quality limitation. Six identified defects were corrected, all 300 corrected records received an author review, and the exact reviewed artifact is bound to a compact attestation by SHA-256. Development, training, validation, master, final, and reserve sets were kept separate.
 
 ## 6. V1 intervention and failure
 
@@ -90,7 +90,7 @@ Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. T
 
 ## Data, code, and ethics
 
-The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Raw generations and adapter weights are excluded from Git but published as checksummed `v1.1.2` release assets. The adapter archive includes its Apache-2.0 license notice. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
+The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Raw generations and adapter weights are excluded from Git but published as checksummed `v1.1.3` release assets. The adapter archive includes its Apache-2.0 license notice. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
 
 The corrected sensitivity results and their exact denominators are available in `reports/corrected_kazakh_v2_analysis.md`.
 

@@ -1,6 +1,6 @@
 {
   "title": "When Anti-Sycophancy Training Becomes Stubbornness: A Multilingual Study in English, Russian, and Kazakh",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Research code, frozen configurations, evaluation data, audits, and derived results for matched QLoRA interventions targeting pressure-induced factual answer changes. The v1 intervention produced stubbornness and capability loss; a shared balanced v2 design restored capability, while explicit selective feedback showed no reliable pressure-resistance advantage over the matched control. The release preserves the original translation-confounded Kazakh analysis for provenance and includes a separately versioned corrected Kazakh sensitivity run, which reached the same null conclusion.",
   "creators": [
     {
@@ -26,7 +26,7 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/tag/v1.1.2",
+      "identifier": "https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/tag/v1.1.3",
       "relation": "isIdenticalTo",
       "scheme": "url"
     }

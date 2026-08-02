@@ -13,6 +13,13 @@ adapter_archive="dist/cross-lingual-anti-sycophancy-${release_version}-adapters.
 source_name="$(basename "$source_archive")"
 results_name="$(basename "$results_archive")"
 adapter_name="$(basename "$adapter_archive")"
+adapter_stage="$(mktemp -d dist/adapter-package.XXXXXX)"
+
+cleanup() {
+  rm -rf "$adapter_stage"
+}
+
+trap cleanup EXIT
 
 git archive \
   --format=tar.gz \
@@ -26,10 +33,30 @@ tar -czf "$results_archive" \
   docs/final_multilingual_result_hashes.txt \
   docs/corrected_kazakh_v2_result_hashes.txt
 
-tar -czf "$adapter_archive" \
-  outputs/adapters/v2/control/final \
-  outputs/adapters/v2/selective_correction/final \
-  docs/trained_v2_adapter_hashes.txt \
+for condition in control selective_correction; do
+  source_directory="outputs/adapters/v2/${condition}/final"
+  destination_directory="${adapter_stage}/${source_directory}"
+  mkdir -p "$destination_directory"
+  cp \
+    "$source_directory/adapter_model.safetensors" \
+    "$source_directory/adapter_config.json" \
+    "$source_directory/tokenizer.json" \
+    "$source_directory/chat_template.jinja" \
+    "$source_directory/tokenizer_config.json" \
+    "$destination_directory/"
+done
+
+cp model_cards/control_v2.md \
+  "$adapter_stage/outputs/adapters/v2/control/final/README.md"
+cp model_cards/selective_correction_v2.md \
+  "$adapter_stage/outputs/adapters/v2/selective_correction/final/README.md"
+mkdir -p "$adapter_stage/docs"
+cp docs/trained_v2_adapter_hashes.txt "$adapter_stage/docs/"
+cp APACHE-2.0.txt MODEL_ARTIFACT_LICENSE.md "$adapter_stage/"
+
+tar -czf "$adapter_archive" -C "$adapter_stage" \
+  outputs \
+  docs \
   APACHE-2.0.txt \
   MODEL_ARTIFACT_LICENSE.md
 

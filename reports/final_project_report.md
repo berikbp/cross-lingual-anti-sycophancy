@@ -44,8 +44,8 @@ The original plan proceeded directly from v1 to multilingual evaluation. Develop
 Core datasets, configurations, scripts, manifests, analysis outputs, reports,
 and hashes are tracked. Release metadata, code/data licenses, a strengthened
 provenance validator, and a supplemental-artifact bundler are now present.
-Adapter weights and raw generations remain outside Git but are packaged by the
-Zenodo workflow after the scientific gate passes.
+Adapter weights and raw generations remain outside Git and are published as
+checksummed release assets by the Zenodo packaging workflow.
 
 The scientific correction gate is closed. The release checker verifies the
 historical and corrected datasets, raw outputs, analyses, manifests, licenses,

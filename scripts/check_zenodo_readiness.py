@@ -26,6 +26,8 @@ CORE_FILES = (
     "docs/reproducibility.md",
     "docs/artifact_inventory.md",
     "reports/publication_audit_v1_0.md",
+    "model_cards/control_v2.md",
+    "model_cards/selective_correction_v2.md",
 )
 
 PUBLICATION_GATE_FILES = (
@@ -153,6 +155,13 @@ def main() -> None:
     )
     if "release candidate" in release_text.casefold():
         failures.append("public files still contain release-candidate wording")
+    for relative in (
+        "model_cards/control_v2.md",
+        "model_cards/selective_correction_v2.md",
+    ):
+        model_card = (ROOT / relative).read_text(encoding="utf-8")
+        if "more information needed" in model_card.casefold():
+            failures.append(f"placeholder text remains in {relative}")
     for archive_name in ("raw-results", "adapters"):
         expected_asset = f"{version}-{archive_name}.tar.gz"
         if expected_asset not in release_text:

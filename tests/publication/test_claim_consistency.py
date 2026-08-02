@@ -103,8 +103,8 @@ def test_release_versions_and_licenses_are_consistent() -> None:
     pyproject = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))
     citation = yaml.safe_load(Path("CITATION.cff").read_text(encoding="utf-8"))
     zenodo = json.loads(Path(".zenodo.json").read_text(encoding="utf-8"))
-    assert pyproject["project"]["version"] == "1.1.2"
-    assert str(citation["version"]) == "1.1.2"
+    assert pyproject["project"]["version"] == "1.1.3"
+    assert str(citation["version"]) == "1.1.3"
     assert zenodo["license"] == "mit"
     assert Path("LICENSE").exists()
     assert Path("DATA_LICENSE.md").exists()
@@ -122,8 +122,8 @@ def test_public_release_wording_and_artifact_links_are_current() -> None:
         )
     )
     assert "release candidate" not in public.casefold()
-    assert "1.1.2-adapters.tar.gz" in public
-    assert "1.1.2-raw-results.tar.gz" in public
+    assert "1.1.3-adapters.tar.gz" in public
+    assert "1.1.3-raw-results.tar.gz" in public
 
 
 def test_original_kazakh_claim_is_qualified_everywhere_public() -> None:
@@ -163,3 +163,24 @@ def test_bundle_checksums_are_portable() -> None:
     assert 'results_name="$(basename "$results_archive")"' in script
     assert 'adapter_name="$(basename "$adapter_archive")"' in script
     assert "  cd dist\n" in script
+
+
+def test_release_model_cards_are_complete_and_packaged() -> None:
+    for filename in ("control_v2.md", "selective_correction_v2.md"):
+        text = (Path("model_cards") / filename).read_text(encoding="utf-8")
+        assert "More Information Needed" not in text
+        assert "cdbee75f17c01a7cc42f958dc650907174af0554" in text
+        assert "license: apache-2.0" in text
+
+    builder = Path("scripts/build_zenodo_bundles.sh").read_text(
+        encoding="utf-8"
+    )
+    assert "model_cards/control_v2.md" in builder
+    assert "model_cards/selective_correction_v2.md" in builder
+
+
+def test_paper_describes_answer_position_balance_correctly() -> None:
+    paper = Path("paper/paper.md").read_text(encoding="utf-8")
+    assert "master pool" in paper
+    assert "exactly balanced correct- and wrong-option positions" in paper
+    assert "300 test and 100 reserve stems with balanced answer positions" not in paper
