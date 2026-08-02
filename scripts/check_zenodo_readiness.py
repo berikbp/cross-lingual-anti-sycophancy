@@ -138,6 +138,8 @@ def main() -> None:
         failures.append(".zenodo.json and pyproject.toml versions differ")
     if not zenodo.get("creators"):
         failures.append(".zenodo.json has no creators")
+    if zenodo.get("license") != "mit":
+        failures.append(".zenodo.json license must use Zenodo identifier 'mit'")
 
     release_text = "\n".join(
         (ROOT / relative).read_text(encoding="utf-8")

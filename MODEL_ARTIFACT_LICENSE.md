@@ -13,4 +13,4 @@ recorded checksums.
 Upstream model card: <https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507>
 
 Release archive:
-<https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.1/cross-lingual-anti-sycophancy-1.1.1-adapters.tar.gz>
+<https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.2/cross-lingual-anti-sycophancy-1.1.2-adapters.tar.gz>

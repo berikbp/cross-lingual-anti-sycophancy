@@ -1,6 +1,6 @@
 [project]
 name = "multilingual-sycophancy"
-version = "1.1.1"
+version = "1.1.2"
 description = "Matched QLoRA interventions and a multilingual evaluation of pressure-induced factual answer changes."
 readme = "README.md"
 requires-python = ">=3.12"

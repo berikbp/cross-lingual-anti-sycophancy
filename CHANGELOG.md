@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.2 — Zenodo metadata normalization
+
+- Normalized the `.zenodo.json` MIT license identifier to Zenodo's controlled
+  lowercase value, `mit`.
+- Added a release-gate check for the controlled license identifier.
+- Rebuilt publication archives without changing data, results, or scientific
+  claims.
+
 ## 1.1.1 — publication cleanup
 
 - Removed stale release-candidate wording and synchronized release metadata.

@@ -1,6 +1,6 @@
 # Zenodo publication guide
 
-Version `1.1.1` is the publication package. Earlier tags remain unchanged for
+Version `1.1.2` is the publication package. Earlier tags remain unchanged for
 provenance.
 
 ## Verify the repository
@@ -26,10 +26,10 @@ and historical and corrected result hashes.
 The command creates five files under `dist/`:
 
 ```text
-cross-lingual-anti-sycophancy-1.1.1-source.tar.gz
-cross-lingual-anti-sycophancy-1.1.1-raw-results.tar.gz
+cross-lingual-anti-sycophancy-1.1.2-source.tar.gz
+cross-lingual-anti-sycophancy-1.1.2-raw-results.tar.gz
 SOURCE_AND_RESULTS_SHA256SUMS.txt
-cross-lingual-anti-sycophancy-1.1.1-adapters.tar.gz
+cross-lingual-anti-sycophancy-1.1.2-adapters.tar.gz
 ADAPTER_SHA256SUMS.txt
 ```
 

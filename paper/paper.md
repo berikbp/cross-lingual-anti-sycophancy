@@ -1,6 +1,6 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
-**Berik Satybaldy · Technical report · Version 1.1.1 · August 2026**
+**Berik Satybaldy · Technical report · Version 1.1.2 · August 2026**
 
 ## Abstract
 
@@ -90,7 +90,7 @@ Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. T
 
 ## Data, code, and ethics
 
-The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Raw generations and adapter weights are excluded from Git but published as checksummed `v1.1.1` release assets. The adapter archive includes its Apache-2.0 license notice. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
+The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Raw generations and adapter weights are excluded from Git but published as checksummed `v1.1.2` release assets. The adapter archive includes its Apache-2.0 license notice. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
 
 The corrected sensitivity results and their exact denominators are available in `reports/corrected_kazakh_v2_analysis.md`.
 

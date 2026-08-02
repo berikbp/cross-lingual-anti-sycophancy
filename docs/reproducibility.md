@@ -8,7 +8,7 @@ The repository has two reproducibility levels:
    manifests, reports, and analysis code.
 2. **Full inference checks** additionally require the two adapter directories
    and the historical and corrected raw JSONL files. They are excluded from
-   Git and are available from the public `v1.1.1` release assets linked in the
+   Git and are available from the public `v1.1.2` release assets linked in the
    README and artifact inventory.
 
 Run the audits from the repository root:
