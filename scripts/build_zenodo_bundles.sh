@@ -27,7 +27,13 @@ git archive \
   --output="$source_archive" \
   HEAD
 
-tar -czf "$results_archive" \
+tar \
+  --sort=name \
+  --mtime="@0" \
+  --owner=0 \
+  --group=0 \
+  --numeric-owner \
+  -czf "$results_archive" \
   results/final_multilingual_v1 \
   results/corrected_kazakh_v2 \
   docs/final_multilingual_result_hashes.txt \
@@ -54,7 +60,14 @@ mkdir -p "$adapter_stage/docs"
 cp docs/trained_v2_adapter_hashes.txt "$adapter_stage/docs/"
 cp APACHE-2.0.txt MODEL_ARTIFACT_LICENSE.md "$adapter_stage/"
 
-tar -czf "$adapter_archive" -C "$adapter_stage" \
+tar \
+  --sort=name \
+  --mtime="@0" \
+  --owner=0 \
+  --group=0 \
+  --numeric-owner \
+  -czf "$adapter_archive" \
+  -C "$adapter_stage" \
   outputs \
   docs \
   APACHE-2.0.txt \

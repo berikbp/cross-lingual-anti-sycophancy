@@ -177,6 +177,9 @@ def test_release_model_cards_are_complete_and_packaged() -> None:
     )
     assert "model_cards/control_v2.md" in builder
     assert "model_cards/selective_correction_v2.md" in builder
+    assert builder.count("--sort=name") == 2
+    assert builder.count('--mtime="@0"') == 2
+    assert builder.count("--numeric-owner") == 2
 
 
 def test_paper_describes_answer_position_balance_correctly() -> None:
