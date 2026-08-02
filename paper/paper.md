@@ -1,6 +1,6 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
-**Berik Tarakov · Technical report · v1.1.0 release candidate · August 2026**
+**Berik Satybaldy · Technical report · v1.1.0 release candidate · August 2026**
 
 ## Abstract
 
