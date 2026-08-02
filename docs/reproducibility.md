@@ -7,8 +7,9 @@ The repository has two reproducibility levels:
 1. **Fresh-clone checks** use tracked datasets, configurations, scripts,
    manifests, reports, and analysis code.
 2. **Full inference checks** additionally require the two adapter directories
-   and nine raw Stage 19 JSONL files. They are excluded from Git and must be
-   regenerated or downloaded from the release's external-artifact archive.
+   and the historical and corrected raw JSONL files. They are excluded from
+   Git and are available from the public `v1.1.1` release assets linked in the
+   README and artifact inventory.
 
 Run the audits from the repository root:
 

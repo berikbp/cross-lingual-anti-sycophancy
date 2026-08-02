@@ -54,12 +54,18 @@ The locked evaluation contains the same 300 stem IDs in each language and four i
 
 ## Reproduction
 
-Create the environment with `uv sync`, then follow [docs/reproducibility.md](docs/reproducibility.md). Adapter weights are excluded from Git; regenerate them with the frozen training scripts or obtain them separately if a release location is provided.
+Create the environment with `uv sync --frozen`, then follow
+[docs/reproducibility.md](docs/reproducibility.md). Large artifacts are excluded
+from Git but published with the `v1.1.1` release:
 
-The original ignored adapter and generation artifacts are present in the
-author's working archive and have frozen checksums. The Zenodo release workflow
-packages them separately from the Git source archive; see
-[docs/zenodo_release.md](docs/zenodo_release.md).
+- [raw generations](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.1/cross-lingual-anti-sycophancy-1.1.1-raw-results.tar.gz)
+- [Control-v2 and Selective-v2 adapters](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.1/cross-lingual-anti-sycophancy-1.1.1-adapters.tar.gz)
+- [source and result checksums](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.1/SOURCE_AND_RESULTS_SHA256SUMS.txt)
+- [adapter checksum](https://github.com/berikbp/cross-lingual-anti-sycophancy/releases/download/v1.1.1/ADAPTER_SHA256SUMS.txt)
+
+The adapter archive is Apache-2.0; source code is MIT, and the project data and
+report have the terms stated in [DATA_LICENSE.md](DATA_LICENSE.md). Zenodo
+upload instructions are in [docs/zenodo_release.md](docs/zenodo_release.md).
 
 ## Limitations
 

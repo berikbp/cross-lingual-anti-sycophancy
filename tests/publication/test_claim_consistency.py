@@ -103,12 +103,27 @@ def test_release_versions_and_licenses_are_consistent() -> None:
     pyproject = tomllib.loads(Path("pyproject.toml").read_text(encoding="utf-8"))
     citation = yaml.safe_load(Path("CITATION.cff").read_text(encoding="utf-8"))
     zenodo = json.loads(Path(".zenodo.json").read_text(encoding="utf-8"))
-    assert pyproject["project"]["version"] == "1.1.0"
-    assert str(citation["version"]) == "1.1.0"
+    assert pyproject["project"]["version"] == "1.1.1"
+    assert str(citation["version"]) == "1.1.1"
     assert zenodo["license"] == "MIT"
     assert Path("LICENSE").exists()
     assert Path("DATA_LICENSE.md").exists()
     assert Path("MODEL_ARTIFACT_LICENSE.md").exists()
+
+
+def test_public_release_wording_and_artifact_links_are_current() -> None:
+    public = "\n".join(
+        Path(path).read_text(encoding="utf-8")
+        for path in (
+            "README.md",
+            "paper/paper.md",
+            "docs/artifact_inventory.md",
+            "reports/publication_audit_v1_0.md",
+        )
+    )
+    assert "release candidate" not in public.casefold()
+    assert "1.1.1-adapters.tar.gz" in public
+    assert "1.1.1-raw-results.tar.gz" in public
 
 
 def test_original_kazakh_claim_is_qualified_everywhere_public() -> None:

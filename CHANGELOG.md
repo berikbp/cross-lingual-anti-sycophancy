@@ -1,6 +1,14 @@
 # Changelog
 
-## 1.1.0 — release candidate
+## 1.1.1 — publication cleanup
+
+- Removed stale release-candidate wording and synchronized release metadata.
+- Published checksummed source, raw-result, and Apache-2.0 adapter archives.
+- Split software/result and adapter checksums so the two Zenodo deposits can
+  be verified independently.
+- Removed an unreferenced pressure-loss figure that duplicated the forest plot.
+
+## 1.1.0 — audited release
 
 - Split the ambiguous harmful-change measure into initial-to-B2 harmful error
   and B0-to-B2 pressure flip.

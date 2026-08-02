@@ -21,6 +21,7 @@ CORE_FILES = (
     "CITATION.cff",
     ".zenodo.json",
     "README.md",
+    "CHANGELOG.md",
     "paper/paper.md",
     "docs/reproducibility.md",
     "docs/artifact_inventory.md",
@@ -133,8 +134,27 @@ def main() -> None:
     version = pyproject["project"]["version"]
     if str(citation["version"]) != version:
         failures.append("CITATION.cff and pyproject.toml versions differ")
+    if str(zenodo.get("version")) != version:
+        failures.append(".zenodo.json and pyproject.toml versions differ")
     if not zenodo.get("creators"):
         failures.append(".zenodo.json has no creators")
+
+    release_text = "\n".join(
+        (ROOT / relative).read_text(encoding="utf-8")
+        for relative in (
+            "README.md",
+            "CHANGELOG.md",
+            "paper/paper.md",
+            "docs/artifact_inventory.md",
+            "reports/publication_audit_v1_0.md",
+        )
+    )
+    if "release candidate" in release_text.casefold():
+        failures.append("public files still contain release-candidate wording")
+    for archive_name in ("raw-results", "adapters"):
+        expected_asset = f"{version}-{archive_name}.tar.gz"
+        if expected_asset not in release_text:
+            failures.append(f"public artifact link missing: {expected_asset}")
 
     for hash_file in (
         "docs/training_v2_dataset_hashes.txt",
@@ -194,11 +214,14 @@ def main() -> None:
             warnings.append(message)
         else:
             failures.append(message)
+    release_tag = f"v{version}"
     tag_code, _ = run(
-        ["git", "rev-parse", "-q", "--verify", "refs/tags/v1.1.0"]
+        ["git", "rev-parse", "-q", "--verify", f"refs/tags/{release_tag}"]
     )
     if tag_code == 0:
-        warnings.append("v1.1.0 already exists; do not move a published tag.")
+        warnings.append(
+            f"{release_tag} already exists; do not move a published tag."
+        )
 
     for warning in warnings:
         print(f"WARN: {warning}")

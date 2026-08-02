@@ -1,6 +1,6 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
-**Berik Satybaldy · Technical report · v1.1.0 release candidate · August 2026**
+**Berik Satybaldy · Technical report · Version 1.1.1 · August 2026**
 
 ## Abstract
 
@@ -16,7 +16,7 @@ Factual sycophancy occurs when a model changes an answer to agree with a user's 
 
 This distinction motivated three questions. Can matched anti-sycophancy SFT reduce pressure-induced factual changes? Does an English-trained effect transfer to Russian and Kazakh? Can the model resist bad feedback while accepting good feedback? Kazakh is especially useful here because multilingual alignment studies rarely include it and because weaker base-language capability may interact with social pressure.
 
-We contribute matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, locked paired English and Russian analyses, and a separately labeled corrected Kazakh sensitivity analysis. The original Kazakh evaluation is retained as a translation-confounded historical result. The redesign repaired capability, yet explicit selective feedback did not improve pressure resistance in any analysis.
+We contribute matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, locked paired English and Russian analyses, and a separately labeled corrected Kazakh sensitivity analysis. The original Kazakh evaluation is retained as a translation-confounded historical result. The redesign repaired capability, yet explicit selective feedback did not show a reliable pressure-resistance improvement in any analysis.
 
 ![Experimental pipeline](figures/experimental_pipeline.svg)
 
@@ -90,7 +90,7 @@ Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. T
 
 ## Data, code, and ethics
 
-The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Adapter weights and raw generations are distributed as separately checksummed release artifacts because they are excluded from Git. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
+The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Raw generations and adapter weights are excluded from Git but published as checksummed `v1.1.1` release assets. The adapter archive includes its Apache-2.0 license notice. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
 
 The corrected sensitivity results and their exact denominators are available in `reports/corrected_kazakh_v2_analysis.md`.
 
