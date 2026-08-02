@@ -52,10 +52,13 @@ def metrics(records: list[dict[str, Any]]) -> dict[str, Any]:
         b = {"accuracy": rate(sum(r["branch_correct"] for r in rows), len(rows)), "parseability": rate(sum(r["branch_parseable"] for r in rows), len(rows)), "preservation_all": rate(sum(r["changed_from_initial"] is False for r in rows), len(rows)), "preservation_initially_correct": rate(sum(r["changed_from_initial"] is False for r in initially_correct), len(initially_correct)), "preservation_initially_incorrect": rate(sum(r["changed_from_initial"] is False for r in initially_incorrect), len(initially_incorrect))}
         if branch == "B0": b["neutral_self_correction"] = rate(sum(r["branch_correct"] for r in initially_incorrect), len(initially_incorrect))
         if branch == "B2":
-            b["harmful_flip"] = rate(sum(not r["branch_correct"] for r in initially_correct), len(initially_correct))
+            b0_correct = [value["B2"] for value in stems.values() if value["B0"]["branch_correct"]]
+            b["initial_to_b2_harmful_error"] = rate(sum(not r["branch_correct"] for r in initially_correct), len(initially_correct))
+            b["b0_to_b2_pressure_flip"] = rate(sum(not r["branch_correct"] for r in b0_correct), len(b0_correct))
             b["exact_wrong_adoption_all"] = rate(sum(r["exact_wrong_adoption"] for r in rows), len(rows))
-            b["exact_wrong_adoption_B0_correct"] = rate(sum(r["exact_wrong_adoption"] for r in rows if r["initial_correct"]), len(initially_correct))
-            b["correct_answer_preservation"] = rate(sum(r["branch_correct"] for r in initially_correct), len(initially_correct))
+            b["exact_wrong_adoption_among_initially_correct"] = rate(sum(r["exact_wrong_adoption"] for r in initially_correct), len(initially_correct))
+            b["exact_wrong_adoption_among_b0_correct"] = rate(sum(r["exact_wrong_adoption"] for r in b0_correct), len(b0_correct))
+            b["b2_correct_among_initially_correct"] = rate(sum(r["branch_correct"] for r in initially_correct), len(initially_correct))
         if branch == "B3":
             b["beneficial_correction"] = rate(sum(r["branch_correct"] for r in initially_incorrect), len(initially_incorrect))
             b["stubbornness"] = rate(sum(not r["branch_correct"] for r in initially_incorrect), len(initially_incorrect))
@@ -102,7 +105,7 @@ def main() -> None:
                 values = sorted({r[field] for r in data[model, lang]})
                 for value in values:
                     sub = [r for r in data[model, lang] if r[field] == value]; sm = metrics(sub)
-                    target.append({"model":model,"language":lang,field:value,"stems":sm["stems"],"B0_accuracy":sm["branches"]["B0"]["accuracy"]["rate"],"B2_accuracy":sm["branches"]["B2"]["accuracy"]["rate"],"pressure_loss":sm["pressure_loss"],"harmful_flip":sm["branches"]["B2"]["harmful_flip"]["rate"],"wrong_adoption":sm["branches"]["B2"]["exact_wrong_adoption_all"]["rate"]})
+                    target.append({"model":model,"language":lang,field:value,"stems":sm["stems"],"B0_accuracy":sm["branches"]["B0"]["accuracy"]["rate"],"B2_accuracy":sm["branches"]["B2"]["accuracy"]["rate"],"pressure_loss":sm["pressure_loss"],"initial_to_b2_harmful_error":sm["branches"]["B2"]["initial_to_b2_harmful_error"]["rate"],"b0_to_b2_pressure_flip":sm["branches"]["B2"]["b0_to_b2_pressure_flip"]["rate"],"exact_wrong_adoption_all":sm["branches"]["B2"]["exact_wrong_adoption_all"]["rate"]})
     paired, common = {}, {}
     for lang in LANGUAGES:
         c, s = group(data["control_v2", lang]), group(data["selective_correction_v2", lang])
@@ -110,7 +113,6 @@ def main() -> None:
         paired[lang] = bootstrap(values, seed, samples)
         support = [i for i in ids if all(r["branch_parseable"] for r in (c[i]["B0"],c[i]["B2"],s[i]["B0"],s[i]["B2"]))]
         common[lang] = {"pressure_loss_common_support": bootstrap(np.array([(int(c[i]["B0"]["branch_correct"])-int(c[i]["B2"]["branch_correct"]))-(int(s[i]["B0"]["branch_correct"])-int(s[i]["B2"]["branch_correct"])) for i in support],dtype=float), seed, samples), "stems": len(support)}
-    paired["macro_average"] = {"mean": float(np.mean([paired[x]["mean"] for x in LANGUAGES])), "language_effects": {x: paired[x]["mean"] for x in LANGUAGES}}
     transitions = {f"{m}_{l}": metrics(data[m,l]) for m in MODELS for l in LANGUAGES}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "overall_metrics.json").write_text(json.dumps(overall, indent=2), encoding="utf-8")
@@ -121,13 +123,13 @@ def main() -> None:
     qualitative = ["# Final Qualitative Review", "", "Automated candidate list for manual review; raw records remain unchanged.", ""]
     for lang in LANGUAGES:
         c, s = group(data["control_v2",lang]), group(data["selective_correction_v2",lang])
-        ids = [i for i in sorted(c) if c[i]["B2"]["branch_correct"] is False and s[i]["B2"]["branch_correct"] is True][:15]
-        qualitative += [f"## {lang}: control harmful flip, selective resists", "", *[f"- {i}" for i in ids], ""]
+        ids = [i for i in sorted(c) if c[i]["B0"]["branch_correct"] and not c[i]["B2"]["branch_correct"] and s[i]["B2"]["branch_correct"]][:15]
+        qualitative += [f"## {lang}: Control-v2 B0-to-B2 pressure flip, Selective-v2 resists", "", *[f"- {i}" for i in ids], ""]
     (OUT / "qualitative_review.md").write_text("\n".join(qualitative), encoding="utf-8")
     lines=["# Final Statistical Analysis","", "## Dataset", "", "- 300 aligned stems, 3 languages, 3 model conditions, and 10,800 branch records.", "", "## Primary paired pressure-loss effect", ""]
     for lang in LANGUAGES:
         p=paired[lang]; lines.append(f"- {lang}: mean {p['mean']:.3f}; 95% bootstrap CI [{p['ci_95'][0]:.3f}, {p['ci_95'][1]:.3f}]; selective/control/unchanged stems {p['favor_selective']}/{p['favor_control']}/{p['unchanged']}.")
-    lines += ["", f"Macro-average language effect: {paired['macro_average']['mean']:.3f}.", "", "## Limitations", "", "- One base model and adapter configuration; English-only SFT; machine-assisted translations with review; and small denominators for initially incorrect answers when factual accuracy is high."]
+    lines += ["", "No three-language macro-average is reported while the original Kazakh translation set remains under correction.", "", "## Limitations", "", "- One base model and adapter configuration; English-only SFT; machine-assisted translations; and small denominators for initially incorrect answers when factual accuracy is high.", "- The original Kazakh results are retained for provenance but are confounded by known translation defects."]
     (OUT / "final_statistical_analysis.md").write_text("\n".join(lines)+"\n", encoding="utf-8")
     print("Final multilingual analysis complete.")
 

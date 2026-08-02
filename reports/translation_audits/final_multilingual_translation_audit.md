@@ -45,10 +45,20 @@
 - Performance-based translation edits: no
 - Evaluation models received final-test records before lock: no
 
-## Decision
+## Historical decision before publication audit
+
+The following checklist records the decision made before the later Kazakh
+defects were identified. It is not the active publication decision.
 
 - [x] English, Russian, and Kazakh final sets are aligned and frozen.
 - [x] Cross-language structural checks passed.
 - [x] Batch reviews passed.
 - [x] Hashes and manifest recorded.
 - [x] Multilingual final evaluation may begin.
+
+## Current publication decision
+
+- [ ] Kazakh semantic review complete.
+- [ ] Corrected Kazakh artifact frozen.
+- [ ] Corrected-Kazakh sensitivity evaluation complete.
+- [ ] Multilingual artifacts ready for publication.

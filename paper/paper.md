@@ -2,10 +2,10 @@
 
 > **Publication-audit notice:** this historical report includes results from
 > the original Kazakh translation set. A later audit identified substantive
-> translation defects and a labeling mismatch in the secondary harmful-flip
-> metric. The primary pressure-loss calculation is unaffected, but Kazakh
-> interpretation and secondary metric labels require correction before
-> publication. See `reports/publication_audit_v1_0.md`.
+> translation defects and a labeling mismatch in a secondary harmful-change
+> metric. The metric labels and denominators have since been corrected; the
+> primary pressure-loss calculation was unaffected. Kazakh interpretation still
+> requires correction before publication. See `reports/publication_audit_v1_0.md`.
 
 ## Abstract
 
@@ -13,7 +13,7 @@ Large language models sometimes abandon correct answers when users confidently s
 
 Our first intervention rewarded preservation of correct initial answers. It eliminated harmful changes on a development set, but factual accuracy fell and the adapters became almost completely unwilling to accept correct feedback. We then trained fresh adapters on balanced transitions containing correct and incorrect initial answers as well as correct and incorrect feedback. This restored factual capability and reduced the severe stubbornness seen in v1.
 
-On a locked 300-stem multilingual test, however, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English, -0.3 in Russian, and -1.7 in Kazakh. The macro-average was -0.4 points, and every language-specific bootstrap confidence interval included zero. Reducing answer changes is therefore not sufficient evidence of better alignment. Balanced transition supervision repaired a shortcut, but reliable cross-lingual pressure resistance remains unresolved.
+On the locked English and Russian evaluations, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English and -0.3 in Russian, and both bootstrap confidence intervals included zero. The original Kazakh translation set produced a -1.7-point effect, but known translation defects prevent clean interpretation; that result is retained as historical evidence pending a corrected sensitivity run. Reducing answer changes is therefore not sufficient evidence of better alignment. The shared balanced transition design repaired a shortcut, but an explicit selective-feedback benefit was not established.
 
 ## 1. Introduction
 
@@ -21,7 +21,7 @@ Factual sycophancy occurs when a model changes an answer to agree with a user's 
 
 This distinction motivated three questions. Can matched anti-sycophancy SFT reduce pressure-induced factual changes? Does an English-trained effect transfer to Russian and Kazakh? Can the model resist bad feedback while accepting good feedback? Kazakh is especially useful here because multilingual alignment studies rarely include it and because weaker base-language capability may interact with social pressure.
 
-We contribute an aligned 300-stem evaluation in three languages, matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, and a locked paired analysis with artifact hashes. The main result is negative but informative: the redesign repaired capability and stubbornness, yet did not improve the primary multilingual endpoint.
+We contribute matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, and locked paired English and Russian analyses with artifact hashes. The original Kazakh evaluation is retained as a translation-confounded historical analysis. The main result is negative but informative: the redesign repaired capability and stubbornness, yet explicit selective feedback did not improve the currently interpretable primary comparisons.
 
 ## 2. Related work
 
@@ -55,9 +55,11 @@ V2 restored development capability: B0 accuracy reached 99% for Control-v2 and 9
 
 ## 9. Locked final results
 
-Control-v2 pressure loss was 1.7 points in English, 1.7 in Russian, and 17.7 in Kazakh. Selective-v2 loss was 1.0, 2.0, and 19.3 points. The paired Control-minus-Selective effect was +0.7 points in English (95% bootstrap CI -0.7 to 2.0), -0.3 in Russian (-1.7 to 1.0), and -1.7 in Kazakh (-5.0 to 2.0). The equal-language macro-average was -0.4 points. None of the intervals excluded zero.
+Control-v2 pressure loss was 1.7 points in English and 1.7 in Russian. Selective-v2 loss was 1.0 and 2.0 points. The paired Control-minus-Selective effect was +0.7 points in English (95% bootstrap CI -0.7 to 2.0) and -0.3 in Russian (-1.7 to 1.0). Neither interval excluded zero.
 
-Both v2 adapters were fully parseable on B0 and B2. Across all B2 records, exact wrong adoption occurred 11 versus 8 times in English, 11 versus 13 in Russian, and 89 versus 94 in Kazakh for Control-v2 and Selective-v2 respectively. Harmful-change counts are omitted pending recomputation under separate initial-to-B2 and B0-to-B2 definitions. The available results do not support a general Selective-v2 advantage.
+On the original Kazakh translation set, Control-v2 and Selective-v2 pressure loss was 17.7 and 19.3 points, with a paired effect of -1.7 points (-5.0 to 2.0). These historical numbers are not combined with English and Russian because known translation defects prevent clean interpretation.
+
+Both v2 adapters were fully parseable on B0 and B2. For Control-v2 and Selective-v2 respectively, initial-to-B2 harmful errors were 3/281 versus 3/280 in English and 1/269 versus 2/254 in Russian. B0-to-B2 pressure flips were 5/283 versus 4/284 in English and 5/285 versus 7/284 in Russian. Exact wrong adoption is reported separately for initially correct and B0-correct denominators in the results tables. The available results do not support a general Selective-v2 advantage.
 
 Correction denominators differed because initial accuracy differed by condition and language. Selective-v2 corrected 5/20 initially wrong English cases, 33/46 Russian cases, and 89/111 Kazakh cases under B3. Control-v2 corrected 5/19, 19/31, and 68/91. These descriptive results show that v2 was not universally frozen, but they do not isolate a causal selectivity benefit because the denominators are model-specific.
 

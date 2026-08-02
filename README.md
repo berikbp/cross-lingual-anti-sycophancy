@@ -55,7 +55,7 @@ The study evaluates one 4B model, one QLoRA configuration, one training seed, En
 
 The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected Kazakh sensitivity evaluation is being prepared.
 
-A secondary harmful-flip measure is also being recomputed under separate initial-to-B2 and B0-to-B2 definitions. The primary pressure-loss calculation is unaffected.
+Secondary harmful-change metrics are reported separately as initial-to-B2 harmful error and B0-to-B2 pressure flip. The primary pressure-loss calculation was unaffected by this labeling correction.
 
 Detailed correction tracking is available in the [v1.0.0 audit report](reports/publication_audit_v1_0.md).
 

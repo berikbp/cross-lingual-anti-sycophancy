@@ -10,8 +10,9 @@
 - ru: mean -0.003; 95% bootstrap CI [-0.017, 0.010]; selective/control/unchanged stems 2/3/295.
 - kk: mean -0.017; 95% bootstrap CI [-0.050, 0.020]; selective/control/unchanged stems 10/16/274.
 
-Macro-average language effect: -0.004.
+No three-language macro-average is reported while the original Kazakh translation set remains under correction.
 
 ## Limitations
 
-- One base model and adapter configuration; English-only SFT; machine-assisted translations with review; and small denominators for initially incorrect answers when factual accuracy is high.
+- One base model and adapter configuration; English-only SFT; machine-assisted translations; and small denominators for initially incorrect answers when factual accuracy is high.
+- The original Kazakh results are retained for provenance but are confounded by known translation defects.
