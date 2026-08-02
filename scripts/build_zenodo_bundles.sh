@@ -10,6 +10,9 @@ release_version="$(uv run python -c 'import tomllib; print(tomllib.load(open("py
 source_archive="dist/cross-lingual-anti-sycophancy-${release_version}-source.tar.gz"
 results_archive="dist/cross-lingual-anti-sycophancy-${release_version}-raw-results.tar.gz"
 adapter_archive="dist/cross-lingual-anti-sycophancy-${release_version}-adapters.tar.gz"
+source_name="$(basename "$source_archive")"
+results_name="$(basename "$results_archive")"
+adapter_name="$(basename "$adapter_archive")"
 
 git archive \
   --format=tar.gz \
@@ -30,9 +33,12 @@ tar -czf "$adapter_archive" \
   APACHE-2.0.txt \
   MODEL_ARTIFACT_LICENSE.md
 
-sha256sum "$source_archive" "$results_archive" \
-  > dist/SOURCE_AND_RESULTS_SHA256SUMS.txt
-sha256sum "$adapter_archive" > dist/ADAPTER_SHA256SUMS.txt
+(
+  cd dist
+  sha256sum "$source_name" "$results_name" \
+    > SOURCE_AND_RESULTS_SHA256SUMS.txt
+  sha256sum "$adapter_name" > ADAPTER_SHA256SUMS.txt
+)
 
 echo "Zenodo bundles created in dist/."
 echo "Upload source, raw results, and their checksum file to the software deposit."

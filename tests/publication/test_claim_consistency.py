@@ -153,3 +153,13 @@ def test_release_figures_exist() -> None:
     ):
         path = Path("paper/figures") / filename
         assert path.exists() and path.stat().st_size > 500
+
+
+def test_bundle_checksums_are_portable() -> None:
+    script = Path("scripts/build_zenodo_bundles.sh").read_text(
+        encoding="utf-8"
+    )
+    assert 'source_name="$(basename "$source_archive")"' in script
+    assert 'results_name="$(basename "$results_archive")"' in script
+    assert 'adapter_name="$(basename "$adapter_archive")"' in script
+    assert "  cd dist\n" in script

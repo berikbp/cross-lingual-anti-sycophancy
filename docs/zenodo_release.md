@@ -33,6 +33,15 @@ cross-lingual-anti-sycophancy-1.1.1-adapters.tar.gz
 ADAPTER_SHA256SUMS.txt
 ```
 
+Verify the portable checksum manifests from inside that directory:
+
+```bash
+cd dist
+sha256sum -c SOURCE_AND_RESULTS_SHA256SUMS.txt
+sha256sum -c ADAPTER_SHA256SUMS.txt
+cd ..
+```
+
 ## Main software deposit
 
 Create a Zenodo software record using `.zenodo.json` and upload:
