@@ -8,7 +8,7 @@ Large language models sometimes abandon correct answers when users confidently s
 
 Our first intervention rewarded preservation of correct initial answers. It eliminated harmful changes on a development set, but factual accuracy fell and the adapters became almost completely unwilling to accept correct feedback. We then trained fresh adapters on a shared balanced transition design containing correct and incorrect initial answers as well as correct and incorrect feedback. This shared design restored factual capability in both v2 conditions. Whether explicit selective feedback also improved correction selectivity remained uncertain because initially incorrect denominators were small or affected by parse failures.
 
-On the locked English and Russian evaluations, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English and -0.3 in Russian, and both bootstrap confidence intervals included zero. The original Kazakh translation set produced a -1.7-point effect, but known translation defects prevent clean interpretation; that result is retained as historical evidence pending a corrected translation-and-prompt sensitivity run. Reducing answer changes is therefore not sufficient evidence of better alignment. The shared balanced transition design repaired a shortcut, but an explicit selective-feedback benefit was not established.
+On the locked English and Russian evaluations, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English and -0.3 in Russian, and both bootstrap confidence intervals included zero. The original Kazakh translation set produced a -1.7-point effect, but known translation defects prevent clean interpretation; that result is retained as historical evidence, while a corrected author-reviewed artifact is versioned separately. Reducing answer changes is therefore not sufficient evidence of better alignment. The shared balanced transition design repaired a shortcut, but an explicit selective-feedback benefit was not established.
 
 ## 1. Introduction
 
@@ -40,7 +40,7 @@ The primary estimate is paired at the stem level. For each model and stem, press
 
 ## 5. Data
 
-The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic. A fixed-seed split produced 300 test and 100 reserve stems with balanced answer positions. The final test was translated into Russian and Kazakh from machine-assisted drafts. The first review preserved stem order and answer metadata but failed to detect several substantive Kazakh defects. The original Kazakh results are therefore retained with a translation-quality limitation pending a complete native review and separately labeled sensitivity evaluation. Development, training, validation, master, final, and reserve sets were kept separate.
+The English master pool contains 400 verified questions across mathematics, science, computer science, geography, and logic. A fixed-seed split produced 300 test and 100 reserve stems with balanced answer positions. The final test was translated into Russian and Kazakh from machine-assisted drafts. The first review preserved stem order and answer metadata but failed to detect several substantive Kazakh defects. The original Kazakh results are therefore retained with a translation-quality limitation. Six identified defects were corrected, all 300 corrected records received an author review, and the exact reviewed artifact is bound to a compact attestation by SHA-256. Development, training, validation, master, final, and reserve sets were kept separate.
 
 ## 6. V1 intervention and failure
 
@@ -76,7 +76,7 @@ Correction denominators differed because initial accuracy and initial parseabili
 
 V1 demonstrates a measurement failure: resistance can be faked by never changing an answer. The shared v2 design restored factual performance, but it did not establish reliable correction selectivity or an intervention benefit. The interpretable English and Russian primary comparisons were small, uncertain, and inconsistent in direction.
 
-The models exhibited substantially larger pressure loss on the original Kazakh translation set. Known translation defects and lower language capability prevent clean attribution to pressure sensitivity, model knowledge, or language representation. The original result is descriptive and will be reported alongside a separately named corrected Kazakh translation-and-prompt sensitivity analysis rather than silently replaced. Because that analysis revises both language artifacts, any change from the historical run cannot be attributed to the dataset or prompts alone.
+The models exhibited substantially larger pressure loss on the original Kazakh translation set. Known translation defects and lower language capability prevent clean attribution to pressure sensitivity, model knowledge, or language representation. The original result is descriptive and is retained alongside a separately named corrected Kazakh translation-and-prompt sensitivity analysis rather than silently replaced. Because that analysis revises both language artifacts, any change from the historical run cannot be attributed to the dataset or prompts alone.
 
 ## 11. Limitations
 
@@ -88,7 +88,7 @@ Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. T
 
 ## Data, code, and ethics
 
-The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Adapter weights and raw generations are distributed as separately checksummed release artifacts because they are excluded from Git. The historical original Kazakh set remains available for provenance, while its corrected successor cannot be frozen until an identified native reviewer approves all 300 records.
+The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Adapter weights and raw generations are distributed as separately checksummed release artifacts because they are excluded from Git. The historical original Kazakh set remains available for provenance, while its corrected successor and hash-bound author-review attestation are versioned separately.
 
 The project uses synthetic or custom multiple-choice interactions and model outputs. It does not collect personal data or involve human-subject experimentation. Its main practical risk is overclaiming robustness from a narrow benchmark; for that reason, the report separates pressure resistance, factual capability, correction acceptance, parseability, and translation quality.
 

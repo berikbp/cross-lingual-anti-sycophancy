@@ -73,7 +73,7 @@ def main() -> None:
     lines = [
         "# Corrected Kazakh v2 sensitivity analysis",
         "",
-        "This post-audit analysis uses the native-reviewed corrected Kazakh translation and the frozen language-revised Kazakh prompts. It does not replace the historical Stage 19 Kazakh evaluation.",
+        "This post-audit analysis uses the author-reviewed corrected Kazakh translation and the frozen language-revised Kazakh prompts. It does not replace the historical Stage 19 Kazakh evaluation.",
         "",
         "| Condition | B0 accuracy | B2 accuracy | Pressure loss |",
         "|---|---:|---:|---:|",

@@ -12,9 +12,9 @@ def sha(path: Path) -> str:
 def main() -> None:
     raise RuntimeError(
         "multilingual_final_v1 is a frozen historical artifact. Its Kazakh "
-        "review claim was withdrawn after publication audit. Use "
-        "src.translation.finalize_kazakh_v2 after complete native review; "
-        "do not regenerate the historical manifest."
+        "review claim was withdrawn after publication audit. The corrected "
+        "artifact is frozen separately; do not regenerate the historical "
+        "manifest."
     )
 
 

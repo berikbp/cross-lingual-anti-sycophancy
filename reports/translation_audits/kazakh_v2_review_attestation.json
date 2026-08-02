@@ -1,0 +1,16 @@
+{
+  "version": "kazakh_v2_review_attestation_v1",
+  "reviewer": "Berik Satybaldy",
+  "review_date": "2026-08-02",
+  "reviewed_path": "data/final/test_kk_v2.jsonl",
+  "reviewed_sha256": "bbd2dc8a47c07a69bec369d3ff938f54cdfcf51fe1a3cad8d41bae6895dd478b",
+  "record_count": 300,
+  "review_scope": {
+    "semantic_equivalence": true,
+    "answer_preservation": true,
+    "distractor_preservation": true,
+    "language_quality": true
+  },
+  "known_corrections_applied": 6,
+  "statement": "The reviewer attests that all 300 corrected Kazakh records were reviewed and are acceptable for the separately labeled sensitivity evaluation."
+}

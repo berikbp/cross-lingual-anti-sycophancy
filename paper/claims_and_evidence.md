@@ -18,4 +18,5 @@ both v2 conditions, so capability restoration is attributed to that shared
 design rather than to explicit selective feedback. The study did not establish
 a clear Selective-v2 benefit in English; transfer of such a benefit to Russian
 or Kazakh was therefore not demonstrated. Original Kazakh results remain
-historical and require a corrected translation-and-prompt sensitivity analysis.
+historical; the corrected, author-reviewed artifact is evaluated only through
+a separately labeled sensitivity analysis.

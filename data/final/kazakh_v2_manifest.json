@@ -1,0 +1,19 @@
+{
+  "version": "kazakh_translation_corrected_sensitivity_v2",
+  "records": 300,
+  "review_attestation_path": "reports/translation_audits/kazakh_v2_review_attestation.json",
+  "review_attestation_sha256": "2f1727a4c57ed6ac48f91870b1b183fce4414b1dd6f0d7688fda2f81dca969e3",
+  "english_path": "data/final/test_en.jsonl",
+  "english_sha256": "e3c0574fff68e14d70fbc395e4a5624bc0d68b545ab2a8ae36f516f33c74d429",
+  "kazakh_path": "data/final/test_kk_v2.jsonl",
+  "kazakh_sha256": "bbd2dc8a47c07a69bec369d3ff938f54cdfcf51fe1a3cad8d41bae6895dd478b",
+  "author_review_complete": true,
+  "human_reviewers": [
+    "Berik Satybaldy"
+  ],
+  "human_review_dates": [
+    "2026-08-02"
+  ],
+  "translation_method": "machine_assisted_with_author_review",
+  "historical_kazakh_results_replaced": false
+}

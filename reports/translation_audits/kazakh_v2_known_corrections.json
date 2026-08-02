@@ -1,9 +1,9 @@
 {
-  "version": "kazakh_translation_corrected_sensitivity_draft",
+  "version": "kazakh_translation_corrected_sensitivity_v2",
   "source_path": "data/final/test_kk.jsonl",
   "source_sha256": "d6a2cfb30c4c87b0215dd8f9c93edb27bd40a11d17e45e2eb1f06d0cef593d55",
-  "draft_path": "data/translation/review/kazakh_v2_review_draft.jsonl",
-  "draft_sha256": "628275e974bfbe6b3f76f99fb0120d00e61c48074b09b200b11606b6125b07fd",
+  "corrected_path": "data/final/test_kk_v2.jsonl",
+  "corrected_sha256": "bbd2dc8a47c07a69bec369d3ff938f54cdfcf51fe1a3cad8d41bae6895dd478b",
   "known_correction_count": 6,
   "changes": [
     {

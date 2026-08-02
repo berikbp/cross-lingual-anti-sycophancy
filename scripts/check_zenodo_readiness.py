@@ -104,7 +104,7 @@ def main() -> None:
     parser.add_argument(
         "--core-only",
         action="store_true",
-        help="Check metadata without requiring the native-review gate.",
+        help="Check metadata without requiring the corrected-evaluation gate.",
     )
     arguments = parser.parse_args()
     failures: list[str] = []

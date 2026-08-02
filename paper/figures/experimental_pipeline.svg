@@ -47,5 +47,5 @@
     <path d="M258 152 l-10 -6 v12z"/><path d="M498 152 l-10 -6 v12z"/><path d="M738 152 l-10 -6 v12z"/><path d="M978 152 l-10 -6 v12z"/>
   </g>
   <text x="600" y="270" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#384255">The v2 conditions differ only in the follow-up user message; training targets and hyperparameters are matched.</text>
-  <text x="600" y="300" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#6a7383">The original Kazakh evaluation is retained historically but is translation-confounded pending native-reviewed correction.</text>
+  <text x="600" y="300" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#6a7383">The original Kazakh evaluation is retained historically; its corrected, author-reviewed artifact is versioned separately.</text>
 </svg>

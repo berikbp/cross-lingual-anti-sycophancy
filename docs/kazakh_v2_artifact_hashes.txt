@@ -1,0 +1,2 @@
+bbd2dc8a47c07a69bec369d3ff938f54cdfcf51fe1a3cad8d41bae6895dd478b  data/final/test_kk_v2.jsonl
+76323d056ac22567dbf8970cb7d65c7e8e38e72ea7dc6e873f905595deb772bf  data/final/kazakh_v2_manifest.json

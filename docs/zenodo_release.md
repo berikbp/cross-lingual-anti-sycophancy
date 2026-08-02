@@ -1,26 +1,22 @@
 # Zenodo release procedure
 
-The repository is prepared for a `v1.1.0` archival release, but publication is
-blocked until the native-Kazakh review and separately named corrected Kazakh
-translation-and-prompt sensitivity run are complete. The readiness checker
-enforces that gate.
+The repository is prepared for a `v1.1.0` archival release. The corrected
+Kazakh artifact has a compact, hash-bound author-review attestation; the
+separately named translation-and-prompt sensitivity run must still be
+completed before publication. The readiness checker enforces that gate.
 
-## 1. Complete the Kazakh review
+## 1. Verify the Kazakh review artifact
 
-Review all 300 rows in
-`reports/translation_audits/kazakh_v2_native_review.csv` against the English
-source shown in the worksheet. Correct the editable `kazakh_*` text columns as
-needed. Record semantic-equivalence, answer-preservation,
-distractor-preservation, language-quality, decision, reviewer, review date,
-and a note for every stem. Import and freeze the completed review with:
+The review record is documented in
+`docs/translation/kazakh_v2_review_record.md`. Freeze and verify the exact
+reviewed JSONL with:
 
 ```bash
-uv run python -m src.translation.import_kazakh_v2_native_review
-uv run python -m src.translation.finalize_kazakh_v2 \
-  --reviewed data/translation/review/kazakh_v2_native_reviewed.jsonl
+uv run python -m src.translation.finalize_kazakh_v2
+sha256sum -c docs/kazakh_v2_artifact_hashes.txt
 ```
 
-The finalizer rejects incomplete or anonymous reviews.
+The finalizer rejects a dataset that does not match its review attestation.
 
 ## 2. Run the corrected translation-and-prompt sensitivity evaluation
 

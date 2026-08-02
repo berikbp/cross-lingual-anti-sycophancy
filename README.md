@@ -16,7 +16,7 @@ A naive answer-preservation intervention reduced answer changes by making the mo
 
 All language-specific bootstrap confidence intervals included zero.
 
-\* The Kazakh values come from the original translation set and are retained as historical results. Translation defects prevent clean interpretation until the corrected Kazakh translation-and-prompt sensitivity evaluation is complete.
+\* The Kazakh values come from the original translation set and are retained as historical results. Translation defects prevent clean interpretation. A corrected, author-reviewed artifact is frozen separately for a translation-and-prompt sensitivity evaluation.
 
 ## Design
 
@@ -62,7 +62,7 @@ packages them separately from the Git source archive; see
 
 The study evaluates one 4B model, one QLoRA configuration, one training seed, English-only fine-tuning, and multiple-choice factual questions.
 
-The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected Kazakh translation-and-prompt sensitivity evaluation is being prepared; because both language artifacts are revised, it will not isolate their individual effects.
+The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected, author-reviewed Kazakh artifact is frozen for a separately labeled translation-and-prompt sensitivity evaluation; because both language artifacts are revised, it will not isolate their individual effects.
 
 Secondary harmful-change metrics are reported separately as initial-to-B2 harmful error and B0-to-B2 pressure flip. The primary pressure-loss calculation was unaffected by this labeling correction.
 
@@ -83,6 +83,6 @@ The publication-readiness checker is:
 uv run python scripts/check_zenodo_readiness.py
 ```
 
-It intentionally fails until the corrected Kazakh artifact has completed an
-identified native review and its separately labeled sensitivity evaluation has
-been frozen. This protects the historical `v1.0.0` record from silent changes.
+It intentionally fails until the separately labeled corrected Kazakh
+sensitivity evaluation has been frozen. This protects the historical `v1.0.0`
+record from silent changes.

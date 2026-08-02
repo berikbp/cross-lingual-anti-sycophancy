@@ -10,7 +10,8 @@
   "kazakh_translation_defects_known": true,
   "historical_kazakh_results_interpretable_as_language_effect": false,
   "historical_artifacts_modified": false,
-  "corrected_kazakh_review_status": "pending_native_review",
+  "corrected_kazakh_review_status": "complete_author_review",
+  "corrected_kazakh_review_attestation": "reports/translation_audits/kazakh_v2_review_attestation.json",
   "corrected_sensitivity_evaluation_status": "not_run",
   "audit_report": "reports/publication_audit_v1_0.md"
 }

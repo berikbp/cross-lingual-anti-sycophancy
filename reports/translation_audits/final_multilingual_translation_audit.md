@@ -4,8 +4,9 @@
 > semantic and language defects in the Kazakh set. The statements below record
 > what the original workflow reported; they no longer establish that all 300
 > Kazakh records received adequate native-language review. The original files
-> and results remain frozen for provenance. A full native review and corrected,
-> separately versioned Kazakh evaluation are required before publication.
+> and results remain frozen for provenance. A corrected, author-reviewed
+> Kazakh artifact is now frozen separately; its sensitivity evaluation does
+> not overwrite the historical run.
 
 ## Scope
 
@@ -58,7 +59,7 @@ defects were identified. It is not the active publication decision.
 
 ## Current publication decision
 
-- [ ] Kazakh semantic review complete.
-- [ ] Corrected Kazakh artifact frozen.
+- [x] Corrected Kazakh author review recorded and hash-bound.
+- [x] Corrected Kazakh artifact frozen.
 - [ ] Corrected-Kazakh sensitivity evaluation complete.
 - [ ] Multilingual artifacts ready for publication.

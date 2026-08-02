@@ -9,8 +9,8 @@
 - Hardened final-result provenance validation without rewriting historical raw
   results.
 - Qualified claims based on the original Kazakh translation and added a
-  separate corrected-Kazakh review and sensitivity-analysis workflow with a
-  fail-closed native-review importer.
+  separately versioned corrected-Kazakh artifact with a compact, hash-bound
+  author-review attestation and sensitivity-analysis workflow.
 - Added licensing, citation, Zenodo, packaging, and artifact-release metadata.
 
 ## 1.0.0 — historical tagged snapshot

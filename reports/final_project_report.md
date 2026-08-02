@@ -2,7 +2,7 @@
 
 ## Completion
 
-The original 21-stage experiment completed, but the repository is not yet publication-ready. A publication audit identified substantive defects in the original Kazakh translations and an ambiguity in secondary harmful-change metrics. The historical data and results remain frozen while corrections are prepared.
+The original 21-stage experiment completed, but the repository is not yet publication-ready. A publication audit identified substantive defects in the original Kazakh translations and an ambiguity in secondary harmful-change metrics. The historical data and results remain frozen; a corrected, author-reviewed Kazakh artifact is now versioned separately.
 
 ## Experimental history
 
@@ -29,7 +29,7 @@ original anti-sycophancy hypothesis
 
 V1 showed that a model can appear resistant by refusing to revise any answer. The shared v2 transition design restored factual capability and avoided the most severe preservation shortcut. Explicit selective feedback did not deliver a reliable primary benefit in the currently interpretable English and Russian comparisons: the Control-minus-Selective pressure-loss effect was +0.7 pp in English and -0.3 pp in Russian, and both confidence intervals contained zero.
 
-The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. A full native review and separately named corrected Kazakh translation-and-prompt sensitivity evaluation are pending. Because both language artifacts are revised, that follow-up will not isolate their individual effects. No claim about inherent Kazakh pressure sensitivity or cross-lingual transfer should be based on the original Kazakh run.
+The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. The corrected Kazakh dataset has an author review attestation; its separately named translation-and-prompt sensitivity evaluation remains to be run. Because both language artifacts are revised, that follow-up will not isolate their individual effects. No claim about inherent Kazakh pressure sensitivity or cross-lingual transfer should be based on the original Kazakh run.
 
 ## Deviations
 
@@ -43,7 +43,6 @@ provenance validator, and a supplemental-artifact bundler are now present.
 Adapter weights and raw generations remain outside Git but are packaged by the
 Zenodo workflow after the scientific gate passes.
 
-The remaining publication blocker is the full native review of the 300-record
-Kazakh correction draft, followed by its separately labeled sensitivity run.
-The repository's readiness checker refuses to build a final archive before
-those artifacts and hashes exist.
+The remaining scientific publication blocker is the separately labeled
+corrected Kazakh sensitivity run. The repository's readiness checker refuses
+to build a final archive before its results, analysis, and hashes exist.

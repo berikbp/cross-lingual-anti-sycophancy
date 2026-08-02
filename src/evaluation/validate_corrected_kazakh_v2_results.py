@@ -58,8 +58,8 @@ def main() -> None:
     configuration = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     prompts = json.loads(PROMPTS.read_text(encoding="utf-8"))["kk"]
     manifest = json.loads(DATASET_MANIFEST.read_text(encoding="utf-8"))
-    if manifest["native_review_complete"] is not True:
-        raise ValueError("Corrected Kazakh native review is not complete.")
+    if manifest["author_review_complete"] is not True:
+        raise ValueError("Corrected Kazakh author review is not complete.")
     if sha256(DATASET) != manifest["kazakh_sha256"]:
         raise ValueError("Corrected Kazakh dataset hash mismatch.")
     if sha256(ENGLISH_SOURCE) != manifest["english_sha256"]:

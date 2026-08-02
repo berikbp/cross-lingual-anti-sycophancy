@@ -361,8 +361,8 @@ that required human semantic, structural, answer-preservation, distractor, and
 language review. A later publication audit found that the original Kazakh
 approval metadata overstated the review actually demonstrated by the files and
 missed substantive defects. The historical Kazakh artifact remains frozen; a
-native-reviewed correction and separately labeled sensitivity evaluation are
-required for publication. The assistance policy is recorded in
+corrected artifact with a hash-bound author-review attestation is versioned
+separately for a clearly labeled sensitivity evaluation. The assistance policy is recorded in
 `docs/translation/translation_assistance_amendment.md`.
 
 ### Final outcome
