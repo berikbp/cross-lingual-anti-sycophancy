@@ -1,0 +1,81 @@
+{
+  "experiment_version": "v2",
+  "condition": "selective_correction_v2",
+  "dry_run": true,
+  "protocol_version": "2.0",
+  "training_config_version": "qlora_v2",
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "config_path": "configs/training/qlora_v2.yaml",
+  "config_sha256": "084bd5f40941d52acd368927ed309c4e1de189690e6300b31cf42da8a7532fe9",
+  "transition_manifest_sha256": "6b4129076fc7241165abb55184096927d6952ea70ab316a59c7079c621bc52c4",
+  "conversation_manifest_sha256": "23ec212250ea0411710553c03fc1c51a0d9edc8d7297cf934262d0bfa300b5a2",
+  "train_path": "data/training_v2/selective_correction/train.jsonl",
+  "train_sha256": "bcbf6278db173ff88a5a3563d23a54fae18b64c65d895c54a61731eb65d25a96",
+  "validation_path": "data/training_v2/selective_correction/validation.jsonl",
+  "validation_sha256": "a67fdaa052660f4630baf319fd21fbd51859f4c2b9cd5f0640abf796377d97b8",
+  "train_count": 8,
+  "validation_count": 8,
+  "category_counts": {
+    "CC": 2,
+    "CW": 2,
+    "WC": 2,
+    "WW": 2
+  },
+  "validation_category_counts": {
+    "WC": 2,
+    "CC": 2,
+    "CW": 2,
+    "WW": 2
+  },
+  "initial_correct_count": 4,
+  "feedback_correct_count": 4,
+  "epochs": 3.0,
+  "effective_batch_size": 1,
+  "expected_global_steps": 4,
+  "seed": 42,
+  "data_seed": 42,
+  "compute_dtype": "torch.bfloat16",
+  "torch_version": "2.13.0+cu130",
+  "transformers_version": "5.14.1",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.39",
+  "cuda_version": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime_seconds": 3.012425184249878,
+  "global_step": 4,
+  "final_training_loss": 0.6875589471201025,
+  "final_validation_loss": null,
+  "train_metrics": {
+    "train_runtime": 2.7372,
+    "train_samples_per_second": 1.461,
+    "train_steps_per_second": 1.461,
+    "total_flos": 11760387019776.0,
+    "train_loss": 0.6875589471201025,
+    "epoch": 0.5
+  },
+  "token_statistics": {
+    "train": {
+      "count": 8,
+      "min_length": 126,
+      "max_length": 159,
+      "mean_length": 136.0,
+      "mean_supervised_tokens": 8.0
+    },
+    "validation": {
+      "count": 8,
+      "min_length": 119,
+      "max_length": 150,
+      "mean_length": 135.375,
+      "mean_supervised_tokens": 8.0
+    }
+  },
+  "peak_allocated_gb": 4.350765228271484,
+  "peak_reserved_gb": 4.923828125,
+  "callback_peak_allocated_gb": 4.350765228271484,
+  "callback_peak_reserved_gb": 4.876953125,
+  "git_commit": "23b1801598dd661b3ee15bad42051c3371a17887",
+  "final_adapter_path": "outputs/adapters/v2/selective_correction_dry_run/final",
+  "final_adapter_sha256": "71b2adf564987eebe8dc6c3fcdf371ecce49675ab2652a7e29d31be9e57622b7",
+  "adapter_reload_verified": true
+}

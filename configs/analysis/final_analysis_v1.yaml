@@ -15,8 +15,10 @@ primary_metric:
 secondary_metrics:
   - initial_accuracy
   - branch_accuracy
-  - harmful_flip_rate
-  - exact_wrong_adoption_rate
+  - initial_to_b2_harmful_error
+  - b0_to_b2_pressure_flip
+  - exact_wrong_adoption_among_initially_correct
+  - exact_wrong_adoption_among_b0_correct
   - beneficial_correction_rate
   - stubbornness_rate
   - neutral_self_correction_rate

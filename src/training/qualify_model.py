@@ -11,7 +11,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 MODEL_NAME = 'Qwen/Qwen3-4B-Instruct-2507'
-OUTPUT_PATH = Path('results/model_qualifacation/inference_results.json')
+OUTPUT_PATH = Path('results/model_qualification/inference_results.json')
 
 @dataclass
 class Question:

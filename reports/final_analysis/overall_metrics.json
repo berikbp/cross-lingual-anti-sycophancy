@@ -1,509 +1,647 @@
 {
-  "base": {
-    "stems": 900,
-    "initial_accuracy": {
-      "count": 565,
-      "denominator": 900,
-      "rate": 0.6277777777777778
-    },
-    "initial_parseability": {
-      "count": 632,
-      "denominator": 900,
-      "rate": 0.7022222222222222
-    },
-    "branches": {
-      "B0": {
-        "accuracy": {
-          "count": 646,
-          "denominator": 900,
-          "rate": 0.7177777777777777
+  "scope_note": "Descriptive aggregate across 900 language-stem observations. It is not an inferential multilingual estimate because the three languages repeat the same 300 source stems and the historical Kazakh translation is confounded.",
+  "models": {
+    "base": {
+      "stems": 900,
+      "initial_accuracy_all_records": {
+        "count": 565,
+        "denominator": 900,
+        "rate": 0.6277777777777778
+      },
+      "initial_accuracy_parseable": {
+        "count": 565,
+        "denominator": 632,
+        "rate": 0.8939873417721519
+      },
+      "initial_parseability": {
+        "count": 632,
+        "denominator": 900,
+        "rate": 0.7022222222222222
+      },
+      "branches": {
+        "B0": {
+          "accuracy_all_records": {
+            "count": 646,
+            "denominator": 900,
+            "rate": 0.7177777777777777
+          },
+          "accuracy_parseable": {
+            "count": 646,
+            "denominator": 794,
+            "rate": 0.8136020151133502
+          },
+          "parseability": {
+            "count": 794,
+            "denominator": 900,
+            "rate": 0.8822222222222222
+          },
+          "answer_preservation_common_support": {
+            "count": 591,
+            "denominator": 613,
+            "rate": 0.964110929853181
+          },
+          "answer_preservation_initially_correct": {
+            "count": 535,
+            "denominator": 552,
+            "rate": 0.9692028985507246
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 56,
+            "denominator": 61,
+            "rate": 0.9180327868852459
+          },
+          "neutral_self_correction": {
+            "count": 3,
+            "denominator": 61,
+            "rate": 0.04918032786885246
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 6,
+            "denominator": 67,
+            "rate": 0.08955223880597014
+          }
         },
-        "parseability": {
-          "count": 794,
-          "denominator": 900,
-          "rate": 0.8822222222222222
+        "B1": {
+          "accuracy_all_records": {
+            "count": 490,
+            "denominator": 900,
+            "rate": 0.5444444444444444
+          },
+          "accuracy_parseable": {
+            "count": 490,
+            "denominator": 573,
+            "rate": 0.8551483420593369
+          },
+          "parseability": {
+            "count": 573,
+            "denominator": 900,
+            "rate": 0.6366666666666667
+          },
+          "answer_preservation_common_support": {
+            "count": 472,
+            "denominator": 549,
+            "rate": 0.8597449908925319
+          },
+          "answer_preservation_initially_correct": {
+            "count": 455,
+            "denominator": 494,
+            "rate": 0.9210526315789473
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 17,
+            "denominator": 55,
+            "rate": 0.3090909090909091
+          }
         },
-        "preservation_all": {
-          "count": 878,
-          "denominator": 900,
-          "rate": 0.9755555555555555
+        "B2": {
+          "accuracy_all_records": {
+            "count": 497,
+            "denominator": 900,
+            "rate": 0.5522222222222222
+          },
+          "accuracy_parseable": {
+            "count": 497,
+            "denominator": 760,
+            "rate": 0.6539473684210526
+          },
+          "parseability": {
+            "count": 760,
+            "denominator": 900,
+            "rate": 0.8444444444444444
+          },
+          "answer_preservation_common_support": {
+            "count": 476,
+            "denominator": 621,
+            "rate": 0.7665056360708534
+          },
+          "answer_preservation_initially_correct": {
+            "count": 442,
+            "denominator": 555,
+            "rate": 0.7963963963963964
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 34,
+            "denominator": 66,
+            "rate": 0.5151515151515151
+          },
+          "initial_to_b2_harmful_error": {
+            "count": 123,
+            "denominator": 565,
+            "rate": 0.2176991150442478
+          },
+          "initial_to_b2_harmful_error_parseable_support": {
+            "count": 113,
+            "denominator": 555,
+            "rate": 0.2036036036036036
+          },
+          "b0_to_b2_pressure_flip": {
+            "count": 172,
+            "denominator": 646,
+            "rate": 0.26625386996904027
+          },
+          "b0_to_b2_pressure_flip_parseable_support": {
+            "count": 121,
+            "denominator": 595,
+            "rate": 0.20336134453781513
+          },
+          "exact_wrong_adoption_all": {
+            "count": 227,
+            "denominator": 900,
+            "rate": 0.25222222222222224
+          },
+          "exact_wrong_adoption_among_initially_correct": {
+            "count": 110,
+            "denominator": 565,
+            "rate": 0.19469026548672566
+          },
+          "exact_wrong_adoption_among_b0_correct": {
+            "count": 118,
+            "denominator": 646,
+            "rate": 0.1826625386996904
+          },
+          "b2_correct_among_initially_correct": {
+            "count": 442,
+            "denominator": 565,
+            "rate": 0.7823008849557522
+          }
         },
-        "preservation_initially_correct": {
-          "count": 548,
-          "denominator": 565,
-          "rate": 0.9699115044247788
-        },
-        "preservation_initially_incorrect": {
-          "count": 330,
-          "denominator": 335,
-          "rate": 0.9850746268656716
-        },
-        "neutral_self_correction": {
-          "count": 111,
-          "denominator": 335,
-          "rate": 0.33134328358208953
+        "B3": {
+          "accuracy_all_records": {
+            "count": 778,
+            "denominator": 900,
+            "rate": 0.8644444444444445
+          },
+          "accuracy_parseable": {
+            "count": 778,
+            "denominator": 806,
+            "rate": 0.9652605459057072
+          },
+          "parseability": {
+            "count": 806,
+            "denominator": 900,
+            "rate": 0.8955555555555555
+          },
+          "answer_preservation_common_support": {
+            "count": 569,
+            "denominator": 629,
+            "rate": 0.904610492845787
+          },
+          "answer_preservation_initially_correct": {
+            "count": 559,
+            "denominator": 564,
+            "rate": 0.9911347517730497
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 10,
+            "denominator": 65,
+            "rate": 0.15384615384615385
+          },
+          "beneficial_correction": {
+            "count": 51,
+            "denominator": 65,
+            "rate": 0.7846153846153846
+          },
+          "stubbornness": {
+            "count": 14,
+            "denominator": 65,
+            "rate": 0.2153846153846154
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 2,
+            "denominator": 67,
+            "rate": 0.029850746268656716
+          }
         }
       },
-      "B1": {
-        "accuracy": {
-          "count": 490,
-          "denominator": 900,
-          "rate": 0.5444444444444444
-        },
-        "parseability": {
-          "count": 573,
-          "denominator": 900,
-          "rate": 0.6366666666666667
-        },
-        "preservation_all": {
-          "count": 823,
-          "denominator": 900,
-          "rate": 0.9144444444444444
-        },
-        "preservation_initially_correct": {
-          "count": 526,
-          "denominator": 565,
-          "rate": 0.9309734513274336
-        },
-        "preservation_initially_incorrect": {
-          "count": 297,
-          "denominator": 335,
-          "rate": 0.8865671641791045
-        }
-      },
-      "B2": {
-        "accuracy": {
-          "count": 497,
-          "denominator": 900,
-          "rate": 0.5522222222222222
-        },
-        "parseability": {
-          "count": 760,
-          "denominator": 900,
-          "rate": 0.8444444444444444
-        },
-        "preservation_all": {
-          "count": 755,
-          "denominator": 900,
-          "rate": 0.8388888888888889
-        },
-        "preservation_initially_correct": {
-          "count": 452,
-          "denominator": 565,
-          "rate": 0.8
-        },
-        "preservation_initially_incorrect": {
-          "count": 303,
-          "denominator": 335,
-          "rate": 0.9044776119402985
-        },
-        "initial_to_b2_harmful_error": {
-          "count": 123,
-          "denominator": 565,
-          "rate": 0.2176991150442478
-        },
-        "b0_to_b2_pressure_flip": {
-          "count": 172,
-          "denominator": 646,
-          "rate": 0.26625386996904027
-        },
-        "exact_wrong_adoption_all": {
-          "count": 227,
-          "denominator": 900,
-          "rate": 0.25222222222222224
-        },
-        "exact_wrong_adoption_among_initially_correct": {
-          "count": 110,
-          "denominator": 565,
-          "rate": 0.19469026548672566
-        },
-        "exact_wrong_adoption_among_b0_correct": {
-          "count": 118,
-          "denominator": 646,
-          "rate": 0.1826625386996904
-        },
-        "b2_correct_among_initially_correct": {
-          "count": 442,
-          "denominator": 565,
-          "rate": 0.7823008849557522
-        }
-      },
-      "B3": {
-        "accuracy": {
-          "count": 778,
-          "denominator": 900,
-          "rate": 0.8644444444444445
-        },
-        "parseability": {
-          "count": 806,
-          "denominator": 900,
-          "rate": 0.8955555555555555
-        },
-        "preservation_all": {
-          "count": 840,
-          "denominator": 900,
-          "rate": 0.9333333333333333
-        },
-        "preservation_initially_correct": {
-          "count": 560,
-          "denominator": 565,
-          "rate": 0.9911504424778761
-        },
-        "preservation_initially_incorrect": {
-          "count": 280,
-          "denominator": 335,
-          "rate": 0.835820895522388
-        },
-        "beneficial_correction": {
-          "count": 219,
-          "denominator": 335,
-          "rate": 0.6537313432835821
-        },
-        "stubbornness": {
-          "count": 116,
-          "denominator": 335,
-          "rate": 0.34626865671641793
-        }
-      }
+      "pressure_loss": 0.16555555555555557
     },
-    "pressure_loss": 0.16555555555555557
-  },
-  "control_v2": {
-    "stems": 900,
-    "initial_accuracy": {
-      "count": 759,
-      "denominator": 900,
-      "rate": 0.8433333333333334
-    },
-    "initial_parseability": {
-      "count": 845,
-      "denominator": 900,
-      "rate": 0.9388888888888889
-    },
-    "branches": {
-      "B0": {
-        "accuracy": {
-          "count": 805,
-          "denominator": 900,
-          "rate": 0.8944444444444445
+    "control_v2": {
+      "stems": 900,
+      "initial_accuracy_all_records": {
+        "count": 759,
+        "denominator": 900,
+        "rate": 0.8433333333333334
+      },
+      "initial_accuracy_parseable": {
+        "count": 759,
+        "denominator": 845,
+        "rate": 0.8982248520710059
+      },
+      "initial_parseability": {
+        "count": 845,
+        "denominator": 900,
+        "rate": 0.9388888888888889
+      },
+      "branches": {
+        "B0": {
+          "accuracy_all_records": {
+            "count": 805,
+            "denominator": 900,
+            "rate": 0.8944444444444445
+          },
+          "accuracy_parseable": {
+            "count": 805,
+            "denominator": 900,
+            "rate": 0.8944444444444445
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 840,
+            "denominator": 845,
+            "rate": 0.9940828402366864
+          },
+          "answer_preservation_initially_correct": {
+            "count": 758,
+            "denominator": 759,
+            "rate": 0.9986824769433466
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 82,
+            "denominator": 86,
+            "rate": 0.9534883720930233
+          },
+          "neutral_self_correction": {
+            "count": 3,
+            "denominator": 86,
+            "rate": 0.03488372093023256
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 0,
+            "denominator": 86,
+            "rate": 0.0
+          }
         },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
+        "B1": {
+          "accuracy_all_records": {
+            "count": 800,
+            "denominator": 900,
+            "rate": 0.8888888888888888
+          },
+          "accuracy_parseable": {
+            "count": 800,
+            "denominator": 894,
+            "rate": 0.8948545861297539
+          },
+          "parseability": {
+            "count": 894,
+            "denominator": 900,
+            "rate": 0.9933333333333333
+          },
+          "answer_preservation_common_support": {
+            "count": 826,
+            "denominator": 845,
+            "rate": 0.9775147928994082
+          },
+          "answer_preservation_initially_correct": {
+            "count": 754,
+            "denominator": 759,
+            "rate": 0.9934123847167325
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 72,
+            "denominator": 86,
+            "rate": 0.8372093023255814
+          }
         },
-        "preservation_all": {
-          "count": 895,
-          "denominator": 900,
-          "rate": 0.9944444444444445
+        "B2": {
+          "accuracy_all_records": {
+            "count": 742,
+            "denominator": 900,
+            "rate": 0.8244444444444444
+          },
+          "accuracy_parseable": {
+            "count": 742,
+            "denominator": 900,
+            "rate": 0.8244444444444444
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 780,
+            "denominator": 845,
+            "rate": 0.9230769230769231
+          },
+          "answer_preservation_initially_correct": {
+            "count": 709,
+            "denominator": 759,
+            "rate": 0.9341238471673254
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 71,
+            "denominator": 86,
+            "rate": 0.8255813953488372
+          },
+          "initial_to_b2_harmful_error": {
+            "count": 50,
+            "denominator": 759,
+            "rate": 0.06587615283267458
+          },
+          "initial_to_b2_harmful_error_parseable_support": {
+            "count": 50,
+            "denominator": 759,
+            "rate": 0.06587615283267458
+          },
+          "b0_to_b2_pressure_flip": {
+            "count": 65,
+            "denominator": 805,
+            "rate": 0.08074534161490683
+          },
+          "b0_to_b2_pressure_flip_parseable_support": {
+            "count": 65,
+            "denominator": 805,
+            "rate": 0.08074534161490683
+          },
+          "exact_wrong_adoption_all": {
+            "count": 111,
+            "denominator": 900,
+            "rate": 0.12333333333333334
+          },
+          "exact_wrong_adoption_among_initially_correct": {
+            "count": 45,
+            "denominator": 759,
+            "rate": 0.05928853754940711
+          },
+          "exact_wrong_adoption_among_b0_correct": {
+            "count": 57,
+            "denominator": 805,
+            "rate": 0.07080745341614907
+          },
+          "b2_correct_among_initially_correct": {
+            "count": 709,
+            "denominator": 759,
+            "rate": 0.9341238471673254
+          }
         },
-        "preservation_initially_correct": {
-          "count": 758,
-          "denominator": 759,
-          "rate": 0.9986824769433466
-        },
-        "preservation_initially_incorrect": {
-          "count": 137,
-          "denominator": 141,
-          "rate": 0.9716312056737588
-        },
-        "neutral_self_correction": {
-          "count": 47,
-          "denominator": 141,
-          "rate": 0.3333333333333333
+        "B3": {
+          "accuracy_all_records": {
+            "count": 851,
+            "denominator": 900,
+            "rate": 0.9455555555555556
+          },
+          "accuracy_parseable": {
+            "count": 851,
+            "denominator": 900,
+            "rate": 0.9455555555555556
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 802,
+            "denominator": 845,
+            "rate": 0.9491124260355029
+          },
+          "answer_preservation_initially_correct": {
+            "count": 759,
+            "denominator": 759,
+            "rate": 1.0
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 43,
+            "denominator": 86,
+            "rate": 0.5
+          },
+          "beneficial_correction": {
+            "count": 40,
+            "denominator": 86,
+            "rate": 0.46511627906976744
+          },
+          "stubbornness": {
+            "count": 46,
+            "denominator": 86,
+            "rate": 0.5348837209302325
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 0,
+            "denominator": 86,
+            "rate": 0.0
+          }
         }
       },
-      "B1": {
-        "accuracy": {
-          "count": 800,
-          "denominator": 900,
-          "rate": 0.8888888888888888
-        },
-        "parseability": {
-          "count": 894,
-          "denominator": 900,
-          "rate": 0.9933333333333333
-        },
-        "preservation_all": {
-          "count": 881,
-          "denominator": 900,
-          "rate": 0.9788888888888889
-        },
-        "preservation_initially_correct": {
-          "count": 754,
-          "denominator": 759,
-          "rate": 0.9934123847167325
-        },
-        "preservation_initially_incorrect": {
-          "count": 127,
-          "denominator": 141,
-          "rate": 0.900709219858156
-        }
-      },
-      "B2": {
-        "accuracy": {
-          "count": 742,
-          "denominator": 900,
-          "rate": 0.8244444444444444
-        },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
-        },
-        "preservation_all": {
-          "count": 835,
-          "denominator": 900,
-          "rate": 0.9277777777777778
-        },
-        "preservation_initially_correct": {
-          "count": 709,
-          "denominator": 759,
-          "rate": 0.9341238471673254
-        },
-        "preservation_initially_incorrect": {
-          "count": 126,
-          "denominator": 141,
-          "rate": 0.8936170212765957
-        },
-        "initial_to_b2_harmful_error": {
-          "count": 50,
-          "denominator": 759,
-          "rate": 0.06587615283267458
-        },
-        "b0_to_b2_pressure_flip": {
-          "count": 65,
-          "denominator": 805,
-          "rate": 0.08074534161490683
-        },
-        "exact_wrong_adoption_all": {
-          "count": 111,
-          "denominator": 900,
-          "rate": 0.12333333333333334
-        },
-        "exact_wrong_adoption_among_initially_correct": {
-          "count": 45,
-          "denominator": 759,
-          "rate": 0.05928853754940711
-        },
-        "exact_wrong_adoption_among_b0_correct": {
-          "count": 57,
-          "denominator": 805,
-          "rate": 0.07080745341614907
-        },
-        "b2_correct_among_initially_correct": {
-          "count": 709,
-          "denominator": 759,
-          "rate": 0.9341238471673254
-        }
-      },
-      "B3": {
-        "accuracy": {
-          "count": 851,
-          "denominator": 900,
-          "rate": 0.9455555555555556
-        },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
-        },
-        "preservation_all": {
-          "count": 857,
-          "denominator": 900,
-          "rate": 0.9522222222222222
-        },
-        "preservation_initially_correct": {
-          "count": 759,
-          "denominator": 759,
-          "rate": 1.0
-        },
-        "preservation_initially_incorrect": {
-          "count": 98,
-          "denominator": 141,
-          "rate": 0.6950354609929078
-        },
-        "beneficial_correction": {
-          "count": 92,
-          "denominator": 141,
-          "rate": 0.6524822695035462
-        },
-        "stubbornness": {
-          "count": 49,
-          "denominator": 141,
-          "rate": 0.3475177304964539
-        }
-      }
+      "pressure_loss": 0.07000000000000006
     },
-    "pressure_loss": 0.07000000000000006
-  },
-  "selective_correction_v2": {
-    "stems": 900,
-    "initial_accuracy": {
-      "count": 723,
-      "denominator": 900,
-      "rate": 0.8033333333333333
-    },
-    "initial_parseability": {
-      "count": 800,
-      "denominator": 900,
-      "rate": 0.8888888888888888
-    },
-    "branches": {
-      "B0": {
-        "accuracy": {
-          "count": 805,
-          "denominator": 900,
-          "rate": 0.8944444444444445
+    "selective_correction_v2": {
+      "stems": 900,
+      "initial_accuracy_all_records": {
+        "count": 723,
+        "denominator": 900,
+        "rate": 0.8033333333333333
+      },
+      "initial_accuracy_parseable": {
+        "count": 723,
+        "denominator": 800,
+        "rate": 0.90375
+      },
+      "initial_parseability": {
+        "count": 800,
+        "denominator": 900,
+        "rate": 0.8888888888888888
+      },
+      "branches": {
+        "B0": {
+          "accuracy_all_records": {
+            "count": 805,
+            "denominator": 900,
+            "rate": 0.8944444444444445
+          },
+          "accuracy_parseable": {
+            "count": 805,
+            "denominator": 900,
+            "rate": 0.8944444444444445
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 796,
+            "denominator": 800,
+            "rate": 0.995
+          },
+          "answer_preservation_initially_correct": {
+            "count": 723,
+            "denominator": 723,
+            "rate": 1.0
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 73,
+            "denominator": 77,
+            "rate": 0.948051948051948
+          },
+          "neutral_self_correction": {
+            "count": 4,
+            "denominator": 77,
+            "rate": 0.05194805194805195
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 0,
+            "denominator": 77,
+            "rate": 0.0
+          }
         },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
+        "B1": {
+          "accuracy_all_records": {
+            "count": 792,
+            "denominator": 900,
+            "rate": 0.88
+          },
+          "accuracy_parseable": {
+            "count": 792,
+            "denominator": 895,
+            "rate": 0.8849162011173184
+          },
+          "parseability": {
+            "count": 895,
+            "denominator": 900,
+            "rate": 0.9944444444444445
+          },
+          "answer_preservation_common_support": {
+            "count": 756,
+            "denominator": 800,
+            "rate": 0.945
+          },
+          "answer_preservation_initially_correct": {
+            "count": 703,
+            "denominator": 723,
+            "rate": 0.9723374827109267
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 53,
+            "denominator": 77,
+            "rate": 0.6883116883116883
+          }
         },
-        "preservation_all": {
-          "count": 896,
-          "denominator": 900,
-          "rate": 0.9955555555555555
+        "B2": {
+          "accuracy_all_records": {
+            "count": 738,
+            "denominator": 900,
+            "rate": 0.82
+          },
+          "accuracy_parseable": {
+            "count": 738,
+            "denominator": 900,
+            "rate": 0.82
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 730,
+            "denominator": 800,
+            "rate": 0.9125
+          },
+          "answer_preservation_initially_correct": {
+            "count": 668,
+            "denominator": 723,
+            "rate": 0.9239280774550485
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 62,
+            "denominator": 77,
+            "rate": 0.8051948051948052
+          },
+          "initial_to_b2_harmful_error": {
+            "count": 55,
+            "denominator": 723,
+            "rate": 0.07607192254495158
+          },
+          "initial_to_b2_harmful_error_parseable_support": {
+            "count": 55,
+            "denominator": 723,
+            "rate": 0.07607192254495158
+          },
+          "b0_to_b2_pressure_flip": {
+            "count": 74,
+            "denominator": 805,
+            "rate": 0.09192546583850932
+          },
+          "b0_to_b2_pressure_flip_parseable_support": {
+            "count": 74,
+            "denominator": 805,
+            "rate": 0.09192546583850932
+          },
+          "exact_wrong_adoption_all": {
+            "count": 115,
+            "denominator": 900,
+            "rate": 0.12777777777777777
+          },
+          "exact_wrong_adoption_among_initially_correct": {
+            "count": 47,
+            "denominator": 723,
+            "rate": 0.06500691562932227
+          },
+          "exact_wrong_adoption_among_b0_correct": {
+            "count": 63,
+            "denominator": 805,
+            "rate": 0.0782608695652174
+          },
+          "b2_correct_among_initially_correct": {
+            "count": 668,
+            "denominator": 723,
+            "rate": 0.9239280774550485
+          }
         },
-        "preservation_initially_correct": {
-          "count": 723,
-          "denominator": 723,
-          "rate": 1.0
-        },
-        "preservation_initially_incorrect": {
-          "count": 173,
-          "denominator": 177,
-          "rate": 0.9774011299435028
-        },
-        "neutral_self_correction": {
-          "count": 82,
-          "denominator": 177,
-          "rate": 0.4632768361581921
+        "B3": {
+          "accuracy_all_records": {
+            "count": 850,
+            "denominator": 900,
+            "rate": 0.9444444444444444
+          },
+          "accuracy_parseable": {
+            "count": 850,
+            "denominator": 900,
+            "rate": 0.9444444444444444
+          },
+          "parseability": {
+            "count": 900,
+            "denominator": 900,
+            "rate": 1.0
+          },
+          "answer_preservation_common_support": {
+            "count": 762,
+            "denominator": 800,
+            "rate": 0.9525
+          },
+          "answer_preservation_initially_correct": {
+            "count": 723,
+            "denominator": 723,
+            "rate": 1.0
+          },
+          "answer_preservation_initially_incorrect": {
+            "count": 39,
+            "denominator": 77,
+            "rate": 0.5064935064935064
+          },
+          "beneficial_correction": {
+            "count": 36,
+            "denominator": 77,
+            "rate": 0.4675324675324675
+          },
+          "stubbornness": {
+            "count": 41,
+            "denominator": 77,
+            "rate": 0.5324675324675324
+          },
+          "initially_incorrect_branch_unparseable": {
+            "count": 0,
+            "denominator": 77,
+            "rate": 0.0
+          }
         }
       },
-      "B1": {
-        "accuracy": {
-          "count": 792,
-          "denominator": 900,
-          "rate": 0.88
-        },
-        "parseability": {
-          "count": 895,
-          "denominator": 900,
-          "rate": 0.9944444444444445
-        },
-        "preservation_all": {
-          "count": 856,
-          "denominator": 900,
-          "rate": 0.9511111111111111
-        },
-        "preservation_initially_correct": {
-          "count": 703,
-          "denominator": 723,
-          "rate": 0.9723374827109267
-        },
-        "preservation_initially_incorrect": {
-          "count": 153,
-          "denominator": 177,
-          "rate": 0.864406779661017
-        }
-      },
-      "B2": {
-        "accuracy": {
-          "count": 738,
-          "denominator": 900,
-          "rate": 0.82
-        },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
-        },
-        "preservation_all": {
-          "count": 830,
-          "denominator": 900,
-          "rate": 0.9222222222222223
-        },
-        "preservation_initially_correct": {
-          "count": 668,
-          "denominator": 723,
-          "rate": 0.9239280774550485
-        },
-        "preservation_initially_incorrect": {
-          "count": 162,
-          "denominator": 177,
-          "rate": 0.9152542372881356
-        },
-        "initial_to_b2_harmful_error": {
-          "count": 55,
-          "denominator": 723,
-          "rate": 0.07607192254495158
-        },
-        "b0_to_b2_pressure_flip": {
-          "count": 74,
-          "denominator": 805,
-          "rate": 0.09192546583850932
-        },
-        "exact_wrong_adoption_all": {
-          "count": 115,
-          "denominator": 900,
-          "rate": 0.12777777777777777
-        },
-        "exact_wrong_adoption_among_initially_correct": {
-          "count": 47,
-          "denominator": 723,
-          "rate": 0.06500691562932227
-        },
-        "exact_wrong_adoption_among_b0_correct": {
-          "count": 63,
-          "denominator": 805,
-          "rate": 0.0782608695652174
-        },
-        "b2_correct_among_initially_correct": {
-          "count": 668,
-          "denominator": 723,
-          "rate": 0.9239280774550485
-        }
-      },
-      "B3": {
-        "accuracy": {
-          "count": 850,
-          "denominator": 900,
-          "rate": 0.9444444444444444
-        },
-        "parseability": {
-          "count": 900,
-          "denominator": 900,
-          "rate": 1.0
-        },
-        "preservation_all": {
-          "count": 862,
-          "denominator": 900,
-          "rate": 0.9577777777777777
-        },
-        "preservation_initially_correct": {
-          "count": 723,
-          "denominator": 723,
-          "rate": 1.0
-        },
-        "preservation_initially_incorrect": {
-          "count": 139,
-          "denominator": 177,
-          "rate": 0.7853107344632768
-        },
-        "beneficial_correction": {
-          "count": 127,
-          "denominator": 177,
-          "rate": 0.7175141242937854
-        },
-        "stubbornness": {
-          "count": 50,
-          "denominator": 177,
-          "rate": 0.2824858757062147
-        }
-      }
-    },
-    "pressure_loss": 0.07444444444444454
+      "pressure_loss": 0.07444444444444454
+    }
   }
 }

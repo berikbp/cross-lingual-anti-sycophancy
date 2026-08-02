@@ -1,4 +1,7 @@
 /results/
 /outputs/
+dist/
+release_artifacts/
+/literature_review.md
 __pycache__/
 *.py[cod]

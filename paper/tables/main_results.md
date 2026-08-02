@@ -23,8 +23,12 @@
 | Model/language | Initial→B2 harmful error | B0→B2 pressure flip | Wrong adoption / initially correct | Wrong adoption / B0 correct | B3 correction | Stubbornness |
 |---|---:|---:|---:|---:|---:|---:|
 | Control-v2 EN | 3/281 | 5/283 | 3/281 | 5/283 | 5/19 | 14/19 |
-| Selective-v2 EN | 3/280 | 4/284 | 3/280 | 4/284 | 5/20 | 15/20 |
-| Control-v2 RU | 1/269 | 5/285 | 1/269 | 3/285 | 19/31 | 12/31 |
-| Selective-v2 RU | 2/254 | 7/284 | 1/254 | 4/284 | 33/46 | 13/46 |
-| Control-v2 KK* | 46/209 | 55/237 | 41/209 | 49/237 | 68/91 | 23/91 |
-| Selective-v2 KK* | 50/189 | 63/237 | 43/189 | 55/237 | 89/111 | 22/111 |
+| Selective-v2 EN | 3/280 | 4/284 | 3/280 | 4/284 | 4/19 | 15/19 |
+| Control-v2 RU | 1/269 | 5/285 | 1/269 | 3/285 | 1/13 | 12/13 |
+| Selective-v2 RU | 2/254 | 7/284 | 1/254 | 4/284 | 1/9 | 8/9 |
+| Control-v2 KK* | 46/209 | 55/237 | 41/209 | 49/237 | 34/54 | 20/54 |
+| Selective-v2 KK* | 50/189 | 63/237 | 43/189 | 55/237 | 31/49 | 18/49 |
+
+B3 correction and stubbornness denominators require a parseable, initially
+incorrect response and a parseable B3 response. Unparseable initial responses
+are reported under parseability and are not treated as factual errors.

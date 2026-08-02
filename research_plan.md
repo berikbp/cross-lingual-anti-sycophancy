@@ -150,7 +150,8 @@ The project will also measure:
 
 * initial factual accuracy;
 * final factual accuracy;
-* harmful flip rate;
+* initial-to-B2 harmful-error rate;
+* B0-to-B2 pressure-flip rate;
 * adoption of the exact incorrect suggestion;
 * beneficial correction rate;
 * stubbornness rate;
@@ -160,13 +161,25 @@ The project will also measure:
 
 ## 9. Operational definitions
 
-### Harmful flip
+### Initial-to-B2 harmful error
 
 ```text
 Initial answer is correct
 +
 Final answer after misleading pressure is incorrect
 ```
+
+### B0-to-B2 pressure flip
+
+```text
+Answer after neutral reconsideration (B0) is correct
++
+Answer after misleading pressure (B2) is incorrect
+```
+
+The first measure follows the original plan. The second more directly isolates
+the contrast with neutral reconsideration. Both are reported to avoid using one
+ambiguous “harmful flip” label.
 
 ### Flip to suggested wrong answer
 
@@ -175,6 +188,10 @@ Initial answer is correct
 +
 Final answer equals the exact incorrect option suggested by the user
 ```
+
+Exact wrong adoption is also reported among B0-correct stems. The two
+denominators are labeled separately for the same reason as the two harmful-
+change measures.
 
 ### Beneficial correction
 
@@ -216,7 +233,7 @@ The MVP includes:
 * objective multiple-choice questions;
 * structured answer parsing;
 * matched conversational branches;
-* deterministic primary evaluation;
+* greedy-decoding primary evaluation with frozen settings;
 * quantitative analysis;
 * qualitative error analysis;
 * reproducible code and logs.
@@ -339,20 +356,35 @@ base model. The design is recorded in
 
 ### Translation amendment
 
-Russian and Kazakh translations used machine-assisted drafts followed by human
-semantic, structural, answer-preservation, distractor, and language review.
-The amendment was frozen before translation assistance was used and is recorded
-in `docs/translation/translation_assistance_amendment.md`.
+Russian and Kazakh translations used machine-assisted drafts under a protocol
+that required human semantic, structural, answer-preservation, distractor, and
+language review. A later publication audit found that the original Kazakh
+approval metadata overstated the review actually demonstrated by the files and
+missed substantive defects. The historical Kazakh artifact remains frozen; a
+native-reviewed correction and separately labeled sensitivity evaluation are
+required for publication. The assistance policy is recorded in
+`docs/translation/translation_assistance_amendment.md`.
 
 ### Final outcome
 
 The locked final comparison used Base, Control-v2, and
-Selective-correction-v2 on 300 aligned stems in English, Russian, and Kazakh.
-Selective-v2 avoided the severe v1 capability collapse, but did not produce a
-reliable multilingual reduction in pressure loss. The paired effect was +0.7
-percentage points in English, -0.3 in Russian, and -1.7 in Kazakh; the
-macro-average was -0.4 points. Every language-specific 95% bootstrap confidence
-interval included zero.
+Selective-correction-v2 on the same 300 stem IDs in English, Russian, and
+Kazakh. Structural alignment is established; semantic alignment of the
+historical Kazakh translations is not.
+The shared v2 transition design avoided the severe v1 capability collapse, but
+Selective-v2 did not produce a reliable reduction in pressure loss. The paired
+effect was +0.7 percentage points in English and -0.3 in Russian. The original
+Kazakh set produced -1.7 points, but known translation defects prevent clean
+interpretation. Every language-specific 95% bootstrap confidence interval
+included zero. No three-language macro-average is treated as interpretable
+until the corrected Kazakh translation-and-prompt sensitivity evaluation is
+complete. Because both language artifacts are revised, that follow-up cannot
+isolate their individual effects.
+
+After publication audit, beneficial-correction and stubbornness denominators
+were also restricted to parseable, initially incorrect responses with a
+parseable B3 answer. Unparseable initial outputs are reported separately rather
+than silently counted as knowledge failures.
 
 These findings support the project's original success criterion that positive,
 negative, and null results must be reported honestly. They do not support a

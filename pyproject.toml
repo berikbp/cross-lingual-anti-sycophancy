@@ -1,19 +1,36 @@
 [project]
 name = "multilingual-sycophancy"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.1.0"
+description = "Matched QLoRA interventions and a multilingual evaluation of pressure-induced factual answer changes."
 readme = "README.md"
 requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    { name = "Berik Tarakov" },
+]
+keywords = [
+    "sycophancy",
+    "multilingual-evaluation",
+    "qlora",
+    "language-models",
+]
 dependencies = [
     "accelerate>=1.14.0",
     "bitsandbytes>=0.50.0",
     "datasets>=5.0.0",
+    "numpy>=2.5.1",
     "peft>=0.19.1",
+    "pyyaml>=6.0.3",
     "safetensors>=0.8.0",
     "sentencepiece>=0.2.2",
     "torch>=2.13.0",
     "transformers>=5.14.1",
+    "trl>=1.9.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/berikbp/cross-lingual-anti-sycophancy"
+Issues = "https://github.com/berikbp/cross-lingual-anti-sycophancy/issues"
 
 [dependency-groups]
 dev = [

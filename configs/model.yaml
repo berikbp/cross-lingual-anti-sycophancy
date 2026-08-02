@@ -4,7 +4,7 @@ model:
   trust_remote_code: false
 
 quantization:
-  load_in_date: true
+  load_in_4bit: true
   quant_type: nf4
   double_quantization: true
   compute_dtype: auto
@@ -19,4 +19,3 @@ project:
     - ru
     - kk
   output_format: json
-

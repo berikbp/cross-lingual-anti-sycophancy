@@ -33,8 +33,12 @@ def main() -> None:
         expected = Counter(record[field] for record in en)
         for lang, records in translated.items():
             assert Counter(record[field] for record in records) == expected, (lang, field)
-    print("Multilingual final alignment validation passed.")
+    print("Historical multilingual structural alignment validation passed.")
     print("Records per language: 300")
+    print(
+        "Caveat: approval fields record the original workflow and do not "
+        "establish adequate native Kazakh semantic review."
+    )
 
 
 if __name__ == "__main__":

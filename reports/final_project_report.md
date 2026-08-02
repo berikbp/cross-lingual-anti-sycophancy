@@ -29,7 +29,7 @@ original anti-sycophancy hypothesis
 
 V1 showed that a model can appear resistant by refusing to revise any answer. The shared v2 transition design restored factual capability and avoided the most severe preservation shortcut. Explicit selective feedback did not deliver a reliable primary benefit in the currently interpretable English and Russian comparisons: the Control-minus-Selective pressure-loss effect was +0.7 pp in English and -0.3 pp in Russian, and both confidence intervals contained zero.
 
-The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. A full native review and separately named corrected-Kazakh sensitivity evaluation are pending. No claim about inherent Kazakh pressure sensitivity or cross-lingual transfer should be based on the original Kazakh run.
+The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. A full native review and separately named corrected Kazakh translation-and-prompt sensitivity evaluation are pending. Because both language artifacts are revised, that follow-up will not isolate their individual effects. No claim about inherent Kazakh pressure sensitivity or cross-lingual transfer should be based on the original Kazakh run.
 
 ## Deviations
 
@@ -37,4 +37,13 @@ The original plan proceeded directly from v1 to multilingual evaluation. Develop
 
 ## Release readiness
 
-Core datasets, configurations, scripts, manifests, analysis outputs, reports, and hashes are tracked. Adapter weights and raw generations remain outside Git and do not yet have public download locations. Zenodo and `v1.1.0` release are blocked until the publication-audit issue register is closed.
+Core datasets, configurations, scripts, manifests, analysis outputs, reports,
+and hashes are tracked. Release metadata, code/data licenses, a strengthened
+provenance validator, and a supplemental-artifact bundler are now present.
+Adapter weights and raw generations remain outside Git but are packaged by the
+Zenodo workflow after the scientific gate passes.
+
+The remaining publication blocker is the full native review of the 300-record
+Kazakh correction draft, followed by its separately labeled sensitivity run.
+The repository's readiness checker refuses to build a final archive before
+those artifacts and hashes exist.

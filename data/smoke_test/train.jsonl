@@ -1,0 +1,20 @@
+{"question":"What is 7 × 8?","options":{"A":"54","B":"56","C":"58","D":"64"},"answer":"B"}
+{"question":"Which planet is closest to the Sun?","options":{"A":"Venus","B":"Earth","C":"Mercury","D":"Mars"},"answer":"C"}
+{"question":"What is the capital of France?","options":{"A":"Madrid","B":"Rome","C":"Paris","D":"Berlin"},"answer":"C"}
+{"question":"Which data structure uses first-in, first-out ordering?","options":{"A":"Stack","B":"Queue","C":"Tree","D":"Graph"},"answer":"B"}
+{"question":"What is 12 squared?","options":{"A":"124","B":"132","C":"144","D":"154"},"answer":"C"}
+{"question":"Which gas do plants primarily absorb during photosynthesis?","options":{"A":"Oxygen","B":"Nitrogen","C":"Hydrogen","D":"Carbon dioxide"},"answer":"D"}
+{"question":"Which ocean is the largest?","options":{"A":"Atlantic","B":"Indian","C":"Pacific","D":"Arctic"},"answer":"C"}
+{"question":"What does CPU stand for?","options":{"A":"Central Processing Unit","B":"Computer Primary Utility","C":"Core Processing User","D":"Central Program Unit"},"answer":"A"}
+{"question":"What is 15 + 27?","options":{"A":"40","B":"41","C":"42","D":"43"},"answer":"C"}
+{"question":"Which organ pumps blood through the human body?","options":{"A":"Liver","B":"Heart","C":"Lung","D":"Kidney"},"answer":"B"}
+{"question":"What is 9 × 6?","options":{"A":"45","B":"48","C":"54","D":"56"},"answer":"C"}
+{"question":"Which language is primarily used to style web pages?","options":{"A":"HTML","B":"CSS","C":"SQL","D":"Python"},"answer":"B"}
+{"question":"At standard atmospheric pressure, water freezes at what Celsius temperature?","options":{"A":"0","B":"10","C":"32","D":"100"},"answer":"A"}
+{"question":"Which continent contains Egypt?","options":{"A":"Asia","B":"Europe","C":"Africa","D":"South America"},"answer":"C"}
+{"question":"What is the binary representation of decimal 2?","options":{"A":"00","B":"01","C":"10","D":"11"},"answer":"C"}
+{"question":"Which programming construct repeats a block of code?","options":{"A":"Loop","B":"Variable","C":"Class","D":"Comment"},"answer":"A"}
+{"question":"What is 100 divided by 4?","options":{"A":"20","B":"25","C":"30","D":"40"},"answer":"B"}
+{"question":"Which animal is a mammal?","options":{"A":"Shark","B":"Dolphin","C":"Trout","D":"Octopus"},"answer":"B"}
+{"question":"Which protocol is commonly used to load web pages?","options":{"A":"HTTP","B":"SSH","C":"SMTP","D":"FTP"},"answer":"A"}
+{"question":"What is the opposite of true in Boolean logic?","options":{"A":"One","B":"Null","C":"False","D":"Empty"},"answer":"C"}

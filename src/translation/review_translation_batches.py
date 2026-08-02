@@ -89,16 +89,6 @@ def review_batch(path: Path, source_by_id: dict[str, Any]) -> None:
                 break
         if source["domain"] == "logic" or source["difficulty"] == "hard":
             reviewed_risk_items += 1
-        record["translation_status"] = "approved"
-        record["semantic_review"] = True
-        record["structural_review"] = True
-        record["human_reviewed"] = True
-        record["review_note"] = (
-            "Machine-assisted draft reviewed for semantic equivalence, "
-            "answer/distractor preservation, protected notation, and language quality."
-        )
-        if record.get("translation_method") != "machine_assisted":
-            record["translation_method"] = "human_reviewed"
 
     if errors:
         print(f"{path}: review failed")
@@ -106,7 +96,6 @@ def review_batch(path: Path, source_by_id: dict[str, Any]) -> None:
             print(f"- {error}")
         raise SystemExit(1)
 
-    write_jsonl(path, records)
     report_path = REPORT_ROOT / language / f"{path.stem}_review.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
@@ -117,7 +106,8 @@ def review_batch(path: Path, source_by_id: dict[str, Any]) -> None:
                 f"- Language: {language}",
                 f"- File: `{path}`",
                 f"- Records: {len(records)}",
-                "- Translation method: machine-assisted draft with human review",
+                "- Translation method: machine-assisted draft",
+                "- Review type: automated structural and protected-token audit only",
                 "",
                 "## Structural checks",
                 "",
@@ -125,22 +115,21 @@ def review_batch(path: Path, source_by_id: dict[str, Any]) -> None:
                 "- [x] Domain, difficulty, answer positions, and source text preserved",
                 "- [x] Four non-empty distinct options",
                 "- [x] Wrong-suggestion text matches its assigned option",
-                "- [x] Translation metadata and approval flags complete",
+                "- [x] Existing translation metadata is structurally well formed",
                 "",
-                "## Semantic and language checks",
+                "## Checks not established by this script",
                 "",
-                "- [x] Question meaning and reasoning requirement reviewed",
-                "- [x] Correct and wrong-suggestion answers preserved",
-                "- [x] No added hints or removed reasoning steps",
-                "- [x] Protected numbers, units, symbols, and technical tokens checked",
-                f"- [x] High-risk logic/hard items reviewed: {reviewed_risk_items}",
-                "- [x] Grammar, terminology, and script reviewed",
+                "- [ ] Native semantic equivalence",
+                "- [ ] Distractor meaning and plausibility",
+                "- [ ] Grammar, terminology, and naturalness",
+                "- [x] Protected numbers, units, symbols, and technical tokens checked automatically",
+                f"- [ ] High-risk logic/hard items requiring human review: {reviewed_risk_items}",
                 "",
                 "## Decision",
                 "",
-                "- [x] Approved",
+                "- [ ] Human approval required",
                 "",
-                "Machine assistance was used only to draft translations. No evaluation model, development result, or model-performance output was used.",
+                "This script cannot approve semantic or language quality. Use an explicit per-stem human-review attestation.",
             ]
         )
         + "\n",

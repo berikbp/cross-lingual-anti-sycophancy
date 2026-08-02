@@ -16,7 +16,7 @@ A naive answer-preservation intervention reduced answer changes by making the mo
 
 All language-specific bootstrap confidence intervals included zero.
 
-\* The Kazakh values come from the original translation set and are retained as historical results. Translation defects prevent clean interpretation until the corrected Kazakh sensitivity evaluation is complete.
+\* The Kazakh values come from the original translation set and are retained as historical results. Translation defects prevent clean interpretation until the corrected Kazakh translation-and-prompt sensitivity evaluation is complete.
 
 ## Design
 
@@ -31,10 +31,14 @@ balanced v2 datasets and fresh adapters
       ↓
 locked English/Russian/Kazakh evaluation
       ↓
-deterministic paired analysis
+fixed-seed paired analysis
 ```
 
-The final evaluation contains 300 aligned stems per language and four independent branches per stem: neutral reconsideration, doubt, an incorrect suggestion, and a correct suggestion. Three model conditions produced 10,800 stored branch records.
+The final evaluation contains the same 300 stem IDs in each language and four independent branches per stem: neutral reconsideration, doubt, an incorrect suggestion, and a correct suggestion. Structural alignment is verified; semantic alignment of the historical Kazakh translations is not assumed. Three model conditions produced 10,800 stored branch records.
+
+![Experimental pipeline from the v1 failure through the v2 redesign and locked evaluation](paper/figures/experimental_pipeline.svg)
+
+![Paired Control-v2 minus Selective-v2 pressure-loss effects with 95% confidence intervals](paper/figures/paired_effect_forest.svg)
 
 ## Repository map
 
@@ -49,11 +53,16 @@ The final evaluation contains 300 aligned stems per language and four independen
 
 Create the environment with `uv sync`, then follow [docs/reproducibility.md](docs/reproducibility.md). Adapter weights are excluded from Git; regenerate them with the frozen training scripts or obtain them separately if a release location is provided.
 
+The original ignored adapter and generation artifacts are present in the
+author's working archive and have frozen checksums. The Zenodo release workflow
+packages them separately from the Git source archive; see
+[docs/zenodo_release.md](docs/zenodo_release.md).
+
 ## Limitations
 
 The study evaluates one 4B model, one QLoRA configuration, one training seed, English-only fine-tuning, and multiple-choice factual questions.
 
-The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected Kazakh sensitivity evaluation is being prepared.
+The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected Kazakh translation-and-prompt sensitivity evaluation is being prepared; because both language artifacts are revised, it will not isolate their individual effects.
 
 Secondary harmful-change metrics are reported separately as initial-to-B2 harmful error and B0-to-B2 pressure flip. The primary pressure-loss calculation was unaffected by this labeling correction.
 
@@ -61,4 +70,19 @@ Detailed correction tracking is available in the [v1.0.0 audit report](reports/p
 
 ## Citation and license
 
-Citation metadata and a release license should be added before public archival release.
+Use [CITATION.cff](CITATION.cff) for citation metadata. Source code is licensed
+under the [MIT License](LICENSE). Original datasets, translations, paper,
+figures, reports, and documentation are dual-licensed under
+[CC BY 4.0 or MIT](DATA_LICENSE.md). The v2 adapter artifacts are
+[Apache-2.0](MODEL_ARTIFACT_LICENSE.md), matching the upstream Qwen model.
+Third-party models and dependencies retain their upstream licenses.
+
+The publication-readiness checker is:
+
+```bash
+uv run python scripts/check_zenodo_readiness.py
+```
+
+It intentionally fails until the corrected Kazakh artifact has completed an
+identified native review and its separately labeled sensitivity evaluation has
+been frozen. This protects the historical `v1.0.0` record from silent changes.

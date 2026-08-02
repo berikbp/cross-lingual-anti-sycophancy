@@ -1,0 +1,107 @@
+{
+  "validator_version": "final_multilingual_provenance_v2",
+  "historical_raw_schema": true,
+  "historical_limitations": [
+    "raw records store absolute dataset paths",
+    "generation settings are frozen in configuration but not embedded in historical records",
+    "historical manifests do not contain every current provenance field"
+  ],
+  "evaluation_config_path": "configs/evaluation/final_multilingual_v1.yaml",
+  "evaluation_config_sha256": "26db204a7b3021a3c028e89ababfc95fea1d6eec77cc13234888e15ee259e719",
+  "prompt_config_path": "configs/evaluation/prompts_final_multilingual_v1.json",
+  "prompt_config_sha256": "2e17ee5915588863aea681a369a09943137844f5a3e8346ee8daa6b16fe3501d",
+  "files": {
+    "base_en": {
+      "path": "results/final_multilingual_v1/base_en.jsonl",
+      "sha256": "d9fe9935cb73673a55d865d3248ed3cadfc77f6a82f44170a23d6c33d00cacd6",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 272,
+      "parseable_branches": 1173,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/base/en/run_manifest.json",
+      "manifest_validated": true
+    },
+    "base_ru": {
+      "path": "results/final_multilingual_v1/base_ru.jsonl",
+      "sha256": "bb76798d3ebf1feba1e3bd3f56b52daa7a6f6e4f7d1269b09c1efad42cf0fa00",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 196,
+      "parseable_branches": 785,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/base/ru/run_manifest.json",
+      "manifest_validated": true
+    },
+    "base_kk": {
+      "path": "results/final_multilingual_v1/base_kk.jsonl",
+      "sha256": "269c2b3226d898db15ab0ac4eaac8f981a95fc213aedd818aa32da7b62e8a84e",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 164,
+      "parseable_branches": 975,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/base/kk/run_manifest.json",
+      "manifest_validated": true
+    },
+    "control_v2_en": {
+      "path": "results/final_multilingual_v1/control_v2_en.jsonl",
+      "sha256": "9d643c318943df2ee7103b79fd25dba7f432169695eb8a6314c74acff9013a4a",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 300,
+      "parseable_branches": 1200,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/control_v2/en/run_manifest.json",
+      "manifest_validated": true
+    },
+    "control_v2_ru": {
+      "path": "results/final_multilingual_v1/control_v2_ru.jsonl",
+      "sha256": "0b4788bc6ed8d3b1818bdc135e7888296c94e87b202d89ebb9c34397c76bff8f",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 282,
+      "parseable_branches": 1199,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/control_v2/ru/run_manifest.json",
+      "manifest_validated": true
+    },
+    "control_v2_kk": {
+      "path": "results/final_multilingual_v1/control_v2_kk.jsonl",
+      "sha256": "e4c59006e8ddefeff08eaff50848839e8791d5d6037114c984ba02f593f9e01f",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 263,
+      "parseable_branches": 1195,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/control_v2/kk/run_manifest.json",
+      "manifest_validated": true
+    },
+    "selective_correction_v2_en": {
+      "path": "results/final_multilingual_v1/selective_correction_v2_en.jsonl",
+      "sha256": "74391c055703c9600a67445f8ad7c66a3ea77672d8cb34bdbb4b6e17c1db0799",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 299,
+      "parseable_branches": 1200,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/selective_correction_v2/en/run_manifest.json",
+      "manifest_validated": true
+    },
+    "selective_correction_v2_ru": {
+      "path": "results/final_multilingual_v1/selective_correction_v2_ru.jsonl",
+      "sha256": "586e0898f9d74b22de1bee2879e2211e164097cef0ca5aa73744dabfd730ac6c",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 263,
+      "parseable_branches": 1199,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/selective_correction_v2/ru/run_manifest.json",
+      "manifest_validated": true
+    },
+    "selective_correction_v2_kk": {
+      "path": "results/final_multilingual_v1/selective_correction_v2_kk.jsonl",
+      "sha256": "842e041b6d98361f0373d3f209662b65a026816ddda51a91bcbee186ed98deef",
+      "records": 1200,
+      "stems": 300,
+      "parseable_initials": 238,
+      "parseable_branches": 1196,
+      "manifest_path": "reports/evaluation_runs/final_multilingual_v1/selective_correction_v2/kk/run_manifest.json",
+      "manifest_validated": true
+    }
+  },
+  "total_records": 10800,
+  "validation_passed": true
+}

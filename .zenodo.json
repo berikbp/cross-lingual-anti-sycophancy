@@ -1,0 +1,28 @@
+{
+  "title": "When Anti-Sycophancy Training Becomes Stubbornness: A Multilingual Study in English, Russian, and Kazakh",
+  "description": "Research code, frozen configurations, evaluation data, audits, and derived results for matched QLoRA interventions targeting pressure-induced factual answer changes. The v1 intervention produced stubbornness and capability loss; a shared balanced v2 design restored capability, while explicit selective feedback showed no reliable pressure-resistance advantage over the matched control. The release preserves the original translation-confounded Kazakh analysis for provenance and includes a separately versioned native-reviewed correction and sensitivity workflow.",
+  "creators": [
+    {
+      "name": "Tarakov, Berik"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "sycophancy",
+    "multilingual evaluation",
+    "QLoRA",
+    "large language models",
+    "English",
+    "Russian",
+    "Kazakh"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/berikbp/cross-lingual-anti-sycophancy",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

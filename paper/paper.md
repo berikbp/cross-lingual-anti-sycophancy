@@ -1,19 +1,14 @@
 # When anti-sycophancy training becomes stubbornness: a multilingual study in English, Russian, and Kazakh
 
-> **Publication-audit notice:** this historical report includes results from
-> the original Kazakh translation set. A later audit identified substantive
-> translation defects and a labeling mismatch in a secondary harmful-change
-> metric. The metric labels and denominators have since been corrected; the
-> primary pressure-loss calculation was unaffected. Kazakh interpretation still
-> requires correction before publication. See `reports/publication_audit_v1_0.md`.
+**Berik Tarakov · Technical report · v1.1.0 release candidate · August 2026**
 
 ## Abstract
 
 Large language models sometimes abandon correct answers when users confidently suggest incorrect alternatives. We test whether supervised fine-tuning can reduce this behavior and whether any improvement transfers from English to Russian and Kazakh. We evaluate a 4B instruction model with paired multiple-choice interactions containing neutral reconsideration, doubt, incorrect suggestions, and correct suggestions.
 
-Our first intervention rewarded preservation of correct initial answers. It eliminated harmful changes on a development set, but factual accuracy fell and the adapters became almost completely unwilling to accept correct feedback. We then trained fresh adapters on balanced transitions containing correct and incorrect initial answers as well as correct and incorrect feedback. This restored factual capability and reduced the severe stubbornness seen in v1.
+Our first intervention rewarded preservation of correct initial answers. It eliminated harmful changes on a development set, but factual accuracy fell and the adapters became almost completely unwilling to accept correct feedback. We then trained fresh adapters on a shared balanced transition design containing correct and incorrect initial answers as well as correct and incorrect feedback. This shared design restored factual capability in both v2 conditions. Whether explicit selective feedback also improved correction selectivity remained uncertain because initially incorrect denominators were small or affected by parse failures.
 
-On the locked English and Russian evaluations, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English and -0.3 in Russian, and both bootstrap confidence intervals included zero. The original Kazakh translation set produced a -1.7-point effect, but known translation defects prevent clean interpretation; that result is retained as historical evidence pending a corrected sensitivity run. Reducing answer changes is therefore not sufficient evidence of better alignment. The shared balanced transition design repaired a shortcut, but an explicit selective-feedback benefit was not established.
+On the locked English and Russian evaluations, Selective-v2 did not clearly outperform its matched Control-v2 adapter. The paired pressure-loss effect was +0.7 percentage points in English and -0.3 in Russian, and both bootstrap confidence intervals included zero. The original Kazakh translation set produced a -1.7-point effect, but known translation defects prevent clean interpretation; that result is retained as historical evidence pending a corrected translation-and-prompt sensitivity run. Reducing answer changes is therefore not sufficient evidence of better alignment. The shared balanced transition design repaired a shortcut, but an explicit selective-feedback benefit was not established.
 
 ## 1. Introduction
 
@@ -21,21 +16,27 @@ Factual sycophancy occurs when a model changes an answer to agree with a user's 
 
 This distinction motivated three questions. Can matched anti-sycophancy SFT reduce pressure-induced factual changes? Does an English-trained effect transfer to Russian and Kazakh? Can the model resist bad feedback while accepting good feedback? Kazakh is especially useful here because multilingual alignment studies rarely include it and because weaker base-language capability may interact with social pressure.
 
-We contribute matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, and locked paired English and Russian analyses with artifact hashes. The original Kazakh evaluation is retained as a translation-confounded historical analysis. The main result is negative but informative: the redesign repaired capability and stubbornness, yet explicit selective feedback did not improve the currently interpretable primary comparisons.
+We contribute matched control and intervention adapters, a documented stubbornness failure, a balanced redesign, and locked paired English and Russian analyses with artifact hashes. The original Kazakh evaluation is retained as a translation-confounded historical analysis. The main result is negative but informative: the redesign repaired capability, yet explicit selective feedback did not improve the currently interpretable primary comparisons.
+
+![Experimental pipeline](figures/experimental_pipeline.svg)
+
+*Figure 1. The intervention history and locked evaluation. V2 was designed only after the v1 development failure had been frozen and diagnosed.*
 
 ## 2. Related work
 
-Prior work on sycophancy has examined agreement with user beliefs, answer changes after challenges such as "are you sure?", and synthetic preference or instruction data intended to improve resistance. Multilingual work asks whether alignment behavior learned in a high-resource language transfers to languages with different training coverage. Our experiment connects these questions to correction selectivity. We treat resistance and willingness to update as separate properties rather than assuming that fewer answer changes are always better.
+Prior work shows that language models can mirror a user's stated beliefs and that preference data can reinforce agreement rather than factual accuracy [1, 2]. Synthetic-data interventions can reduce this behavior in held-out prompts, but their evaluations do not by themselves rule out indiscriminate refusal to update [3]. SycoBench-600 explicitly measures correction selectivity alongside pressure resistance [4]. Ranaldi and Pucci study multilingual control through an agentic policy and report cross-language generalization [5]. Our narrower experiment asks whether matched English SFT with explicit answer suggestions beats a neutral matched control on English and Russian while tracking the stubbornness shortcut. We treat resistance and willingness to update as separate properties rather than assuming that fewer answer changes are always better.
 
 ## 3. Problem formulation
 
 Each stem receives one initial answer. Four independent branches then start from that same conversational state: B0 asks for neutral reconsideration, B1 expresses doubt, B2 confidently suggests an assigned wrong option, and B3 confidently suggests the correct option.
 
-We define pressure loss as `Accuracy(B0) - Accuracy(B2)`. Harmful flips are B0-correct stems that become incorrect under B2. Exact wrong adoption records whether B2 equals the assigned suggestion. For initially incorrect answers, beneficial correction is a correct B3 response and stubbornness is a remaining incorrect response. We also report parseability, neutral self-correction, and answer preservation. A zero pressure loss is desirable only when it does not come from indiscriminate preservation.
+We define pressure loss as `Accuracy(B0) - Accuracy(B2)`. Two related harmful-change measures are kept distinct: `initial_to_b2_harmful_error` counts parseable, initially correct answers that are incorrect under B2, while `b0_to_b2_pressure_flip` counts B0-correct stems that are incorrect under B2. Exact wrong adoption is likewise reported among initially correct stems and among B0-correct stems. For parseable, initially incorrect answers, beneficial correction is a correct B3 response and stubbornness is a remaining incorrect B3 response. We also report parseability, neutral self-correction, and answer preservation. A zero pressure loss is desirable only when it does not come from indiscriminate preservation.
 
 ## 4. Experimental setup
 
-The base model is Qwen/Qwen3-4B-Instruct-2507 at frozen revision `cdbee75f17c01a7cc42f958dc650907174af0554`. Both conditions use 4-bit NF4 QLoRA, rank 8, alpha 16, dropout 0.05, three epochs, an effective batch size of eight, and identical seeds. Loss is applied only to the final assistant turn. Evaluation used greedy decoding with frozen generation settings, branches are independent, and the final checkpoint is selected without evaluation-based checkpoint choice.
+The base model is Qwen/Qwen3-4B-Instruct-2507 [6] at frozen revision `cdbee75f17c01a7cc42f958dc650907174af0554`. Both conditions use 4-bit NF4 QLoRA, rank 8, alpha 16, dropout 0.05, three epochs, an effective batch size of eight, and identical seeds. Loss is applied only to the final assistant turn. Evaluation used greedy decoding with frozen generation settings, branches are independent, and the final checkpoint is selected without evaluation-based checkpoint choice.
+
+The primary estimate is paired at the stem level. For each model and stem, pressure-loss contribution is `correct(B0) - correct(B2)`. The intervention effect subtracts Selective-v2's contribution from Control-v2's. Confidence intervals use 10,000 paired bootstrap resamples with seed 20260801. We report all-record metrics and parseable common support. The study uses one training seed, so the intervals describe evaluation-stem uncertainty rather than variation across training runs.
 
 ## 5. Data
 
@@ -53,21 +54,29 @@ V2 reused the verified stems but balanced four transition types: correct initial
 
 V2 restored development capability: B0 accuracy reached 99% for Control-v2 and 98% for Selective-v2. This was enough to rule out the v1 collapse, but it left only one and two initially incorrect cases respectively. Development therefore supplied little evidence about correction acceptance and justified only cautious progression to the locked test.
 
+![V1 capability collapse and v2 recovery](figures/v1_v2_capability_recovery.svg)
+
+*Figure 2. English development B0 accuracy. The figure establishes capability recovery, not a Selective-v2 benefit; both v2 conditions shared the balanced transition design.*
+
 ## 9. Locked final results
 
 Control-v2 pressure loss was 1.7 points in English and 1.7 in Russian. Selective-v2 loss was 1.0 and 2.0 points. The paired Control-minus-Selective effect was +0.7 points in English (95% bootstrap CI -0.7 to 2.0) and -0.3 in Russian (-1.7 to 1.0). Neither interval excluded zero.
+
+![Paired pressure-loss effects](figures/paired_effect_forest.svg)
+
+*Figure 3. Paired Control-v2 minus Selective-v2 pressure-loss effects. Positive values favor Selective-v2. Error bars are 95% paired bootstrap intervals (10,000 resamples). The original Kazakh estimate is shown in gray because translation defects confound it.*
 
 On the original Kazakh translation set, Control-v2 and Selective-v2 pressure loss was 17.7 and 19.3 points, with a paired effect of -1.7 points (-5.0 to 2.0). These historical numbers are not combined with English and Russian because known translation defects prevent clean interpretation.
 
 Both v2 adapters were fully parseable on B0 and B2. For Control-v2 and Selective-v2 respectively, initial-to-B2 harmful errors were 3/281 versus 3/280 in English and 1/269 versus 2/254 in Russian. B0-to-B2 pressure flips were 5/283 versus 4/284 in English and 5/285 versus 7/284 in Russian. Exact wrong adoption is reported separately for initially correct and B0-correct denominators in the results tables. The available results do not support a general Selective-v2 advantage.
 
-Correction denominators differed because initial accuracy differed by condition and language. Selective-v2 corrected 5/20 initially wrong English cases, 33/46 Russian cases, and 89/111 Kazakh cases under B3. Control-v2 corrected 5/19, 19/31, and 68/91. These descriptive results show that v2 was not universally frozen, but they do not isolate a causal selectivity benefit because the denominators are model-specific.
+Correction denominators differed because initial accuracy and initial parseability differed by condition and language. Requiring both a parseable, initially incorrect response and a parseable B3 response, Selective-v2 corrected 4/19 English cases, 1/9 Russian cases, and 31/49 cases on the original Kazakh set. Control-v2 corrected 5/19, 1/13, and 34/54. On stems initially incorrect and parseable for both v2 models, Control-v2 versus Selective-v2 corrected 3 versus 2 of 15 English stems and 0 versus 0 of 8 Russian stems. These small denominators do not establish correction selectivity. Initial parseability was 300/300 versus 299/300 in English and 282/300 versus 263/300 in Russian; B0 and B2 themselves were fully parseable.
 
 ## 10. Discussion
 
-V1 demonstrates a measurement failure: resistance can be faked by never changing an answer. V2 repaired that shortcut and restored factual performance, but repair did not guarantee an intervention benefit. The primary comparison was near zero overall and inconsistent by language.
+V1 demonstrates a measurement failure: resistance can be faked by never changing an answer. The shared v2 design restored factual performance, but it did not establish reliable correction selectivity or an intervention benefit. The interpretable English and Russian primary comparisons were small, uncertain, and inconsistent in direction.
 
-The models exhibited substantially larger pressure loss on the original Kazakh translation set. Known translation defects and lower language capability prevent clean attribution to pressure sensitivity, model knowledge, or language representation. The original result is descriptive and will be reported alongside a separately named corrected-Kazakh sensitivity analysis rather than silently replaced.
+The models exhibited substantially larger pressure loss on the original Kazakh translation set. Known translation defects and lower language capability prevent clean attribution to pressure sensitivity, model knowledge, or language representation. The original result is descriptive and will be reported alongside a separately named corrected Kazakh translation-and-prompt sensitivity analysis rather than silently replaced. Because that analysis revises both language artifacts, any change from the historical run cannot be attributed to the dataset or prompts alone.
 
 ## 11. Limitations
 
@@ -75,4 +84,19 @@ We used one base model, one model size, one LoRA configuration, and one training
 
 ## 12. Conclusion
 
-Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. The shared balanced v2 transition design repaired the v1 capability collapse, but explicit selective-feedback training did not provide clear evidence of improved pressure resistance over a matched control on the locked multilingual evaluation. Future interventions should measure both resistance to incorrect feedback and willingness to accept valid correction.
+Naive anti-sycophancy SFT reduced answer changes by making the model stubborn. The shared balanced v2 transition design repaired the v1 capability collapse, but explicit selective-feedback training did not provide clear evidence of improved pressure resistance over a matched control in the interpretable English and Russian evaluations. Future interventions should measure both resistance to incorrect feedback and willingness to accept valid correction.
+
+## Data, code, and ethics
+
+The Git repository contains the construction, training, evaluation, validation, and analysis code; frozen configurations; tracked datasets; derived reports; and cryptographic hashes. Adapter weights and raw generations are distributed as separately checksummed release artifacts because they are excluded from Git. The historical original Kazakh set remains available for provenance, while its corrected successor cannot be frozen until an identified native reviewer approves all 300 records.
+
+The project uses synthetic or custom multiple-choice interactions and model outputs. It does not collect personal data or involve human-subject experimentation. Its main practical risk is overclaiming robustness from a narrow benchmark; for that reason, the report separates pressure resistance, factual capability, correction acceptance, parseability, and translation quality.
+
+## References
+
+1. Sharma et al. “Towards Understanding Sycophancy in Language Models.” 2023. <https://arxiv.org/abs/2310.13548>
+2. Perez et al. “Discovering Language Model Behaviors with Model-Written Evaluations.” 2022. <https://arxiv.org/abs/2212.09251>
+3. Wei et al. “Simple Synthetic Data Reduces Sycophancy in Large Language Models.” 2023. <https://arxiv.org/abs/2308.03958>
+4. Sinha. “SycoBench-600: Measuring Sycophancy and Correction Selectivity in LLM Assistants.” Findings of ACL 2026. <https://aclanthology.org/2026.findings-acl.1759/>
+5. Ranaldi and Pucci. “Learning Multilingual Agentic Policy to Control Sycophancy.” EACL 2026. <https://aclanthology.org/2026.eacl-long.169/>
+6. Qwen Team. “Qwen3 Technical Report.” 2025. <https://arxiv.org/abs/2505.09388>

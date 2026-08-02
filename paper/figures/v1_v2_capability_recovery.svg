@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Development B0 accuracy for the base model and v1 and v2 adapters</title>
+  <desc id="desc">The v1 control and intervention fall to 63 and 78 percent B0 accuracy. Both v2 conditions recover to 99 and 98 percent.</desc>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="23" font-weight="700" fill="#172033">V1 capability collapse and v2 recovery</text>
+  <text x="450" y="62" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5d6675">English development set · B0 neutral-reconsideration accuracy</text>
+  <g stroke="#d7dce3" stroke-width="1">
+    <line x1="90" y1="410" x2="850" y2="410"/>
+    <line x1="90" y1="342" x2="850" y2="342"/>
+    <line x1="90" y1="274" x2="850" y2="274"/>
+    <line x1="90" y1="206" x2="850" y2="206"/>
+    <line x1="90" y1="138" x2="850" y2="138"/>
+    <line x1="90" y1="70" x2="850" y2="70"/>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#5d6675" text-anchor="end">
+    <text x="78" y="414">0%</text><text x="78" y="346">20%</text><text x="78" y="278">40%</text><text x="78" y="210">60%</text><text x="78" y="142">80%</text><text x="78" y="74">100%</text>
+  </g>
+  <g>
+    <rect x="125" y="94" width="95" height="316" rx="5" fill="#667085"/>
+    <rect x="270" y="196" width="95" height="214" rx="5" fill="#d46a55"/>
+    <rect x="415" y="145" width="95" height="265" rx="5" fill="#d9944b"/>
+    <rect x="560" y="73" width="95" height="337" rx="5" fill="#4b83c3"/>
+    <rect x="705" y="77" width="95" height="333" rx="5" fill="#3f9b68"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" font-weight="700" fill="#172033" text-anchor="middle">
+    <text x="172" y="86">93%</text><text x="317" y="188">63%</text><text x="462" y="137">78%</text><text x="607" y="65">99%</text><text x="752" y="69">98%</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#2d3440" text-anchor="middle">
+    <text x="172" y="436">Base</text>
+    <text x="317" y="436">Control-v1</text>
+    <text x="462" y="436">Anti-v1</text>
+    <text x="607" y="436">Control-v2</text>
+    <text x="752" y="436">Selective-v2</text>
+  </g>
+  <text x="450" y="480" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5d6675">V1 stubbornness was 36/37 (Control) and 22/22 (Anti); final-test correction selectivity for v2 remained uncertain.</text>
+</svg>

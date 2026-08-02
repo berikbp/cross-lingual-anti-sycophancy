@@ -1,0 +1,81 @@
+{
+  "experiment_version": "v2",
+  "condition": "control_v2",
+  "dry_run": true,
+  "protocol_version": "2.0",
+  "training_config_version": "qlora_v2",
+  "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "config_path": "configs/training/qlora_v2.yaml",
+  "config_sha256": "084bd5f40941d52acd368927ed309c4e1de189690e6300b31cf42da8a7532fe9",
+  "transition_manifest_sha256": "6b4129076fc7241165abb55184096927d6952ea70ab316a59c7079c621bc52c4",
+  "conversation_manifest_sha256": "23ec212250ea0411710553c03fc1c51a0d9edc8d7297cf934262d0bfa300b5a2",
+  "train_path": "data/training_v2/control/train.jsonl",
+  "train_sha256": "cbb062782f5caea638fa955410fe82c1fe00b645792974b10d3637ef2eacde97",
+  "validation_path": "data/training_v2/control/validation.jsonl",
+  "validation_sha256": "74618739c73a1ce4e955ff495aed4df3a21d0ca3af88c119b889c2edb18c98ce",
+  "train_count": 8,
+  "validation_count": 8,
+  "category_counts": {
+    "CC": 2,
+    "CW": 2,
+    "WC": 2,
+    "WW": 2
+  },
+  "validation_category_counts": {
+    "WC": 2,
+    "CC": 2,
+    "CW": 2,
+    "WW": 2
+  },
+  "initial_correct_count": 4,
+  "feedback_correct_count": 4,
+  "epochs": 3.0,
+  "effective_batch_size": 1,
+  "expected_global_steps": 4,
+  "seed": 42,
+  "data_seed": 42,
+  "compute_dtype": "torch.bfloat16",
+  "torch_version": "2.13.0+cu130",
+  "transformers_version": "5.14.1",
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "platform": "Linux-7.0.11-76070011-generic-x86_64-with-glibc2.39",
+  "cuda_version": "13.0",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "runtime_seconds": 3.1209888458251953,
+  "global_step": 4,
+  "final_training_loss": 1.570897759695022,
+  "final_validation_loss": null,
+  "train_metrics": {
+    "train_runtime": 2.8402,
+    "train_samples_per_second": 1.408,
+    "train_steps_per_second": 1.408,
+    "total_flos": 10774879727616.0,
+    "train_loss": 1.570897759695022,
+    "epoch": 0.5
+  },
+  "token_statistics": {
+    "train": {
+      "count": 8,
+      "min_length": 115,
+      "max_length": 146,
+      "mean_length": 124.75,
+      "mean_supervised_tokens": 8.0
+    },
+    "validation": {
+      "count": 8,
+      "min_length": 109,
+      "max_length": 138,
+      "mean_length": 124.0,
+      "mean_supervised_tokens": 8.0
+    }
+  },
+  "peak_allocated_gb": 4.331725120544434,
+  "peak_reserved_gb": 4.923828125,
+  "callback_peak_allocated_gb": 4.331725120544434,
+  "callback_peak_reserved_gb": 4.875,
+  "git_commit": "23b1801598dd661b3ee15bad42051c3371a17887",
+  "final_adapter_path": "outputs/adapters/v2/control_dry_run/final",
+  "final_adapter_sha256": "dd72c039906dd1e9194acc661f5c43868f670885aedbf3bf61bc02270c328581",
+  "adapter_reload_verified": true
+}

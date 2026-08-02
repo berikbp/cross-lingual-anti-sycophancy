@@ -10,6 +10,21 @@ def sha(path: Path) -> str:
 
 
 def main() -> None:
+    raise RuntimeError(
+        "multilingual_final_v1 is a frozen historical artifact. Its Kazakh "
+        "review claim was withdrawn after publication audit. Use "
+        "src.translation.finalize_kazakh_v2 after complete native review; "
+        "do not regenerate the historical manifest."
+    )
+
+
+def historical_implementation_for_provenance() -> dict[str, object]:
+    """Return the old manifest payload without writing it.
+
+    This function preserves the original construction logic for auditability.
+    The review-complete field records what the workflow claimed in 2026-07;
+    it is not a current semantic-review conclusion.
+    """
     files = {key: Path(value) for key, value in {
         "english": "data/final/test_en.jsonl",
         "russian": "data/final/test_ru.jsonl",
@@ -34,9 +49,7 @@ def main() -> None:
         "translation_review_complete": True,
         "model_inference_performed": False,
     }
-    out = Path("data/final/multilingual_manifest.json")
-    out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(out)
+    return manifest
 
 
 if __name__ == "__main__":
