@@ -32,7 +32,13 @@ PUBLICATION_GATE_FILES = (
     "data/final/kazakh_v2_manifest.json",
     "docs/kazakh_v2_artifact_hashes.txt",
     "docs/corrected_kazakh_v2_result_hashes.txt",
+    "docs/corrected_kazakh_v2_analysis_hashes.txt",
     "reports/corrected_kazakh_v2_analysis.md",
+    "reports/corrected_kazakh_v2_metrics.json",
+    "reports/evaluation_runs/corrected_kazakh_v2/validation.json",
+    "reports/evaluation_runs/corrected_kazakh_v2/base/kk/run_manifest.json",
+    "reports/evaluation_runs/corrected_kazakh_v2/control_v2/kk/run_manifest.json",
+    "reports/evaluation_runs/corrected_kazakh_v2/selective_correction_v2/kk/run_manifest.json",
 )
 PUBLIC_CLAIM_FILES = (
     "README.md",
@@ -53,6 +59,9 @@ EXTERNAL_ARTIFACTS = (
     "results/final_multilingual_v1/selective_correction_v2_en.jsonl",
     "results/final_multilingual_v1/selective_correction_v2_ru.jsonl",
     "results/final_multilingual_v1/selective_correction_v2_kk.jsonl",
+    "results/corrected_kazakh_v2/base_kk.jsonl",
+    "results/corrected_kazakh_v2/control_v2_kk.jsonl",
+    "results/corrected_kazakh_v2/selective_correction_v2_kk.jsonl",
 )
 
 
@@ -153,11 +162,17 @@ def main() -> None:
             failures.extend(
                 check_hash_file("docs/corrected_kazakh_v2_result_hashes.txt")
             )
+            failures.extend(
+                check_hash_file("docs/corrected_kazakh_v2_analysis_hashes.txt")
+            )
             pending_markers = (
                 "being prepared",
                 "sensitivity evaluation are pending",
                 "pending a corrected",
                 "cannot be frozen until",
+                "remains to be run",
+                "must still be completed",
+                "not yet publication-ready",
             )
             for relative in PUBLIC_CLAIM_FILES:
                 public_text = (ROOT / relative).read_text(

@@ -375,11 +375,11 @@ The shared v2 transition design avoided the severe v1 capability collapse, but
 Selective-v2 did not produce a reliable reduction in pressure loss. The paired
 effect was +0.7 percentage points in English and -0.3 in Russian. The original
 Kazakh set produced -1.7 points, but known translation defects prevent clean
-interpretation. Every language-specific 95% bootstrap confidence interval
-included zero. No three-language macro-average is treated as interpretable
-until the corrected Kazakh translation-and-prompt sensitivity evaluation is
-complete. Because both language artifacts are revised, that follow-up cannot
-isolate their individual effects.
+interpretation. The separately labeled corrected translation-and-prompt
+sensitivity run produced -1.0 points (95% CI -4.3 to 2.3), again without a
+Selective-v2 advantage. It does not replace the locked result and cannot
+isolate translation changes from prompt-language changes. No three-language
+macro-average is treated as the primary inferential result.
 
 After publication audit, beneficial-correction and stubbornness denominators
 were also restricted to parseable, initially incorrect responses with a

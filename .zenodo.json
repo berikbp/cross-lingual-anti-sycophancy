@@ -1,6 +1,6 @@
 {
   "title": "When Anti-Sycophancy Training Becomes Stubbornness: A Multilingual Study in English, Russian, and Kazakh",
-  "description": "Research code, frozen configurations, evaluation data, audits, and derived results for matched QLoRA interventions targeting pressure-induced factual answer changes. The v1 intervention produced stubbornness and capability loss; a shared balanced v2 design restored capability, while explicit selective feedback showed no reliable pressure-resistance advantage over the matched control. The release preserves the original translation-confounded Kazakh analysis for provenance and includes a separately versioned, author-reviewed corrected artifact and sensitivity workflow.",
+  "description": "Research code, frozen configurations, evaluation data, audits, and derived results for matched QLoRA interventions targeting pressure-induced factual answer changes. The v1 intervention produced stubbornness and capability loss; a shared balanced v2 design restored capability, while explicit selective feedback showed no reliable pressure-resistance advantage over the matched control. The release preserves the original translation-confounded Kazakh analysis for provenance and includes a separately versioned corrected Kazakh sensitivity run, which reached the same null conclusion.",
   "creators": [
     {
       "name": "Satybaldy, Berik"

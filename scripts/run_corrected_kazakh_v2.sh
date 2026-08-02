@@ -22,5 +22,6 @@ done
 uv run python -m src.evaluation.validate_corrected_kazakh_v2_results
 uv run python -m src.analysis.analyze_corrected_kazakh_v2
 sha256sum -c docs/corrected_kazakh_v2_result_hashes.txt
+sha256sum -c docs/corrected_kazakh_v2_analysis_hashes.txt
 
 echo "Corrected Kazakh v2 sensitivity evaluation completed."

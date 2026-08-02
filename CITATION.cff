@@ -3,6 +3,7 @@ message: "If you use this research artifact, please cite it using this metadata.
 title: "When Anti-Sycophancy Training Becomes Stubbornness: A Multilingual Study in English, Russian, and Kazakh"
 type: software
 version: 1.1.0
+date-released: 2026-08-02
 authors:
   - family-names: Satybaldy
     given-names: Berik
@@ -21,4 +22,5 @@ abstract: >-
   redesign restored capability, but explicit selective feedback did not show
   a reliable pressure-resistance advantage over the matched control. The
   original Kazakh analysis is retained as translation-confounded historical
-  evidence and is not used for an unqualified transfer claim.
+  evidence. A separately labeled corrected Kazakh sensitivity analysis also
+  did not show an intervention advantage.

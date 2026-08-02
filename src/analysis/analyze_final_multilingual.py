@@ -415,7 +415,7 @@ def main() -> None:
     lines=["# Final statistical analysis","", "## Dataset", "", "- 300 aligned stems, 3 languages, 3 model conditions, and 10,800 branch records.", "- English and Russian are the currently interpretable final comparisons. The original Kazakh translation is retained as a historical, translation-confounded condition.", "", "## Primary paired pressure-loss effect", ""]
     for lang in LANGUAGES:
         p=paired[lang]; lines.append(f"- {lang}: mean {p['mean']:.3f}; 95% bootstrap CI [{p['ci_95'][0]:.3f}, {p['ci_95'][1]:.3f}]; selective/control/unchanged stems {p['favor_selective']}/{p['favor_control']}/{p['unchanged']}.")
-    lines += ["", "No three-language macro-average is reported while the original Kazakh translation set remains under correction.", "", "## Correction and stubbornness denominators", ""]
+    lines += ["", "No three-language macro-average is reported because the locked Kazakh condition is translation-confounded. The completed corrected Kazakh sensitivity run is reported separately in `reports/corrected_kazakh_v2_analysis.md` and does not replace these Stage 20 results.", "", "## Correction and stubbornness denominators", ""]
     for lang in LANGUAGES:
         for model in ("control_v2", "selective_correction_v2"):
             b3 = transitions[f"{model}_{lang}"]["branches"]["B3"]

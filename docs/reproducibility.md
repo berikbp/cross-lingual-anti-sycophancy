@@ -22,6 +22,9 @@ sha256sum -c docs/trained_v2_adapter_hashes.txt
 sha256sum -c docs/final_multilingual_artifact_hashes.txt
 sha256sum -c docs/final_multilingual_result_hashes.txt
 sha256sum -c docs/final_analysis_hashes.txt
+sha256sum -c docs/kazakh_v2_artifact_hashes.txt
+sha256sum -c docs/corrected_kazakh_v2_result_hashes.txt
+sha256sum -c docs/corrected_kazakh_v2_analysis_hashes.txt
 ```
 
 Recreate the fixed-seed analysis:
@@ -45,6 +48,16 @@ The locked evaluation can be run on a CUDA-capable machine with:
 ```
 
 That command performs preflight hash checks, executes all nine model-language conditions, validates 10,800 records, and records result hashes.
+
+Reproduce the separately labeled corrected Kazakh sensitivity analysis with:
+
+```bash
+./scripts/run_corrected_kazakh_v2.sh
+```
+
+It validates the corrected dataset and adapters, runs three model conditions,
+checks 3,600 branch records, writes the paired analysis, and verifies the raw
+result and analysis hashes. It does not overwrite the locked Stage 19 files.
 
 The historical raw records contain absolute working-directory paths because
 that evaluator version serialized resolved paths. Their hashes therefore

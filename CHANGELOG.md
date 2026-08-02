@@ -11,6 +11,9 @@
 - Qualified claims based on the original Kazakh translation and added a
   separately versioned corrected-Kazakh artifact with a compact, hash-bound
   author-review attestation and sensitivity-analysis workflow.
+- Completed the 3,600-record corrected Kazakh sensitivity run. Its paired
+  Control-minus-Selective effect was -1.0 pp (95% CI -4.3 to 2.3), so it did
+  not change the study's null conclusion.
 - Added licensing, citation, Zenodo, packaging, and artifact-release metadata.
 
 ## 1.0.0 — historical tagged snapshot

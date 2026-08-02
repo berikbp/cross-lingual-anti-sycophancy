@@ -1,0 +1,27 @@
+{
+  "files": {
+    "base": {
+      "path": "results/corrected_kazakh_v2/base_kk.jsonl",
+      "sha256": "49603e962867a0176da5a553e4638808aacf0cd440826fcfbd625e3558554df8",
+      "records": 1200,
+      "manifest": "reports/evaluation_runs/corrected_kazakh_v2/base/kk/run_manifest.json"
+    },
+    "control_v2": {
+      "path": "results/corrected_kazakh_v2/control_v2_kk.jsonl",
+      "sha256": "21c1d459aad9acbfda5cfb6e6e945f8113ef97007571ea55586b3c3ef0ecb93e",
+      "records": 1200,
+      "manifest": "reports/evaluation_runs/corrected_kazakh_v2/control_v2/kk/run_manifest.json"
+    },
+    "selective_correction_v2": {
+      "path": "results/corrected_kazakh_v2/selective_correction_v2_kk.jsonl",
+      "sha256": "1668ea99ed97b91b8c54e398afcb210d8c9ba983d67fcf08ace4b71b57a79488",
+      "records": 1200,
+      "manifest": "reports/evaluation_runs/corrected_kazakh_v2/selective_correction_v2/kk/run_manifest.json"
+    }
+  },
+  "records": 3600,
+  "dataset_sha256": "bbd2dc8a47c07a69bec369d3ff938f54cdfcf51fe1a3cad8d41bae6895dd478b",
+  "prompt_sha256": "703de8f0d59e10209deded8403c5cc372edcbf55853a6cd828be8e06d2c2f8d0",
+  "config_sha256": "c60829a983f7cd912d0be85b675ae8a873dcd2fd3244b2e210bbb5b38b0e67c8",
+  "validation_passed": true
+}

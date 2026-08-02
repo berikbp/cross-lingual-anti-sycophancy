@@ -2,7 +2,7 @@
 
 ## Completion
 
-The original 21-stage experiment completed, but the repository is not yet publication-ready. A publication audit identified substantive defects in the original Kazakh translations and an ambiguity in secondary harmful-change metrics. The historical data and results remain frozen; a corrected, author-reviewed Kazakh artifact is now versioned separately.
+The original 21-stage experiment and the post-audit corrections are complete. A publication audit identified substantive defects in the original Kazakh translations and an ambiguity in secondary harmful-change metrics. The historical data and results remain frozen. The corrected Kazakh artifact, separate sensitivity run, and revised secondary metrics are versioned alongside them rather than replacing them.
 
 ## Experimental history
 
@@ -24,12 +24,16 @@ original anti-sycophancy hypothesis
 - Languages: English, Russian, Kazakh
 - Final model-language conditions: 9
 - Final stored branch records: 10,800
+- Corrected Kazakh sensitivity conditions: 3
+- Corrected Kazakh sensitivity records: 3,600
 
 ## Findings
 
 V1 showed that a model can appear resistant by refusing to revise any answer. The shared v2 transition design restored factual capability and avoided the most severe preservation shortcut. Explicit selective feedback did not deliver a reliable primary benefit in the currently interpretable English and Russian comparisons: the Control-minus-Selective pressure-loss effect was +0.7 pp in English and -0.3 pp in Russian, and both confidence intervals contained zero.
 
-The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. The corrected Kazakh dataset has an author review attestation; its separately named translation-and-prompt sensitivity evaluation remains to be run. Because both language artifacts are revised, that follow-up will not isolate their individual effects. No claim about inherent Kazakh pressure sensitivity or cross-lingual transfer should be based on the original Kazakh run.
+The original Kazakh evaluation is retained as a historical result but is confounded by known translation defects. In the corrected translation-and-prompt sensitivity run, Control-v2 pressure loss was 18.7 pp and Selective-v2 loss was 19.7 pp. The paired effect was -1.0 pp (95% bootstrap CI -4.3 to 2.3 pp). This separately named run also does not support a Selective-v2 pressure-resistance benefit. Because both translations and prompt wording changed, it does not isolate either component. See `reports/corrected_kazakh_v2_analysis.md`.
+
+The corrected run did not reproduce v1-level stubbornness: B3 beneficial correction was 32/52 for Control-v2 and 31/47 for Selective-v2. This supports the narrower conclusion that the shared v2 transition design repaired the severe preservation shortcut, not that explicit selective feedback improved pressure resistance.
 
 ## Deviations
 
@@ -43,6 +47,6 @@ provenance validator, and a supplemental-artifact bundler are now present.
 Adapter weights and raw generations remain outside Git but are packaged by the
 Zenodo workflow after the scientific gate passes.
 
-The remaining scientific publication blocker is the separately labeled
-corrected Kazakh sensitivity run. The repository's readiness checker refuses
-to build a final archive before its results, analysis, and hashes exist.
+The scientific correction gate is closed. The release checker verifies the
+historical and corrected datasets, raw outputs, analyses, manifests, licenses,
+and citation metadata before archival bundles are built.

@@ -12,6 +12,8 @@
   "historical_artifacts_modified": false,
   "corrected_kazakh_review_status": "complete_author_review",
   "corrected_kazakh_review_attestation": "reports/translation_audits/kazakh_v2_review_attestation.json",
-  "corrected_sensitivity_evaluation_status": "not_run",
+  "corrected_sensitivity_evaluation_status": "complete_separate_sensitivity",
+  "corrected_sensitivity_validation": "reports/evaluation_runs/corrected_kazakh_v2/validation.json",
+  "corrected_sensitivity_analysis": "reports/corrected_kazakh_v2_analysis.md",
   "audit_report": "reports/publication_audit_v1_0.md"
 }

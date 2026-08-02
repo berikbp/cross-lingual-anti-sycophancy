@@ -12,11 +12,14 @@ A naive answer-preservation intervention reduced answer changes by making the mo
 |---|---:|---:|---:|
 | English | 1.7 pp | 1.0 pp | +0.7 pp |
 | Russian | 1.7 pp | 2.0 pp | -0.3 pp |
-| Kazakh* | 17.7 pp | 19.3 pp | -1.7 pp |
+| Kazakh, original translation* | 17.7 pp | 19.3 pp | -1.7 pp |
+| Kazakh, corrected sensitivity analysis** | 18.7 pp | 19.7 pp | -1.0 pp |
 
-All language-specific bootstrap confidence intervals included zero.
+All bootstrap confidence intervals included zero.
 
-\* The Kazakh values come from the original translation set and are retained as historical results. Translation defects prevent clean interpretation. A corrected, author-reviewed artifact is frozen separately for a translation-and-prompt sensitivity evaluation.
+\* The original Kazakh values are retained for provenance, but known translation defects prevent clean interpretation.
+
+\** The [corrected Kazakh analysis](reports/corrected_kazakh_v2_analysis.md) is a post-audit sensitivity run, not a replacement for the locked result. It revised both the item translations and Kazakh prompt wording, so it cannot identify the effect of either change alone.
 
 ## Design
 
@@ -34,7 +37,7 @@ locked English/Russian/Kazakh evaluation
 fixed-seed paired analysis
 ```
 
-The final evaluation contains the same 300 stem IDs in each language and four independent branches per stem: neutral reconsideration, doubt, an incorrect suggestion, and a correct suggestion. Structural alignment is verified; semantic alignment of the historical Kazakh translations is not assumed. Three model conditions produced 10,800 stored branch records.
+The locked evaluation contains the same 300 stem IDs in each language and four independent branches per stem: neutral reconsideration, doubt, an incorrect suggestion, and a correct suggestion. Structural alignment is verified; semantic alignment of the historical Kazakh translations is not assumed. Three model conditions produced 10,800 stored branch records. The separately named corrected Kazakh sensitivity run added 3,600 records without overwriting the locked files.
 
 ![Experimental pipeline from the v1 failure through the v2 redesign and locked evaluation](paper/figures/experimental_pipeline.svg)
 
@@ -62,7 +65,7 @@ packages them separately from the Git source archive; see
 
 The study evaluates one 4B model, one QLoRA configuration, one training seed, English-only fine-tuning, and multiple-choice factual questions.
 
-The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. A corrected, author-reviewed Kazakh artifact is frozen for a separately labeled translation-and-prompt sensitivity evaluation; because both language artifacts are revised, it will not isolate their individual effects.
+The original Kazakh translation set contains known semantic and language defects. Its results are retained for transparency but should not be used alone to draw conclusions about Kazakh-language pressure sensitivity or cross-lingual transfer. The corrected sensitivity run reached the same directional result: Selective-v2 did not outperform Control-v2. Because both the translations and prompt wording were revised, the difference between the two Kazakh runs cannot be attributed to either change alone.
 
 Secondary harmful-change metrics are reported separately as initial-to-B2 harmful error and B0-to-B2 pressure flip. The primary pressure-loss calculation was unaffected by this labeling correction.
 
@@ -77,12 +80,11 @@ figures, reports, and documentation are dual-licensed under
 [Apache-2.0](MODEL_ARTIFACT_LICENSE.md), matching the upstream Qwen model.
 Third-party models and dependencies retain their upstream licenses.
 
-The publication-readiness checker is:
+Run the publication-readiness checker before building a release:
 
 ```bash
 uv run python scripts/check_zenodo_readiness.py
 ```
 
-It intentionally fails until the separately labeled corrected Kazakh
-sensitivity evaluation has been frozen. This protects the historical `v1.0.0`
-record from silent changes.
+The corrected sensitivity evaluation is frozen. The checker now verifies its
+dataset, raw-result, and analysis hashes alongside the historical artifacts.

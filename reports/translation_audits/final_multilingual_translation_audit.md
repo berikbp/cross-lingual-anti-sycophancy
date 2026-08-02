@@ -5,8 +5,8 @@
 > what the original workflow reported; they no longer establish that all 300
 > Kazakh records received adequate native-language review. The original files
 > and results remain frozen for provenance. A corrected, author-reviewed
-> Kazakh artifact is now frozen separately; its sensitivity evaluation does
-> not overwrite the historical run.
+> Kazakh artifact and its sensitivity evaluation are frozen separately; they
+> do not overwrite the historical run.
 
 ## Scope
 
@@ -32,7 +32,8 @@
 - Initial Kazakh human semantic verification adequate for publication: no
 - Answer keys and option positions structurally preserved: yes
 - Kazakh terminology, grammar, and semantic equivalence fully reviewed: no; claim withdrawn
-- Known unresolved Kazakh issues: present; tracked in `reports/publication_audit_v1_0.md`
+- Known issues in the historical Kazakh artifact: present; tracked in `reports/publication_audit_v1_0.md`
+- Corrected Kazakh artifact: author-reviewed, hash-bound, and separately versioned
 
 ## Replacements
 
@@ -61,5 +62,5 @@ defects were identified. It is not the active publication decision.
 
 - [x] Corrected Kazakh author review recorded and hash-bound.
 - [x] Corrected Kazakh artifact frozen.
-- [ ] Corrected-Kazakh sensitivity evaluation complete.
-- [ ] Multilingual artifacts ready for publication.
+- [x] Corrected-Kazakh sensitivity evaluation complete and separately labeled.
+- [x] Historical and corrected artifacts ready for publication with their stated qualifications.

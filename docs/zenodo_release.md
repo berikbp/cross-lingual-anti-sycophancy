@@ -1,9 +1,9 @@
 # Zenodo release procedure
 
 The repository is prepared for a `v1.1.0` archival release. The corrected
-Kazakh artifact has a compact, hash-bound author-review attestation; the
-separately named translation-and-prompt sensitivity run must still be
-completed before publication. The readiness checker enforces that gate.
+Kazakh artifact has a compact, hash-bound author-review attestation, and the
+separately named translation-and-prompt sensitivity run is complete. The
+readiness checker verifies both the historical and corrected artifacts.
 
 ## 1. Verify the Kazakh review artifact
 
@@ -29,18 +29,16 @@ validation, analysis, and result-hash verification:
 ./scripts/run_corrected_kazakh_v2.sh
 ```
 
-Validate and analyze the three files, record
-`docs/corrected_kazakh_v2_result_hashes.txt`, and write
+The completed wrapper validates and analyzes the three files, records
+`docs/corrected_kazakh_v2_result_hashes.txt`, and writes
 `reports/corrected_kazakh_v2_analysis.md`. Report the historical and corrected
 Kazakh results side by side. This follow-up revises both the item translations
 and the Kazakh prompt wording, so it measures their combined effect and cannot
 identify either component separately.
 
-Before release, update `README.md`, `paper/paper.md`,
-`paper/claims_and_evidence.md`, and `reports/final_project_report.md` with the
-frozen corrected results and a link to
-`reports/corrected_kazakh_v2_analysis.md`. Remove wording that says the run is
-pending. The readiness checker enforces this post-result claim update.
+The public claims report the historical and corrected results side by side and
+link to `reports/corrected_kazakh_v2_analysis.md`. The readiness checker rejects
+stale language that describes the corrected run as pending.
 
 ## 3. Run the release audit
 

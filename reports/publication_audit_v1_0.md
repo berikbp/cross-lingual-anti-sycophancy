@@ -11,7 +11,7 @@ datasets, results, hashes, and tag are not overwritten.
 
 | Issue | Severity | Affected files | Scientific impact | Required correction | Status |
 |---|---|---|---|---|---|
-| Kazakh records contain semantic and language defects despite a completed-review claim | Critical | `data/final/test_kk.jsonl`, Kazakh batches, translation audit, paper, README, claims | Original Kazakh effects cannot be cleanly attributed to model behavior or language capability | Review all 300 corrected records; preserve the six-item change log and hash-bound review attestation; freeze `test_kk_v2.jsonl`; run a separately named corrected translation-and-prompt sensitivity evaluation | Partially closed: author review attested and corrected artifact frozen; separately labeled sensitivity run pending |
+| Kazakh records contain semantic and language defects despite a completed-review claim | Critical | `data/final/test_kk.jsonl`, Kazakh batches, translation audit, paper, README, claims | Original Kazakh effects cannot be cleanly attributed to model behavior or language capability | Review all 300 corrected records; preserve the six-item change log and hash-bound review attestation; freeze `test_kk_v2.jsonl`; run a separately named corrected translation-and-prompt sensitivity evaluation | Closed: corrected artifact, review attestation, 3,600-record sensitivity run, validation, analysis, and hashes frozen separately |
 | Harmful-flip implementation used initial correctness while prose defined B0 correctness | Critical | analysis code and outputs, paper, tables, hashes | Secondary harmful-flip and conditional wrong-adoption metrics were mislabeled; primary pressure loss was unaffected | Report `initial_to_b2_harmful_error` and `b0_to_b2_pressure_flip` separately, with corresponding wrong-adoption denominators; regenerate derived artifacts | Closed: metrics split, tested, regenerated, and rehashed |
 | Final-result validator and run manifests omit advertised provenance checks | High | final validator, evaluator, run manifests | Artifact validation was weaker than described | Validate hashes, metadata, per-stem branches, datasets, prompts, adapters, model revision, and generation settings; preserve historical outputs | Closed; strengthened validator emits a provenance report and records historical manifest limits |
 | Raw records contain absolute dataset paths | High | evaluator and raw final outputs | Byte hashes are installation-path dependent | Store repository-relative paths in future runs; do not rewrite historical raw files | Closed for future runs; historical limitation documented |
@@ -24,10 +24,11 @@ datasets, results, hashes, and tag are not overwritten.
 
 ## Frozen interpretation during correction
 
-The original Kazakh evaluation remains part of the historical record. It will
-be reported with an explicit translation-quality limitation. A corrected run
-will use a separate label such as `corrected_kazakh_v2`; it will be a
-post-publication-audit sensitivity analysis, not a replacement for Stage 19.
+The original Kazakh evaluation remains part of the historical record and is
+reported with an explicit translation-quality limitation. The completed
+`corrected_kazakh_v2` run is a post-audit sensitivity analysis, not a
+replacement for Stage 19. Its Control-minus-Selective effect was -1.0 pp
+(95% CI -4.3 to 2.3 pp), which does not support a Selective-v2 advantage.
 
 The primary Control-v2 minus Selective-v2 pressure-loss calculation was not
 affected by the harmful-flip labeling error. The secondary metrics have now
@@ -35,6 +36,6 @@ been recomputed under explicit initial-to-B2 and B0-to-B2 definitions.
 
 ## Release gate
 
-Zenodo publication is blocked until every critical and blocking issue above is
-closed, the corrected artifacts are audited, and a new `v1.1.0` release is
-created. Presentation improvements follow the scientific corrections.
+The scientific and metadata corrections are closed. Zenodo publication now
+requires a clean release audit, archival bundle creation, a new `v1.1.0` tag,
+and an actual GitHub/Zenodo release. The historical `v1.0.0` tag must not move.

@@ -18,6 +18,15 @@
 
 \* Historical original-translation result; known Kazakh defects prevent clean interpretation.
 
+## Corrected Kazakh sensitivity analysis
+
+| Condition | B0 accuracy | B2 accuracy | Pressure loss | Paired effect | 95% bootstrap CI |
+|---|---:|---:|---:|---:|---:|
+| Control-v2 | 239/300 (79.7%) | 183/300 (61.0%) | 18.7 pp | — | — |
+| Selective-v2 | 238/300 (79.3%) | 179/300 (59.7%) | 19.7 pp | -1.0 pp | [-4.3, 2.3] |
+
+This post-audit run revised both the Kazakh item translations and prompt wording. It is reported separately and does not replace the locked historical result.
+
 ## Locked secondary metrics
 
 | Model/language | Initial→B2 harmful error | B0→B2 pressure flip | Wrong adoption / initially correct | Wrong adoption / B0 correct | B3 correction | Stubbornness |
@@ -28,6 +37,13 @@
 | Selective-v2 RU | 2/254 | 7/284 | 1/254 | 4/284 | 1/9 | 8/9 |
 | Control-v2 KK* | 46/209 | 55/237 | 41/209 | 49/237 | 34/54 | 20/54 |
 | Selective-v2 KK* | 50/189 | 63/237 | 43/189 | 55/237 | 31/49 | 18/49 |
+
+## Corrected Kazakh secondary metrics
+
+| Model | Initial→B2 harmful error | B0→B2 pressure flip | Wrong adoption / initially correct | Wrong adoption / B0 correct | B3 correction | Stubbornness |
+|---|---:|---:|---:|---:|---:|---:|
+| Control-v2 | 50/211 | 58/239 | 45/211 | 52/239 | 32/52 | 20/52 |
+| Selective-v2 | 48/186 | 62/238 | 42/186 | 55/238 | 31/47 | 16/47 |
 
 B3 correction and stubbornness denominators require a parseable, initially
 incorrect response and a parseable B3 response. Unparseable initial responses

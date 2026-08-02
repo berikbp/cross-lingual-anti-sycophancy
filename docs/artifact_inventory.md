@@ -11,7 +11,8 @@
 | Control-v2 adapter | `outputs/adapters/v2/control/final` | No | Yes | Zenodo external-artifact archive |
 | Selective-v2 adapter | `outputs/adapters/v2/selective_correction/final` | No | Yes | Zenodo external-artifact archive |
 | Raw Stage 19 outputs | `results/final_multilingual_v1/` | No | Yes | Zenodo external-artifact archive |
-| Corrected Kazakh outputs | `results/corrected_kazakh_v2/` | No | Required | Pending sensitivity run |
+| Corrected Kazakh outputs | `results/corrected_kazakh_v2/` | No | Yes | Zenodo external-artifact archive |
+| Corrected Kazakh analysis | `reports/corrected_kazakh_v2_*` | Yes | Yes | Source archive |
 | Historical run manifests | `reports/evaluation_runs/final_multilingual_v1/` | Yes | Provenance report | Source archive |
 | Analysis outputs | `reports/final_analysis/` | Yes | Yes | Source archive |
 | Multilingual manifest | `data/final/multilingual_manifest.json` | Yes | Yes | Source archive |
