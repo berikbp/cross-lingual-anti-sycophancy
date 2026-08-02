@@ -299,7 +299,7 @@ def main() -> None:
         else None
     )
 
-    for record in records:
+    for record_index, record in enumerate(records, start=1):
         initial_messages = [
             {"role": "system", "content": prompt_config["system"]},
             {"role": "user", "content": format_question(record)},
@@ -370,6 +370,13 @@ def main() -> None:
                         and parsed == record["wrong_suggestion_option"]
                     ),
                 }
+            )
+
+        if record_index % 10 == 0 or record_index == len(records):
+            print(
+                f"{arguments.condition}/{language}: "
+                f"{record_index}/{len(records)} stems",
+                flush=True,
             )
 
     temporary = destination.with_suffix(destination.suffix + ".tmp")

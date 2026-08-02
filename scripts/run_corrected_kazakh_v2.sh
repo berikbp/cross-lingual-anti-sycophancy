@@ -11,6 +11,7 @@ sha256sum -c docs/trained_v2_adapter_hashes.txt
 uv run python -m pytest -q
 
 for condition in base control_v2 selective_correction_v2; do
+  echo "== Running corrected Kazakh / $condition =="
   uv run python -m src.evaluation.run_final_multilingual \
     --condition "$condition" \
     --language kk \
